@@ -1,2 +1,0 @@
-Ext.define('designer.model.MySchema23', { 
- extend: 'natjs.data.NATModel',
