@@ -1,0 +1,6 @@
+Ext.define('designer.model.Schema1', {  
+     extend: 'designer.model.MySchema', 
+ undefined 
+ fields: [ 
+ ], 
+ 
