@@ -97,6 +97,17 @@ Ext.define('designer.model.CRBaseObject', {
  	 ]
  });
   
+ Ext.define('designer.model.SchemaListGenerator', { 
+ 	 extend: 'designer.model.Generator',
+ 	 alias: 'SchemaListGenerator'
+ 	 
+ 	 ,fields: [
+ 	 	 { name: 'source', type: 'string' }
+ 	 ]
+ 	 ,associations: [
+ 	 ]
+ });
+  
  Ext.define('designer.model.GenerationStep', { 
  	 extend: 'designer.model.CRBaseObject',
  	 alias: 'GenerationStep'
