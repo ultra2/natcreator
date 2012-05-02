@@ -24,6 +24,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.CRMetaRow');
  	 	 Ext.syncRequire('designer.model.CRMetaCategoryRow');
  	 	 Ext.syncRequire('designer.model.CRMetaPropertyRow');
+ 	 	 Ext.syncRequire('designer.model.Login');
  	 }
  });
  
