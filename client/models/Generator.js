@@ -1,8 +1,9 @@
 Ext.define('designer.model.Generator', { 
- 	 extend: 'designer.model.entity',
+ 	 extend: 'designer.model.persistentC',
  	 alias: 'Generator'
  	 
  	 ,fields: [
+ 	 	 { name: 'name', type: 'string' }
  	 ]
  	 ,associations: [
  	 ]

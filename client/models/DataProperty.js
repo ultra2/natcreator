@@ -1,5 +1,5 @@
 Ext.define('designer.model.DataProperty', { 
- 	 extend: 'designer.model.entity',
+ 	 extend: 'designer.model.persistentC',
  	 alias: 'DataProperty'
  	 
  	 ,fields: [
@@ -8,6 +8,7 @@ Ext.define('designer.model.DataProperty', {
  	 	 ,{ name: 'isDebug', type: 'boolean' }
  	 	 ,{ name: 'isNullable', type: 'boolean' }
  	 	 ,{ name: 'isArray', type: 'boolean' }
+ 	 	 ,{ name: 'name', type: 'string' }
  	 ]
  	 ,associations: [
  	 ]

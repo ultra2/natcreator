@@ -1,8 +1,9 @@
 Ext.define('designer.model.CRProject', { 
- 	 extend: 'designer.model.entity',
+ 	 extend: 'designer.model.persistentM',
  	 alias: 'CRProject'
  	 
  	 ,fields: [
+ 	 	 { name: 'name', type: 'string' }
  	 ]
  	 ,associations: [
  	 	 { type: 'belongsTo', name: 'connection', model: 'designer.model.CRConnection' }

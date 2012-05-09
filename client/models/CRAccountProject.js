@@ -1,5 +1,5 @@
 Ext.define('designer.model.CRAccountProject', { 
- 	 extend: 'designer.model.persistent',
+ 	 extend: 'designer.model.persistentM',
  	 alias: 'CRAccountProject'
  	 
  	 ,fields: [

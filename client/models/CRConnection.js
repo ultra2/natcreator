@@ -1,5 +1,5 @@
 Ext.define('designer.model.CRConnection', { 
- 	 extend: 'designer.model.entity',
+ 	 extend: 'designer.model.persistentM',
  	 alias: 'CRConnection'
  	 
  	 ,fields: [

@@ -1,5 +1,5 @@
 Ext.define('designer.model.GenerationStep', { 
- 	 extend: 'designer.model.entity',
+ 	 extend: 'designer.model.persistentC',
  	 alias: 'GenerationStep'
  	 
  	 ,fields: [

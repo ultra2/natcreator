@@ -1,9 +1,10 @@
 Ext.define('designer.model.File', { 
- 	 extend: 'designer.model.entity',
+ 	 extend: 'designer.model.persistentC',
  	 alias: 'File'
  	 
  	 ,fields: [
  	 	 { name: 'content', type: 'string' }
+ 	 	 ,{ name: 'name', type: 'string' }
  	 ]
  	 ,associations: [
  	 ]

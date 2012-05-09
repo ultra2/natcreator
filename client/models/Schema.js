@@ -1,5 +1,5 @@
 Ext.define('designer.model.Schema', { 
- 	 extend: 'designer.model.entity',
+ 	 extend: 'designer.model.persistentC',
  	 alias: 'Schema'
  	 
  	 ,fields: [
@@ -8,6 +8,7 @@ Ext.define('designer.model.Schema', {
  	 	 ,{ name: 'leaf', type: 'boolean', debug: true }
  	 	 ,{ name: 'depth', type: 'int', debug: true }
  	 	 ,{ name: 'index', type: 'int', debug: true }
+ 	 	 ,{ name: 'name', type: 'string' }
  	 ]
  	 ,associations: [
  	 	 { type: 'hasMany', name: 'properties', associationKey: 'properties', model: 'designer.model.DataProperty' , primaryKey: '_id' }
