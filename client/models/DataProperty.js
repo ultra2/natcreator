@@ -1,5 +1,5 @@
 Ext.define('designer.model.DataProperty', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'DataProperty'
  	 
  	 ,fields: [

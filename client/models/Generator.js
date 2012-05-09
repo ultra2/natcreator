@@ -1,5 +1,5 @@
 Ext.define('designer.model.Generator', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'Generator'
  	 
  	 ,fields: [

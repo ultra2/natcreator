@@ -1,5 +1,5 @@
 Ext.define('designer.model.GenerationStep', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'GenerationStep'
  	 
  	 ,fields: [

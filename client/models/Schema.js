@@ -1,5 +1,5 @@
 Ext.define('designer.model.Schema', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'Schema'
  	 
  	 ,fields: [

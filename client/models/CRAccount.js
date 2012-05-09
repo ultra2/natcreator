@@ -1,5 +1,5 @@
 Ext.define('designer.model.CRAccount', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'CRAccount'
  	 
  	 ,fields: [

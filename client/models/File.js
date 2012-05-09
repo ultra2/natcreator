@@ -1,5 +1,5 @@
 Ext.define('designer.model.File', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'File'
  	 
  	 ,fields: [

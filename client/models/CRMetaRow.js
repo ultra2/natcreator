@@ -1,5 +1,5 @@
 Ext.define('designer.model.CRMetaRow', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.client',
  	 alias: 'CRMetaRow'
  	 
  	 ,fields: [

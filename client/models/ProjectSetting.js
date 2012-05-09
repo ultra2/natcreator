@@ -1,5 +1,5 @@
 Ext.define('designer.model.ProjectSetting', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'ProjectSetting'
  	 
  	 ,fields: [

@@ -1,5 +1,5 @@
 Ext.define('designer.model.CRAccountProjectRole', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.persistent',
  	 alias: 'CRAccountProjectRole'
  	 
  	 ,fields: [

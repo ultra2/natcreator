@@ -1,5 +1,5 @@
 Ext.define('designer.model.CRConnection', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.entity',
  	 alias: 'CRConnection'
  	 
  	 ,fields: [

@@ -1,5 +1,5 @@
 Ext.define('designer.model.Login', { 
- 	 extend: 'designer.model.CRBaseObject',
+ 	 extend: 'designer.model.communication',
  	 alias: 'Login'
  	 
  	 ,fields: [
