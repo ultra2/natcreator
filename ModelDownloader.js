@@ -17,7 +17,6 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.ReferenceProperty');
  	 	 Ext.syncRequire('designer.model.ObjectProperty');
  	 	 Ext.syncRequire('designer.model.AutoProperty');
- 	 	 Ext.syncRequire('designer.model.File');
  	 	 Ext.syncRequire('designer.model.GenerationStep');
  	 	 Ext.syncRequire('designer.model.ProjectSetting');
  	 	 Ext.syncRequire('designer.model.Generator');
@@ -30,6 +29,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.communication');
  	 	 Ext.syncRequire('designer.model.Login');
  	 	 Ext.syncRequire('designer.model.registration');
+ 	 	 Ext.syncRequire('designer.model.File');
  	 }
  });
  
