@@ -30,6 +30,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.Login');
  	 	 Ext.syncRequire('designer.model.registration');
  	 	 Ext.syncRequire('designer.model.File');
+ 	 	 Ext.syncRequire('designer.model.AccountInfo');
  	 }
  });
  
