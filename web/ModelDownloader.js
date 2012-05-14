@@ -1,36 +1,36 @@
-Ext.define(params.namespace + 'ModelDownloader', { 
+Ext.define('web.ModelDownloader', { 
  	 Download: function() {
- 	 	 Ext.syncRequire(params.namespace + 'model.CRBaseObject');
- 	 	 Ext.syncRequire(params.namespace + 'model.persistentM');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRAccountProjectRole');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRAccountProject');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRConnection');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRProject');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRAccount');
- 	 	 Ext.syncRequire(params.namespace + 'model.persistentC');
- 	 	 Ext.syncRequire(params.namespace + 'model.Schema');
- 	 	 Ext.syncRequire(params.namespace + 'model.DataProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.StringProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.BooleanProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.DateProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.IntProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.ReferenceProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.ObjectProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.AutoProperty');
- 	 	 Ext.syncRequire(params.namespace + 'model.ProjectSetting');
- 	 	 Ext.syncRequire(params.namespace + 'model.GenerationStep');
- 	 	 Ext.syncRequire(params.namespace + 'model.Generator');
- 	 	 Ext.syncRequire(params.namespace + 'model.SchemaGenerator');
- 	 	 Ext.syncRequire(params.namespace + 'model.SchemaListGenerator');
- 	 	 Ext.syncRequire(params.namespace + 'model.client');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRMetaRow');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRMetaCategoryRow');
- 	 	 Ext.syncRequire(params.namespace + 'model.CRMetaPropertyRow');
- 	 	 Ext.syncRequire(params.namespace + 'model.communication');
- 	 	 Ext.syncRequire(params.namespace + 'model.Login');
- 	 	 Ext.syncRequire(params.namespace + 'model.registration');
- 	 	 Ext.syncRequire(params.namespace + 'model.File');
- 	 	 Ext.syncRequire(params.namespace + 'model.AccountInfo');
+ 	 	 Ext.syncRequire('web.model.CRBaseObject');
+ 	 	 Ext.syncRequire('web.model.persistentM');
+ 	 	 Ext.syncRequire('web.model.CRAccountProjectRole');
+ 	 	 Ext.syncRequire('web.model.CRAccountProject');
+ 	 	 Ext.syncRequire('web.model.CRConnection');
+ 	 	 Ext.syncRequire('web.model.CRProject');
+ 	 	 Ext.syncRequire('web.model.CRAccount');
+ 	 	 Ext.syncRequire('web.model.persistentC');
+ 	 	 Ext.syncRequire('web.model.Schema');
+ 	 	 Ext.syncRequire('web.model.DataProperty');
+ 	 	 Ext.syncRequire('web.model.StringProperty');
+ 	 	 Ext.syncRequire('web.model.BooleanProperty');
+ 	 	 Ext.syncRequire('web.model.DateProperty');
+ 	 	 Ext.syncRequire('web.model.IntProperty');
+ 	 	 Ext.syncRequire('web.model.ReferenceProperty');
+ 	 	 Ext.syncRequire('web.model.ObjectProperty');
+ 	 	 Ext.syncRequire('web.model.AutoProperty');
+ 	 	 Ext.syncRequire('web.model.ProjectSetting');
+ 	 	 Ext.syncRequire('web.model.GenerationStep');
+ 	 	 Ext.syncRequire('web.model.Generator');
+ 	 	 Ext.syncRequire('web.model.SchemaGenerator');
+ 	 	 Ext.syncRequire('web.model.SchemaListGenerator');
+ 	 	 Ext.syncRequire('web.model.client');
+ 	 	 Ext.syncRequire('web.model.CRMetaRow');
+ 	 	 Ext.syncRequire('web.model.CRMetaCategoryRow');
+ 	 	 Ext.syncRequire('web.model.CRMetaPropertyRow');
+ 	 	 Ext.syncRequire('web.model.communication');
+ 	 	 Ext.syncRequire('web.model.Login');
+ 	 	 Ext.syncRequire('web.model.registration');
+ 	 	 Ext.syncRequire('web.model.File');
+ 	 	 Ext.syncRequire('web.model.AccountInfo');
  	 }
  });
  
