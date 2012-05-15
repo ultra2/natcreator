@@ -8,8 +8,8 @@ Ext.define('web.ModelDownloader', {
  	 	 Ext.syncRequire('web.model.CRProject');
  	 	 Ext.syncRequire('web.model.CRAccount');
  	 	 Ext.syncRequire('web.model.persistentC');
- 	 	 Ext.syncRequire('web.model.Schema');
  	 	 Ext.syncRequire('web.model.DataProperty');
+ 	 	 Ext.syncRequire('web.model.Schema');
  	 	 Ext.syncRequire('web.model.StringProperty');
  	 	 Ext.syncRequire('web.model.BooleanProperty');
  	 	 Ext.syncRequire('web.model.DateProperty');
@@ -17,8 +17,8 @@ Ext.define('web.ModelDownloader', {
  	 	 Ext.syncRequire('web.model.ReferenceProperty');
  	 	 Ext.syncRequire('web.model.ObjectProperty');
  	 	 Ext.syncRequire('web.model.AutoProperty');
- 	 	 Ext.syncRequire('web.model.ProjectSetting');
  	 	 Ext.syncRequire('web.model.GenerationStep');
+ 	 	 Ext.syncRequire('web.model.ProjectSetting');
  	 	 Ext.syncRequire('web.model.Generator');
  	 	 Ext.syncRequire('web.model.SchemaGenerator');
  	 	 Ext.syncRequire('web.model.SchemaListGenerator');
