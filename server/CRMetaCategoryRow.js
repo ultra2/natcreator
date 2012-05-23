@@ -1,4 +1,4 @@
-var ArticleSchema = new CRMetaCategoryRowSchema({ 
+var CRMetaCategoryRowSchema = new CRMetaCategoryRowSchema({ 
  })
  mongoose.model('CRMetaCategoryRow', CRMetaCategoryRowSchema)
  

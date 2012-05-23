@@ -1,4 +1,4 @@
-var ArticleSchema = new CommunicationSchema({ 
+var CommunicationSchema = new CommunicationSchema({ 
  })
  mongoose.model('Communication', CommunicationSchema)
  

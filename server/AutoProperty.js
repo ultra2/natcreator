@@ -1,4 +1,4 @@
-var ArticleSchema = new AutoPropertySchema({ 
+var AutoPropertySchema = new AutoPropertySchema({ 
  })
  mongoose.model('AutoProperty', AutoPropertySchema)
  

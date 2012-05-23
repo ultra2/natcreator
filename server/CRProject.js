@@ -1,4 +1,5 @@
-var ArticleSchema = new CRProjectSchema({ 
+var CRProjectSchema = new CRProjectSchema({ 
+ 	 	 name: { type: String }
  })
  mongoose.model('CRProject', CRProjectSchema)
  
