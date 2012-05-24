@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+ 
  require(__dirname + '/model/CRBaseObject');
  require(__dirname + '/model/PersistentM');
  require(__dirname + '/model/CRAccountProjectRole');
@@ -30,6 +31,7 @@ var mongoose = require('mongoose');
  require(__dirname + '/model/Registration');
  require(__dirname + '/model/File');
  require(__dirname + '/model/AccountInfo');
+ 
  exports.CRAccount = mongoose.model('CRBaseObject');
  exports.CRAccount = mongoose.model('PersistentM');
  exports.CRAccount = mongoose.model('CRAccountProjectRole');
@@ -61,5 +63,4 @@ var mongoose = require('mongoose');
  exports.CRAccount = mongoose.model('Registration');
  exports.CRAccount = mongoose.model('File');
  exports.CRAccount = mongoose.model('AccountInfo');
- });
  
