@@ -1,4 +1,4 @@
-var StringPropertySchema = new StringPropertySchema({ 
+var StringPropertySchema = new Schema({ 
  	 	 _id: { type: String }
  	 	 ,created: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
  	 	 ,modified: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
@@ -15,6 +15,6 @@ var StringPropertySchema = new StringPropertySchema({
  	 	 ,minLength: { type: Number }
  	 	 ,maxLength: { type: String }
  	 	 ,vFormat: { type: String }
- })
- mongoose.model('StringProperty', StringPropertySchema)
+ });
+ mongoose.model('StringProperty', StringPropertySchema);
  

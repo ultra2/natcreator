@@ -1,4 +1,4 @@
-var CRMetaPropertyRowSchema = new CRMetaPropertyRowSchema({ 
+var CRMetaPropertyRowSchema = new Schema({ 
  	 	 _id: { type: String }
  	 	 ,parentId: { type: String }
  	 	 ,depth: { type: Number }
@@ -6,6 +6,6 @@ var CRMetaPropertyRowSchema = new CRMetaPropertyRowSchema({
  	 	 ,index: { type: Number }
  	 	 ,type: { type: String }
  	 	 ,value: { type: Mixed }
- })
- mongoose.model('CRMetaPropertyRow', CRMetaPropertyRowSchema)
+ });
+ mongoose.model('CRMetaPropertyRow', CRMetaPropertyRowSchema);
  

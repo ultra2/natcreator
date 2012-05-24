@@ -1,5 +1,5 @@
-var CommunicationSchema = new CommunicationSchema({ 
+var CommunicationSchema = new Schema({ 
  	 	 _id: { type: String }
- })
- mongoose.model('Communication', CommunicationSchema)
+ });
+ mongoose.model('Communication', CommunicationSchema);
  

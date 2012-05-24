@@ -1,5 +1,5 @@
-var CRBaseObjectSchema = new CRBaseObjectSchema({ 
+var CRBaseObjectSchema = new Schema({ 
  	 	 _id: { type: String }
- })
- mongoose.model('CRBaseObject', CRBaseObjectSchema)
+ });
+ mongoose.model('CRBaseObject', CRBaseObjectSchema);
  

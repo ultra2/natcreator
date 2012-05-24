@@ -1,4 +1,4 @@
-var AutoPropertySchema = new AutoPropertySchema({ 
+var AutoPropertySchema = new Schema({ 
  	 	 _id: { type: String }
  	 	 ,created: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
  	 	 ,modified: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
@@ -11,6 +11,6 @@ var AutoPropertySchema = new AutoPropertySchema({
  	 	 ,isArray: { type: Boolean }
  	 	 ,name: { type: String }
  	 	 ,isPersistent: { type: Boolean, default: true }
- })
- mongoose.model('AutoProperty', AutoPropertySchema)
+ });
+ mongoose.model('AutoProperty', AutoPropertySchema);
  

@@ -1,4 +1,4 @@
-var ObjectPropertySchema = new ObjectPropertySchema({ 
+var ObjectPropertySchema = new Schema({ 
  	 	 _id: { type: String }
  	 	 ,created: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
  	 	 ,modified: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
@@ -12,6 +12,6 @@ var ObjectPropertySchema = new ObjectPropertySchema({
  	 	 ,name: { type: String }
  	 	 ,isPersistent: { type: Boolean, default: true }
  	 	 ,type_id: { type: String }
- })
- mongoose.model('ObjectProperty', ObjectPropertySchema)
+ });
+ mongoose.model('ObjectProperty', ObjectPropertySchema);
  

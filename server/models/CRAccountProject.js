@@ -1,4 +1,4 @@
-var CRAccountProjectSchema = new CRAccountProjectSchema({ 
+var CRAccountProjectSchema = new Schema({ 
  	 	 _id: { type: String }
  	 	 ,created: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
  	 	 ,modified: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
@@ -7,6 +7,6 @@ var CRAccountProjectSchema = new CRAccountProjectSchema({
  	 	 ,account_id: { type: String }
  	 	 ,project_id: { type: String }
  	 	 ,role_id: { type: String }
- })
- mongoose.model('CRAccountProject', CRAccountProjectSchema)
+ });
+ mongoose.model('CRAccountProject', CRAccountProjectSchema);
  

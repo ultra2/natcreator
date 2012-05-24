@@ -1,5 +1,5 @@
-var ClientSchema = new ClientSchema({ 
+var ClientSchema = new Schema({ 
  	 	 _id: { type: String }
- })
- mongoose.model('Client', ClientSchema)
+ });
+ mongoose.model('Client', ClientSchema);
  

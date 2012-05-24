@@ -1,9 +1,9 @@
-var CRMetaCategoryRowSchema = new CRMetaCategoryRowSchema({ 
+var CRMetaCategoryRowSchema = new Schema({ 
  	 	 _id: { type: String }
  	 	 ,parentId: { type: String }
  	 	 ,depth: { type: Number }
  	 	 ,leaf: { type: Boolean }
  	 	 ,index: { type: Number }
- })
- mongoose.model('CRMetaCategoryRow', CRMetaCategoryRowSchema)
+ });
+ mongoose.model('CRMetaCategoryRow', CRMetaCategoryRowSchema);
  

@@ -1,4 +1,4 @@
-var ProjectSettingSchema = new ProjectSettingSchema({ 
+var ProjectSettingSchema = new Schema({ 
  	 	 _id: { type: String }
  	 	 ,created: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
  	 	 ,modified: { type: Date, default: 'Fri Apr 27 2012 21:45:43 GMT+0200 (Central Europe Daylight Time)' }
@@ -7,6 +7,6 @@ var ProjectSettingSchema = new ProjectSettingSchema({
  	 	 ,repositoryName: { type: String }
  	 	 ,repositoryHost: { type: String }
  	 	 ,fontSize: { type: Number }
- })
- mongoose.model('ProjectSetting', ProjectSettingSchema)
+ });
+ mongoose.model('ProjectSetting', ProjectSettingSchema);
  
