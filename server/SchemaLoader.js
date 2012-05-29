@@ -32,3 +32,4 @@ exports.Login = require('./schemas/Login').Login;
 exports.Registration = require('./schemas/Registration').Registration;
 exports.File = require('./schemas/File').File;
 exports.AccountInfo = require('./schemas/AccountInfo').AccountInfo;
+exports.new = require('./schemas/new').new;
