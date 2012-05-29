@@ -7,6 +7,7 @@ exports.CRAccountProject = require('./schemas/CRAccountProject').CRAccountProjec
 exports.CRConnection = require('./schemas/CRConnection').CRConnection;
 exports.CRProject = require('./schemas/CRProject').CRProject;
 exports.CRAccount = require('./schemas/CRAccount').CRAccount;
+exports.CRRegistration = require('./schemas/CRRegistration').CRRegistration;
 exports.PersistentC = require('./schemas/PersistentC').PersistentC;
 exports.DataProperty = require('./schemas/DataProperty').DataProperty;
 exports.Schema = require('./schemas/Schema').Schema;
