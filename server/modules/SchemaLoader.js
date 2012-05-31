@@ -33,3 +33,6 @@ exports.Registration = require('../schemas/Registration').Registration;
 exports.File = require('../schemas/File').File;
 exports.AccountInfo = require('../schemas/AccountInfo').AccountInfo;
 exports.IsAccountAvailable = require('../schemas/IsAccountAvailable').IsAccountAvailable;
+exports.Logout = require('../schemas/Logout').Logout;
+exports.ResetPassword = require('../schemas/ResetPassword').ResetPassword;
+exports.ResetPasswordRequest = require('../schemas/ResetPasswordRequest').ResetPasswordRequest;
