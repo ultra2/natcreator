@@ -36,3 +36,4 @@ exports.IsAccountAvailable = require('../schemas/IsAccountAvailable').IsAccountA
 exports.Logout = require('../schemas/Logout').Logout;
 exports.ResetPassword = require('../schemas/ResetPassword').ResetPassword;
 exports.ResetPasswordRequest = require('../schemas/ResetPasswordRequest').ResetPasswordRequest;
+exports.IsAuthenticated = require('../schemas/IsAuthenticated').IsAuthenticated;
