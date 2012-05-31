@@ -33,6 +33,9 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.File');
  	 	 Ext.syncRequire('designer.model.AccountInfo');
  	 	 Ext.syncRequire('designer.model.IsAccountAvailable');
+ 	 	 Ext.syncRequire('designer.model.Logout');
+ 	 	 Ext.syncRequire('designer.model.ResetPassword');
+ 	 	 Ext.syncRequire('designer.model.ResetPasswordRequest');
  	 }
  });
  
