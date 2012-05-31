@@ -9,6 +9,7 @@ Ext.define('web.ModelDownloader', {
  	 	 Ext.syncRequire('web.model.Logout');
  	 	 Ext.syncRequire('web.model.ResetPassword');
  	 	 Ext.syncRequire('web.model.ResetPasswordRequest');
+ 	 	 Ext.syncRequire('web.model.IsAuthenticated');
  	 }
  });
  
