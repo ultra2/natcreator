@@ -7,6 +7,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.CRConnection');
  	 	 Ext.syncRequire('designer.model.CRProject');
  	 	 Ext.syncRequire('designer.model.CRAccount');
+ 	 	 Ext.syncRequire('designer.model.CRRegistration');
  	 	 Ext.syncRequire('designer.model.PersistentC');
  	 	 Ext.syncRequire('designer.model.DataProperty');
  	 	 Ext.syncRequire('designer.model.Schema');
@@ -31,6 +32,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.Registration');
  	 	 Ext.syncRequire('designer.model.File');
  	 	 Ext.syncRequire('designer.model.AccountInfo');
+ 	 	 Ext.syncRequire('designer.model.IsAccountAvailable');
  	 }
  });
  
