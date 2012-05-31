@@ -6,6 +6,9 @@ Ext.define('web.ModelDownloader', {
  	 	 Ext.syncRequire('web.model.Registration');
  	 	 Ext.syncRequire('web.model.AccountInfo');
  	 	 Ext.syncRequire('web.model.IsAccountAvailable');
+ 	 	 Ext.syncRequire('web.model.Logout');
+ 	 	 Ext.syncRequire('web.model.ResetPassword');
+ 	 	 Ext.syncRequire('web.model.ResetPasswordRequest');
  	 }
  });
  
