@@ -19,7 +19,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.ObjectProperty');
  	 	 Ext.syncRequire('designer.model.AutoProperty');
  	 	 Ext.syncRequire('designer.model.GenerationStep');
- 	 	 Ext.syncRequire('designer.model.ProjectSetting');
+ 	 	 Ext.syncRequire('designer.model.PPProjectSetting');
  	 	 Ext.syncRequire('designer.model.Generator');
  	 	 Ext.syncRequire('designer.model.SchemaGenerator');
  	 	 Ext.syncRequire('designer.model.SchemaListGenerator');
