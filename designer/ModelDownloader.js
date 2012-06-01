@@ -2,8 +2,8 @@ Ext.define('designer.ModelDownloader', {
  	 Download: function() {
  	 	 Ext.syncRequire('designer.model.CRBaseObject');
  	 	 Ext.syncRequire('designer.model.PersistentMaster');
- 	 	 Ext.syncRequire('designer.model.CRAccountProjectRole');
- 	 	 Ext.syncRequire('designer.model.CRAccountProject');
+ 	 	 Ext.syncRequire('designer.model.PMAccountProjectRole');
+ 	 	 Ext.syncRequire('designer.model.PMAccountProject');
  	 	 Ext.syncRequire('designer.model.CRConnection');
  	 	 Ext.syncRequire('designer.model.CRProject');
  	 	 Ext.syncRequire('designer.model.PMAccount');
