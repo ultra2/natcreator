@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 exports.CRBaseObject = require('../schemas/CRBaseObject').CRBaseObject;
 exports.PersistentMaster = require('../schemas/PersistentMaster').PersistentMaster;
-exports.CRAccountProjectRole = require('../schemas/CRAccountProjectRole').CRAccountProjectRole;
-exports.CRAccountProject = require('../schemas/CRAccountProject').CRAccountProject;
+exports.PMAccountProjectRole = require('../schemas/PMAccountProjectRole').PMAccountProjectRole;
+exports.PMAccountProject = require('../schemas/PMAccountProject').PMAccountProject;
 exports.CRConnection = require('../schemas/CRConnection').CRConnection;
 exports.CRProject = require('../schemas/CRProject').CRProject;
 exports.PMAccount = require('../schemas/PMAccount').PMAccount;
