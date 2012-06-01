@@ -27,16 +27,16 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.CRMetaRow');
  	 	 Ext.syncRequire('designer.model.CRMetaCategoryRow');
  	 	 Ext.syncRequire('designer.model.CRMetaPropertyRow');
- 	 	 Ext.syncRequire('designer.model.Communication');
- 	 	 Ext.syncRequire('designer.model.Login');
- 	 	 Ext.syncRequire('designer.model.Registration');
- 	 	 Ext.syncRequire('designer.model.File');
- 	 	 Ext.syncRequire('designer.model.AccountInfo');
- 	 	 Ext.syncRequire('designer.model.IsAccountAvailable');
- 	 	 Ext.syncRequire('designer.model.Logout');
- 	 	 Ext.syncRequire('designer.model.ResetPassword');
- 	 	 Ext.syncRequire('designer.model.ResetPasswordRequest');
- 	 	 Ext.syncRequire('designer.model.IsAuthenticated');
+ 	 	 Ext.syncRequire('designer.model.Request');
+ 	 	 Ext.syncRequire('designer.model.RQLogin');
+ 	 	 Ext.syncRequire('designer.model.RQRegistration');
+ 	 	 Ext.syncRequire('designer.model.RQFile');
+ 	 	 Ext.syncRequire('designer.model.RQAccountInfo');
+ 	 	 Ext.syncRequire('designer.model.RQIsAccountAvailable');
+ 	 	 Ext.syncRequire('designer.model.RQLogout');
+ 	 	 Ext.syncRequire('designer.model.RQResetPassword');
+ 	 	 Ext.syncRequire('designer.model.RQResetPasswordRequest');
+ 	 	 Ext.syncRequire('designer.model.RQIsAuthenticated');
  	 }
  });
  
