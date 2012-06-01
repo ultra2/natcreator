@@ -10,7 +10,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.PMRegistration');
  	 	 Ext.syncRequire('designer.model.PersistentProject');
  	 	 Ext.syncRequire('designer.model.DataProperty');
- 	 	 Ext.syncRequire('designer.model.Schema');
+ 	 	 Ext.syncRequire('designer.model.PPSchema');
  	 	 Ext.syncRequire('designer.model.StringProperty');
  	 	 Ext.syncRequire('designer.model.BooleanProperty');
  	 	 Ext.syncRequire('designer.model.DateProperty');
