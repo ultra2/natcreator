@@ -4,10 +4,10 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.PersistentMaster');
  	 	 Ext.syncRequire('designer.model.PMAccountProjectRole');
  	 	 Ext.syncRequire('designer.model.PMAccountProject');
- 	 	 Ext.syncRequire('designer.model.CRConnection');
- 	 	 Ext.syncRequire('designer.model.CRProject');
+ 	 	 Ext.syncRequire('designer.model.PMConnection');
+ 	 	 Ext.syncRequire('designer.model.PMProject');
  	 	 Ext.syncRequire('designer.model.PMAccount');
- 	 	 Ext.syncRequire('designer.model.CRRegistration');
+ 	 	 Ext.syncRequire('designer.model.PMRegistration');
  	 	 Ext.syncRequire('designer.model.PersistentProject');
  	 	 Ext.syncRequire('designer.model.DataProperty');
  	 	 Ext.syncRequire('designer.model.Schema');
