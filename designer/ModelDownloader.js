@@ -1,14 +1,14 @@
 Ext.define('designer.ModelDownloader', { 
  	 Download: function() {
  	 	 Ext.syncRequire('designer.model.CRBaseObject');
- 	 	 Ext.syncRequire('designer.model.PersistentM');
+ 	 	 Ext.syncRequire('designer.model.PersistentMaster');
  	 	 Ext.syncRequire('designer.model.CRAccountProjectRole');
  	 	 Ext.syncRequire('designer.model.CRAccountProject');
  	 	 Ext.syncRequire('designer.model.CRConnection');
  	 	 Ext.syncRequire('designer.model.CRProject');
  	 	 Ext.syncRequire('designer.model.CRAccount');
  	 	 Ext.syncRequire('designer.model.CRRegistration');
- 	 	 Ext.syncRequire('designer.model.PersistentC');
+ 	 	 Ext.syncRequire('designer.model.PersistentProject');
  	 	 Ext.syncRequire('designer.model.DataProperty');
  	 	 Ext.syncRequire('designer.model.Schema');
  	 	 Ext.syncRequire('designer.model.StringProperty');
@@ -23,10 +23,11 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.Generator');
  	 	 Ext.syncRequire('designer.model.SchemaGenerator');
  	 	 Ext.syncRequire('designer.model.SchemaListGenerator');
- 	 	 Ext.syncRequire('designer.model.Client');
- 	 	 Ext.syncRequire('designer.model.CRMetaRow');
- 	 	 Ext.syncRequire('designer.model.CRMetaCategoryRow');
- 	 	 Ext.syncRequire('designer.model.CRMetaPropertyRow');
+ 	 	 Ext.syncRequire('designer.model.ClientDesigner');
+ 	 	 Ext.syncRequire('designer.model.CDMetaRow');
+ 	 	 Ext.syncRequire('designer.model.CDMetaCategoryRow');
+ 	 	 Ext.syncRequire('designer.model.CDMetaPropertyRow');
+ 	 	 Ext.syncRequire('designer.model.ClientWeb');
  	 	 Ext.syncRequire('designer.model.Request');
  	 	 Ext.syncRequire('designer.model.RQLogin');
  	 	 Ext.syncRequire('designer.model.RQRegistration');
