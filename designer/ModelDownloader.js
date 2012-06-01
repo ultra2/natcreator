@@ -6,7 +6,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.CRAccountProject');
  	 	 Ext.syncRequire('designer.model.CRConnection');
  	 	 Ext.syncRequire('designer.model.CRProject');
- 	 	 Ext.syncRequire('designer.model.CRAccount');
+ 	 	 Ext.syncRequire('designer.model.PMAccount');
  	 	 Ext.syncRequire('designer.model.CRRegistration');
  	 	 Ext.syncRequire('designer.model.PersistentProject');
  	 	 Ext.syncRequire('designer.model.DataProperty');
