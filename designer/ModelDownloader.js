@@ -39,6 +39,8 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.RQResetPasswordRequest');
  	 	 Ext.syncRequire('designer.model.RQIsAuthenticated');
  	 	 Ext.syncRequire('designer.model.RQTestConnection');
+ 	 	 Ext.syncRequire('designer.model.RQOpenProject');
+ 	 	 Ext.syncRequire('designer.model.RQCloseProject');
  	 }
  });
  
