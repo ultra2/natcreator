@@ -38,3 +38,4 @@ exports.RQLogout = require('../schemas/RQLogout').RQLogout;
 exports.RQResetPassword = require('../schemas/RQResetPassword').RQResetPassword;
 exports.RQResetPasswordRequest = require('../schemas/RQResetPasswordRequest').RQResetPasswordRequest;
 exports.RQIsAuthenticated = require('../schemas/RQIsAuthenticated').RQIsAuthenticated;
+exports.RQTestConnection = require('../schemas/RQTestConnection').RQTestConnection;
