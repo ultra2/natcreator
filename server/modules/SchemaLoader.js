@@ -43,4 +43,5 @@ exports.RPOpenProject = require('../schemas/RPOpenProject').RPOpenProject;
 exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
 exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
+exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
