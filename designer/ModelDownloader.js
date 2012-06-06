@@ -30,6 +30,8 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.ClientWeb');
  	 	 Ext.syncRequire('designer.model.RequestGet');
  	 	 Ext.syncRequire('designer.model.RGResetPassword');
+ 	 	 Ext.syncRequire('designer.model.RGActivate');
+ 	 	 Ext.syncRequire('designer.model.RGAuthGoogle');
  	 	 Ext.syncRequire('designer.model.RequestPost');
  	 	 Ext.syncRequire('designer.model.RPLogin');
  	 	 Ext.syncRequire('designer.model.RPLogout');
