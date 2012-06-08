@@ -33,8 +33,8 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.RGActivate');
  	 	 Ext.syncRequire('designer.model.RGAuthGoogle');
  	 	 Ext.syncRequire('designer.model.RGAuthGoogleCallback');
- 	 	 Ext.syncRequire('designer.model.RGAuthGithub');
- 	 	 Ext.syncRequire('designer.model.RGAuthGithubCallback');
+ 	 	 Ext.syncRequire('designer.model.RGSetupGithub');
+ 	 	 Ext.syncRequire('designer.model.RGSetupGithubCallback');
  	 	 Ext.syncRequire('designer.model.RequestPost');
  	 	 Ext.syncRequire('designer.model.RPLogin');
  	 	 Ext.syncRequire('designer.model.RPLogout');
