@@ -20,6 +20,7 @@ exports.PPObjectProperty = require('../schemas/PPObjectProperty').PPObjectProper
 exports.PPAutoProperty = require('../schemas/PPAutoProperty').PPAutoProperty;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
+exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
 exports.PPSchemaGenerator = require('../schemas/PPSchemaGenerator').PPSchemaGenerator;
 exports.PPSchemaListGenerator = require('../schemas/PPSchemaListGenerator').PPSchemaListGenerator;
