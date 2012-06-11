@@ -50,4 +50,6 @@ exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
 exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
+exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
+exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
