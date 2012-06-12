@@ -59,6 +59,12 @@ exports.Models = [
 	,{name: 'PMProject', schema: exports.PMProject, collection: 'PMProject'}
 	,{name: 'PMAccount', schema: exports.PMAccount, collection: 'PMAccount'}
 	,{name: 'PMRegistration', schema: exports.PMRegistration, collection: 'PMRegistration'}
+	,{name: 'PPSchema', schema: exports.PPSchema, collection: 'PPSchema'}
+	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
+	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
+	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
+	,{name: 'PPSchemaGenerator', schema: exports.PPSchemaGenerator, collection: 'PPGenerator'}
+	,{name: 'PPSchemaListGenerator', schema: exports.PPSchemaListGenerator, collection: 'PPGenerator'}
 	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RGResetPassword'}
 	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RGActivate'}
 	,{name: 'RGAuthGoogle', schema: exports.RGAuthGoogle, collection: 'RGAuthGoogle'}
