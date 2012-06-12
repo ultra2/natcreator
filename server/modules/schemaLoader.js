@@ -59,4 +59,25 @@ exports.Models = [
 	,{name: 'PMProject', schema: exports.PMProject, collection: 'PMProject'}
 	,{name: 'PMAccount', schema: exports.PMAccount, collection: 'PMAccount'}
 	,{name: 'PMRegistration', schema: exports.PMRegistration, collection: 'PMRegistration'}
+	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RGResetPassword'}
+	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RGActivate'}
+	,{name: 'RGAuthGoogle', schema: exports.RGAuthGoogle, collection: 'RGAuthGoogle'}
+	,{name: 'RGAuthGoogleCallback', schema: exports.RGAuthGoogleCallback, collection: 'RGAuthGoogleCallback'}
+	,{name: 'RGSetupGithub', schema: exports.RGSetupGithub, collection: 'RGSetupGithub'}
+	,{name: 'RGSetupGithubCallback', schema: exports.RGSetupGithubCallback, collection: 'RGSetupGithubCallback'}
+	,{name: 'RPLogin', schema: exports.RPLogin, collection: 'RPLogin'}
+	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RPLogout'}
+	,{name: 'RPRegistration', schema: exports.RPRegistration, collection: 'RPRegistration'}
+	,{name: 'RPIsAccountAvailable', schema: exports.RPIsAccountAvailable, collection: 'RPIsAccountAvailable'}
+	,{name: 'RPResetPassword', schema: exports.RPResetPassword, collection: 'RPResetPassword'}
+	,{name: 'RPResetPasswordRequest', schema: exports.RPResetPasswordRequest, collection: 'RPResetPasswordRequest'}
+	,{name: 'RPIsAuthenticated', schema: exports.RPIsAuthenticated, collection: 'RPIsAuthenticated'}
+	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RPTestConnection'}
+	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RPOpenProject'}
+	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RPCloseProject'}
+	,{name: 'ROFile', schema: exports.ROFile, collection: 'ROFile'}
+	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RPExportFiles'}
+	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RPGetGithubInfo'}
+	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'ROAccountInfo'}
+	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'ROGithubInfo'}
 ];
