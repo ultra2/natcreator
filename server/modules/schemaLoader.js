@@ -53,8 +53,10 @@ exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
 exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
+exports.Models = [
 {name: 'PMAccountProjectRole', schema: exports.PMAccountProjectRole, collection: 'PMAccountProjectRole'}
 {name: 'PMAccountProject', schema: exports.PMAccountProject, collection: 'PMAccountProject'}
 {name: 'PMProject', schema: exports.PMProject, collection: 'PMProject'}
 {name: 'PMAccount', schema: exports.PMAccount, collection: 'PMAccount'}
 {name: 'PMRegistration', schema: exports.PMRegistration, collection: 'PMRegistration'}
+];
