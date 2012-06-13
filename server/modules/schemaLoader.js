@@ -54,6 +54,10 @@ exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
 exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
+exports.QueryResult = require('../schemas/QueryResult').QueryResult;
+exports.QRLookup = require('../schemas/QRLookup').QRLookup;
+exports.QRFrameworkItems = require('../schemas/QRFrameworkItems').QRFrameworkItems;
+exports.QRPropertyTypes = require('../schemas/QRPropertyTypes').QRPropertyTypes;
 exports.Models = [
 	{name: 'PMAccountProjectRole', schema: exports.PMAccountProjectRole, collection: 'PMAccountProjectRole'}
 	,{name: 'PMAccountProject', schema: exports.PMAccountProject, collection: 'PMAccountProject'}
