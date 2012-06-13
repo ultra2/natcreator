@@ -54,6 +54,10 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.RPGetGithubInfo');
  	 	 Ext.syncRequire('designer.model.ROAccountInfo');
  	 	 Ext.syncRequire('designer.model.ROGithubInfo');
+ 	 	 Ext.syncRequire('designer.model.QueryResult');
+ 	 	 Ext.syncRequire('designer.model.QRLookup');
+ 	 	 Ext.syncRequire('designer.model.QRFrameworkItems');
+ 	 	 Ext.syncRequire('designer.model.QRPropertyTypes');
  	 }
  });
  
