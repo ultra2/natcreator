@@ -13,7 +13,6 @@ exports.PPDataProperty = require('../schemas/PPDataProperty').PPDataProperty;
 exports.PPSchema = require('../schemas/PPSchema').PPSchema;
 exports.PPStringProperty = require('../schemas/PPStringProperty').PPStringProperty;
 exports.PPBooleanProperty = require('../schemas/PPBooleanProperty').PPBooleanProperty;
-exports.PPDateProperty = require('../schemas/PPDateProperty').PPDateProperty;
 exports.PPIntProperty = require('../schemas/PPIntProperty').PPIntProperty;
 exports.PPReferenceProperty = require('../schemas/PPReferenceProperty').PPReferenceProperty;
 exports.PPObjectProperty = require('../schemas/PPObjectProperty').PPObjectProperty;
@@ -29,6 +28,8 @@ exports.ClientDesigner = require('../schemas/ClientDesigner').ClientDesigner;
 exports.CDMetaRow = require('../schemas/CDMetaRow').CDMetaRow;
 exports.CDMetaCategoryRow = require('../schemas/CDMetaCategoryRow').CDMetaCategoryRow;
 exports.CDMetaPropertyRow = require('../schemas/CDMetaPropertyRow').CDMetaPropertyRow;
+exports.CDFrameworkItem = require('../schemas/CDFrameworkItem').CDFrameworkItem;
+exports.CDPropertyTypes = require('../schemas/CDPropertyTypes').CDPropertyTypes;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
 exports.RequestGet = require('../schemas/RequestGet').RequestGet;
 exports.RGResetPassword = require('../schemas/RGResetPassword').RGResetPassword;
@@ -56,8 +57,6 @@ exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
 exports.QRLookup = require('../schemas/QRLookup').QRLookup;
-exports.QRFrameworkItems = require('../schemas/QRFrameworkItems').QRFrameworkItems;
-exports.QRPropertyTypes = require('../schemas/QRPropertyTypes').QRPropertyTypes;
 exports.Models = [
 	{name: 'PMAccountProjectRole', schema: exports.PMAccountProjectRole, collection: 'PMAccountProjectRole'}
 	,{name: 'PMAccountProject', schema: exports.PMAccountProject, collection: 'PMAccountProject'}
