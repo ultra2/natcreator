@@ -13,7 +13,6 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.PPSchema');
  	 	 Ext.syncRequire('designer.model.PPStringProperty');
  	 	 Ext.syncRequire('designer.model.PPBooleanProperty');
- 	 	 Ext.syncRequire('designer.model.PPDateProperty');
  	 	 Ext.syncRequire('designer.model.PPIntProperty');
  	 	 Ext.syncRequire('designer.model.PPReferenceProperty');
  	 	 Ext.syncRequire('designer.model.PPObjectProperty');
@@ -29,6 +28,8 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.CDMetaRow');
  	 	 Ext.syncRequire('designer.model.CDMetaCategoryRow');
  	 	 Ext.syncRequire('designer.model.CDMetaPropertyRow');
+ 	 	 Ext.syncRequire('designer.model.CDFrameworkItem');
+ 	 	 Ext.syncRequire('designer.model.CDPropertyTypes');
  	 	 Ext.syncRequire('designer.model.ClientWeb');
  	 	 Ext.syncRequire('designer.model.RequestGet');
  	 	 Ext.syncRequire('designer.model.RGResetPassword');
@@ -56,8 +57,6 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.ROGithubInfo');
  	 	 Ext.syncRequire('designer.model.QueryResult');
  	 	 Ext.syncRequire('designer.model.QRLookup');
- 	 	 Ext.syncRequire('designer.model.QRFrameworkItems');
- 	 	 Ext.syncRequire('designer.model.QRPropertyTypes');
  	 }
  });
  
