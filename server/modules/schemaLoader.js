@@ -71,28 +71,30 @@ exports.Models = [
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
 	,{name: 'PPSchemaGenerator', schema: exports.PPSchemaGenerator, collection: 'PPGenerator'}
 	,{name: 'PPSchemaListGenerator', schema: exports.PPSchemaListGenerator, collection: 'PPGenerator'}
-	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RGResetPassword'}
-	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RGActivate'}
-	,{name: 'RGAuthGoogle', schema: exports.RGAuthGoogle, collection: 'RGAuthGoogle'}
-	,{name: 'RGAuthGoogleCallback', schema: exports.RGAuthGoogleCallback, collection: 'RGAuthGoogleCallback'}
-	,{name: 'RGSetupGithub', schema: exports.RGSetupGithub, collection: 'RGSetupGithub'}
-	,{name: 'RGSetupGithubCallback', schema: exports.RGSetupGithubCallback, collection: 'RGSetupGithubCallback'}
+	,{name: 'RequestGet', schema: exports.RequestGet, collection: 'RequestGet'}
+	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RequestGet'}
+	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RequestGet'}
+	,{name: 'RGAuthGoogle', schema: exports.RGAuthGoogle, collection: 'RequestGet'}
+	,{name: 'RGAuthGoogleCallback', schema: exports.RGAuthGoogleCallback, collection: 'RequestGet'}
+	,{name: 'RGSetupGithub', schema: exports.RGSetupGithub, collection: 'RequestGet'}
+	,{name: 'RGSetupGithubCallback', schema: exports.RGSetupGithubCallback, collection: 'RequestGet'}
 	,{name: 'RequestPost', schema: exports.RequestPost, collection: 'RequestPost'}
-	,{name: 'RPLogin', schema: exports.RPLogin, collection: 'RPLogin'}
-	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RPLogout'}
-	,{name: 'RPRegistration', schema: exports.RPRegistration, collection: 'RPRegistration'}
-	,{name: 'RPIsAccountAvailable', schema: exports.RPIsAccountAvailable, collection: 'RPIsAccountAvailable'}
-	,{name: 'RPResetPassword', schema: exports.RPResetPassword, collection: 'RPResetPassword'}
-	,{name: 'RPResetPasswordRequest', schema: exports.RPResetPasswordRequest, collection: 'RPResetPasswordRequest'}
-	,{name: 'RPIsAuthenticated', schema: exports.RPIsAuthenticated, collection: 'RPIsAuthenticated'}
-	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RPTestConnection'}
-	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RPOpenProject'}
-	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RPCloseProject'}
-	,{name: 'ROFile', schema: exports.ROFile, collection: 'ROFile'}
-	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RPExportFiles'}
-	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RPGetGithubInfo'}
+	,{name: 'RPLogin', schema: exports.RPLogin, collection: 'RequestPost'}
+	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RequestPost'}
+	,{name: 'RPRegistration', schema: exports.RPRegistration, collection: 'RequestPost'}
+	,{name: 'RPIsAccountAvailable', schema: exports.RPIsAccountAvailable, collection: 'RequestPost'}
+	,{name: 'RPResetPassword', schema: exports.RPResetPassword, collection: 'RequestPost'}
+	,{name: 'RPResetPasswordRequest', schema: exports.RPResetPasswordRequest, collection: 'RequestPost'}
+	,{name: 'RPIsAuthenticated', schema: exports.RPIsAuthenticated, collection: 'RequestPost'}
+	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RequestPost'}
+	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RequestPost'}
+	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RequestPost'}
+	,{name: 'RequestObject', schema: exports.RequestObject, collection: 'RequestObject'}
+	,{name: 'ROFile', schema: exports.ROFile, collection: 'RequestObject'}
+	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
+	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RequestPost'}
 	,{name: 'RPDestroyCustomProperty', schema: exports.RPDestroyCustomProperty, collection: 'RequestPost'}
 	,{name: 'RPRenameCustomProperty', schema: exports.RPRenameCustomProperty, collection: 'RequestPost'}
-	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'ROAccountInfo'}
-	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'ROGithubInfo'}
+	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
+	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
