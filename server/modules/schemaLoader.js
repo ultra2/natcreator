@@ -77,6 +77,7 @@ exports.Models = [
 	,{name: 'RGAuthGoogleCallback', schema: exports.RGAuthGoogleCallback, collection: 'RGAuthGoogleCallback'}
 	,{name: 'RGSetupGithub', schema: exports.RGSetupGithub, collection: 'RGSetupGithub'}
 	,{name: 'RGSetupGithubCallback', schema: exports.RGSetupGithubCallback, collection: 'RGSetupGithubCallback'}
+	,{name: 'RequestPost', schema: exports.RequestPost, collection: 'RequestPost'}
 	,{name: 'RPLogin', schema: exports.RPLogin, collection: 'RPLogin'}
 	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RPLogout'}
 	,{name: 'RPRegistration', schema: exports.RPRegistration, collection: 'RPRegistration'}
@@ -90,6 +91,8 @@ exports.Models = [
 	,{name: 'ROFile', schema: exports.ROFile, collection: 'ROFile'}
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RPExportFiles'}
 	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RPGetGithubInfo'}
+	,{name: 'RPDestroyCustomProperty', schema: exports.RPDestroyCustomProperty, collection: 'RequestPost'}
+	,{name: 'RPRenameCustomProperty', schema: exports.RPRenameCustomProperty, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'ROAccountInfo'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'ROGithubInfo'}
 ];
