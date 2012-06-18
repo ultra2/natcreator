@@ -54,8 +54,6 @@ exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
 exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
-exports.RPDestroyCustomProperty = require('../schemas/RPDestroyCustomProperty').RPDestroyCustomProperty;
-exports.RPRenameCustomProperty = require('../schemas/RPRenameCustomProperty').RPRenameCustomProperty;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -95,8 +93,6 @@ exports.Models = [
 	,{name: 'ROFile', schema: exports.ROFile, collection: 'RequestObject'}
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
 	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RequestPost'}
-	,{name: 'RPDestroyCustomProperty', schema: exports.RPDestroyCustomProperty, collection: 'RequestPost'}
-	,{name: 'RPRenameCustomProperty', schema: exports.RPRenameCustomProperty, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
