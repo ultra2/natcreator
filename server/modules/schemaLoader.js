@@ -19,8 +19,9 @@ exports.PPReferenceProperty = require('../schemas/PPReferenceProperty').PPRefere
 exports.PPObjectProperty = require('../schemas/PPObjectProperty').PPObjectProperty;
 exports.PPAutoProperty = require('../schemas/PPAutoProperty').PPAutoProperty;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
-exports.PPMetaProperty = require('../schemas/PPMetaProperty').PPMetaProperty;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
+exports.PPMetaProperty = require('../schemas/PPMetaProperty').PPMetaProperty;
+exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
 exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
 exports.PPSchemaGenerator = require('../schemas/PPSchemaGenerator').PPSchemaGenerator;
@@ -67,6 +68,7 @@ exports.Models = [
 	,{name: 'PMRegistration', schema: exports.PMRegistration, collection: 'PMRegistration'}
 	,{name: 'PPSchema', schema: exports.PPSchema, collection: 'PPSchema'}
 	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
+	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
 	,{name: 'PPSchemaGenerator', schema: exports.PPSchemaGenerator, collection: 'PPGenerator'}
