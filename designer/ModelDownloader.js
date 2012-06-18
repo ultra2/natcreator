@@ -54,8 +54,6 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.ROFile');
  	 	 Ext.syncRequire('designer.model.RPExportFiles');
  	 	 Ext.syncRequire('designer.model.RPGetGithubInfo');
- 	 	 Ext.syncRequire('designer.model.RPDestroyCustomProperty');
- 	 	 Ext.syncRequire('designer.model.RPRenameCustomProperty');
  	 	 Ext.syncRequire('designer.model.ROAccountInfo');
  	 	 Ext.syncRequire('designer.model.ROGithubInfo');
  	 	 Ext.syncRequire('designer.model.QueryResult');
