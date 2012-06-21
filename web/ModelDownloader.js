@@ -9,6 +9,7 @@ Ext.define('web.ModelDownloader', {
  	 	 Ext.syncRequire('web.model.RPResetPassword');
  	 	 Ext.syncRequire('web.model.RPResetPasswordRequest');
  	 	 Ext.syncRequire('web.model.RPIsAuthenticated');
+ 	 	 Ext.syncRequire('web.model.RequestObject');
  	 	 Ext.syncRequire('web.model.ROAccountInfo');
  	 }
  });
