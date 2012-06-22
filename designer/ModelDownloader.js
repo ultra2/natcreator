@@ -31,6 +31,7 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.CDMetaCategoryRow');
  	 	 Ext.syncRequire('designer.model.CDMetaPropertyRow');
  	 	 Ext.syncRequire('designer.model.CDFrameworkItem');
+ 	 	 Ext.syncRequire('designer.model.CDManagerMenu');
  	 	 Ext.syncRequire('designer.model.ClientWeb');
  	 	 Ext.syncRequire('designer.model.RequestGet');
  	 	 Ext.syncRequire('designer.model.RGResetPassword');
