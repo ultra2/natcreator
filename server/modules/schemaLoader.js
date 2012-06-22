@@ -31,6 +31,7 @@ exports.CDMetaRow = require('../schemas/CDMetaRow').CDMetaRow;
 exports.CDMetaCategoryRow = require('../schemas/CDMetaCategoryRow').CDMetaCategoryRow;
 exports.CDMetaPropertyRow = require('../schemas/CDMetaPropertyRow').CDMetaPropertyRow;
 exports.CDFrameworkItem = require('../schemas/CDFrameworkItem').CDFrameworkItem;
+exports.CDManagerMenu = require('../schemas/CDManagerMenu').CDManagerMenu;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
 exports.RequestGet = require('../schemas/RequestGet').RequestGet;
 exports.RGResetPassword = require('../schemas/RGResetPassword').RGResetPassword;
