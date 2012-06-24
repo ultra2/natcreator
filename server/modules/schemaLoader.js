@@ -24,8 +24,6 @@ exports.PPMetaProperty = require('../schemas/PPMetaProperty').PPMetaProperty;
 exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
 exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
-exports.PPSchemaGenerator = require('../schemas/PPSchemaGenerator').PPSchemaGenerator;
-exports.PPSchemaListGenerator = require('../schemas/PPSchemaListGenerator').PPSchemaListGenerator;
 exports.ClientDesigner = require('../schemas/ClientDesigner').ClientDesigner;
 exports.CDMetaRow = require('../schemas/CDMetaRow').CDMetaRow;
 exports.CDMetaCategoryRow = require('../schemas/CDMetaCategoryRow').CDMetaCategoryRow;
@@ -71,8 +69,6 @@ exports.Models = [
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
-	,{name: 'PPSchemaGenerator', schema: exports.PPSchemaGenerator, collection: 'PPGenerator'}
-	,{name: 'PPSchemaListGenerator', schema: exports.PPSchemaListGenerator, collection: 'PPGenerator'}
 	,{name: 'RequestGet', schema: exports.RequestGet, collection: 'RequestGet'}
 	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RequestGet'}
 	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RequestGet'}
