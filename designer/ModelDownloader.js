@@ -24,8 +24,6 @@ Ext.define('designer.ModelDownloader', {
  	 	 Ext.syncRequire('designer.model.PPProjectConfig');
  	 	 Ext.syncRequire('designer.model.PPProjectData');
  	 	 Ext.syncRequire('designer.model.PPGenerator');
- 	 	 Ext.syncRequire('designer.model.PPSchemaGenerator');
- 	 	 Ext.syncRequire('designer.model.PPSchemaListGenerator');
  	 	 Ext.syncRequire('designer.model.ClientDesigner');
  	 	 Ext.syncRequire('designer.model.CDMetaRow');
  	 	 Ext.syncRequire('designer.model.CDMetaCategoryRow');
