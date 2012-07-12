@@ -18,6 +18,7 @@ exports.PPDateProperty = require('../schemas/PPDateProperty').PPDateProperty;
 exports.PPReferenceProperty = require('../schemas/PPReferenceProperty').PPReferenceProperty;
 exports.PPObjectProperty = require('../schemas/PPObjectProperty').PPObjectProperty;
 exports.PPAutoProperty = require('../schemas/PPAutoProperty').PPAutoProperty;
+exports.PPObjectIdProperty = require('../schemas/PPObjectIdProperty').PPObjectIdProperty;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
 exports.PPMetaProperty = require('../schemas/PPMetaProperty').PPMetaProperty;
