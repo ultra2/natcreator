@@ -1,0 +1,11 @@
+var mongoose = require('mongoose')
+  , Schema = mongoose.Schema;
+
+exports.QueryResult = new Schema({ 
+		_id: { type: String }
+		,_type: { type: String }
+		,created: { type: Date, default: new Date(0) }
+		,modified: { type: Date, default: new Date(0) }
+		,deleted: { type: Boolean }
+		,version: { type: Number }
+});
