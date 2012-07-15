@@ -1,4 +1,4 @@
-Ext.define('designer.ModelDownloader', { 
+Ext.define('designer.extjsModelRequires', { 
 	Download: function() {
 		Ext.syncRequire('designer.model.CRBaseObject');
 		Ext.syncRequire('designer.model.PersistentMaster');
