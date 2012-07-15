@@ -8,6 +8,7 @@ exports.PMConnection = require('../schemas/PMConnection').PMConnection;
 exports.PMProject = require('../schemas/PMProject').PMProject;
 exports.PMAccount = require('../schemas/PMAccount').PMAccount;
 exports.PMRegistration = require('../schemas/PMRegistration').PMRegistration;
+exports.PMSharedGenerator = require('../schemas/PMSharedGenerator').PMSharedGenerator;
 exports.PersistentProject = require('../schemas/PersistentProject').PersistentProject;
 exports.PPDataProperty = require('../schemas/PPDataProperty').PPDataProperty;
 exports.PPSchema = require('../schemas/PPSchema').PPSchema;
