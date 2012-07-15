@@ -1,4 +1,4 @@
-Ext.define('web.ModelDownloader', { 
+Ext.define('web.extjsModelRequires', { 
 	Download: function() {
 		Ext.syncRequire('web.model.CRBaseObject');
 		Ext.syncRequire('web.model.RequestPost');
