@@ -55,6 +55,8 @@ exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
 exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.RPResetProjectConfig = require('../schemas/RPResetProjectConfig').RPResetProjectConfig;
+exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallGenerator;
+exports.RPUpdateGenerator = require('../schemas/RPUpdateGenerator').RPUpdateGenerator;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -93,6 +95,8 @@ exports.Models = [
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
 	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RequestPost'}
 	,{name: 'RPResetProjectConfig', schema: exports.RPResetProjectConfig, collection: 'RequestPost'}
+	,{name: 'RPInstallGenerator', schema: exports.RPInstallGenerator, collection: 'RequestPost'}
+	,{name: 'RPUpdateGenerator', schema: exports.RPUpdateGenerator, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
