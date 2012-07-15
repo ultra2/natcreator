@@ -8,6 +8,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.PMProject');
 		Ext.syncRequire('designer.model.PMAccount');
 		Ext.syncRequire('designer.model.PMRegistration');
+		Ext.syncRequire('designer.model.PMSharedGenerator');
 		Ext.syncRequire('designer.model.PersistentProject');
 		Ext.syncRequire('designer.model.PPDataProperty');
 		Ext.syncRequire('designer.model.PPSchema');
