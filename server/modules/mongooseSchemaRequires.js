@@ -68,6 +68,7 @@ exports.Models = [
 	,{name: 'PMProject', schema: exports.PMProject, collection: 'PMProject'}
 	,{name: 'PMAccount', schema: exports.PMAccount, collection: 'PMAccount'}
 	,{name: 'PMRegistration', schema: exports.PMRegistration, collection: 'PMRegistration'}
+	,{name: 'PMSharedGenerator', schema: exports.PMSharedGenerator, collection: 'PMSharedGenerator'}
 	,{name: 'PPSchema', schema: exports.PPSchema, collection: 'PPSchema'}
 	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
