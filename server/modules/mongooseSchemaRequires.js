@@ -45,6 +45,7 @@ exports.RPLogin = require('../schemas/RPLogin').RPLogin;
 exports.RPLogout = require('../schemas/RPLogout').RPLogout;
 exports.RPRegistration = require('../schemas/RPRegistration').RPRegistration;
 exports.RPIsAccountAvailable = require('../schemas/RPIsAccountAvailable').RPIsAccountAvailable;
+exports.RPChangePassword = require('../schemas/RPChangePassword').RPChangePassword;
 exports.RPResetPassword = require('../schemas/RPResetPassword').RPResetPassword;
 exports.RPResetPasswordRequest = require('../schemas/RPResetPasswordRequest').RPResetPasswordRequest;
 exports.RPIsAuthenticated = require('../schemas/RPIsAuthenticated').RPIsAuthenticated;
@@ -58,7 +59,6 @@ exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.RPResetProjectConfig = require('../schemas/RPResetProjectConfig').RPResetProjectConfig;
 exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallGenerator;
 exports.RPUpdateGenerator = require('../schemas/RPUpdateGenerator').RPUpdateGenerator;
-exports.RPChangePassword = require('../schemas/RPChangePassword').RPChangePassword;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -87,6 +87,7 @@ exports.Models = [
 	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RequestPost'}
 	,{name: 'RPRegistration', schema: exports.RPRegistration, collection: 'RequestPost'}
 	,{name: 'RPIsAccountAvailable', schema: exports.RPIsAccountAvailable, collection: 'RequestPost'}
+	,{name: 'RPChangePassword', schema: exports.RPChangePassword, collection: 'RequestPost'}
 	,{name: 'RPResetPassword', schema: exports.RPResetPassword, collection: 'RequestPost'}
 	,{name: 'RPResetPasswordRequest', schema: exports.RPResetPasswordRequest, collection: 'RequestPost'}
 	,{name: 'RPIsAuthenticated', schema: exports.RPIsAuthenticated, collection: 'RequestPost'}
@@ -100,7 +101,6 @@ exports.Models = [
 	,{name: 'RPResetProjectConfig', schema: exports.RPResetProjectConfig, collection: 'RequestPost'}
 	,{name: 'RPInstallGenerator', schema: exports.RPInstallGenerator, collection: 'RequestPost'}
 	,{name: 'RPUpdateGenerator', schema: exports.RPUpdateGenerator, collection: 'RequestPost'}
-	,{name: 'RPChangePassword', schema: exports.RPChangePassword, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
