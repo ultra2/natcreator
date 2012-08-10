@@ -58,6 +58,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.RPResetProjectConfig');
 		Ext.syncRequire('designer.model.RPInstallGenerator');
 		Ext.syncRequire('designer.model.RPUpdateGenerator');
+		Ext.syncRequire('designer.model.RPChangePassword');
 		Ext.syncRequire('designer.model.ROAccountInfo');
 		Ext.syncRequire('designer.model.ROGithubInfo');
 		Ext.syncRequire('designer.model.QueryResult');
