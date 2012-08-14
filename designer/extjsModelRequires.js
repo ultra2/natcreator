@@ -22,7 +22,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.PPObjectIdProperty');
 		Ext.syncRequire('designer.model.PPGenerationStep');
 		Ext.syncRequire('designer.model.PPProjectSetting');
-		Ext.syncRequire('designer.model.PPMetaProperty');
+		Ext.syncRequire('designer.model.PPCustomProperty');
 		Ext.syncRequire('designer.model.PPProjectConfig');
 		Ext.syncRequire('designer.model.PPProjectData');
 		Ext.syncRequire('designer.model.PPGenerator');
