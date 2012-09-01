@@ -63,6 +63,7 @@ exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
 exports.QRLookup = require('../schemas/QRLookup').QRLookup;
+exports.QRProjectList = require('../schemas/QRProjectList').QRProjectList;
 exports.Models = [
 	{name: 'PMAccountProjectRole', schema: exports.PMAccountProjectRole, collection: 'PMAccountProjectRole'}
 	,{name: 'PMAccountProject', schema: exports.PMAccountProject, collection: 'PMAccountProject'}
