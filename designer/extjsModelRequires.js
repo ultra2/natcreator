@@ -63,5 +63,6 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.ROGithubInfo');
 		Ext.syncRequire('designer.model.QueryResult');
 		Ext.syncRequire('designer.model.QRLookup');
+		Ext.syncRequire('designer.model.QRProjectList');
 	}
 });
