@@ -52,6 +52,7 @@ exports.RPIsAuthenticated = require('../schemas/RPIsAuthenticated').RPIsAuthenti
 exports.RPTestConnection = require('../schemas/RPTestConnection').RPTestConnection;
 exports.RPOpenProject = require('../schemas/RPOpenProject').RPOpenProject;
 exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
+exports.RPDeleteProject = require('../schemas/RPDeleteProject').RPDeleteProject;
 exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
@@ -95,6 +96,7 @@ exports.Models = [
 	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RequestPost'}
 	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RequestPost'}
 	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RequestPost'}
+	,{name: 'RPDeleteProject', schema: exports.RPDeleteProject, collection: 'RequestPost'}
 	,{name: 'RequestObject', schema: exports.RequestObject, collection: 'RequestObject'}
 	,{name: 'ROFile', schema: exports.ROFile, collection: 'RequestObject'}
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
