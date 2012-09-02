@@ -52,10 +52,10 @@ exports.RPIsAuthenticated = require('../schemas/RPIsAuthenticated').RPIsAuthenti
 exports.RPTestConnection = require('../schemas/RPTestConnection').RPTestConnection;
 exports.RPOpenProject = require('../schemas/RPOpenProject').RPOpenProject;
 exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
-exports.RPDeleteProject = require('../schemas/RPDeleteProject').RPDeleteProject;
 exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
+exports.RPDeleteProject = require('../schemas/RPDeleteProject').RPDeleteProject;
 exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.RPResetProjectConfig = require('../schemas/RPResetProjectConfig').RPResetProjectConfig;
 exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallGenerator;
@@ -96,10 +96,10 @@ exports.Models = [
 	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RequestPost'}
 	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RequestPost'}
 	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RequestPost'}
-	,{name: 'RPDeleteProject', schema: exports.RPDeleteProject, collection: 'RequestPost'}
 	,{name: 'RequestObject', schema: exports.RequestObject, collection: 'RequestObject'}
 	,{name: 'ROFile', schema: exports.ROFile, collection: 'RequestObject'}
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
+	,{name: 'RPDeleteProject', schema: exports.RPDeleteProject, collection: 'RequestPost'}
 	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RequestPost'}
 	,{name: 'RPResetProjectConfig', schema: exports.RPResetProjectConfig, collection: 'RequestPost'}
 	,{name: 'RPInstallGenerator', schema: exports.RPInstallGenerator, collection: 'RequestPost'}
