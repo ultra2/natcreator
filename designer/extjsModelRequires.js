@@ -52,10 +52,10 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.RPTestConnection');
 		Ext.syncRequire('designer.model.RPOpenProject');
 		Ext.syncRequire('designer.model.RPCloseProject');
-		Ext.syncRequire('designer.model.RPDeleteProject');
 		Ext.syncRequire('designer.model.RequestObject');
 		Ext.syncRequire('designer.model.ROFile');
 		Ext.syncRequire('designer.model.RPExportFiles');
+		Ext.syncRequire('designer.model.RPDeleteProject');
 		Ext.syncRequire('designer.model.RPGetGithubInfo');
 		Ext.syncRequire('designer.model.RPResetProjectConfig');
 		Ext.syncRequire('designer.model.RPInstallGenerator');
