@@ -61,6 +61,7 @@ exports.RPResetProjectConfig = require('../schemas/RPResetProjectConfig').RPRese
 exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallGenerator;
 exports.RPUpdateGenerator = require('../schemas/RPUpdateGenerator').RPUpdateGenerator;
 exports.RPPushGenerator = require('../schemas/RPPushGenerator').RPPushGenerator;
+exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -106,6 +107,7 @@ exports.Models = [
 	,{name: 'RPInstallGenerator', schema: exports.RPInstallGenerator, collection: 'RequestPost'}
 	,{name: 'RPUpdateGenerator', schema: exports.RPUpdateGenerator, collection: 'RequestPost'}
 	,{name: 'RPPushGenerator', schema: exports.RPPushGenerator, collection: 'RequestPost'}
+	,{name: 'RPSendQuestion', schema: exports.RPSendQuestion, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
