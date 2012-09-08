@@ -63,6 +63,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.RPPushGenerator');
 		Ext.syncRequire('designer.model.RPSendQuestion');
 		Ext.syncRequire('designer.model.RPGetTemplateFiles');
+		Ext.syncRequire('designer.model.RPGetTemplateProjectGithubZipUrl');
 		Ext.syncRequire('designer.model.ROAccountInfo');
 		Ext.syncRequire('designer.model.ROGithubInfo');
 		Ext.syncRequire('designer.model.QueryResult');
