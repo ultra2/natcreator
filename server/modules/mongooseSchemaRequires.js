@@ -62,6 +62,7 @@ exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallG
 exports.RPUpdateGenerator = require('../schemas/RPUpdateGenerator').RPUpdateGenerator;
 exports.RPPushGenerator = require('../schemas/RPPushGenerator').RPPushGenerator;
 exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
+exports.RPGetTemplateFiles = require('../schemas/RPGetTemplateFiles').RPGetTemplateFiles;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -108,6 +109,7 @@ exports.Models = [
 	,{name: 'RPUpdateGenerator', schema: exports.RPUpdateGenerator, collection: 'RequestPost'}
 	,{name: 'RPPushGenerator', schema: exports.RPPushGenerator, collection: 'RequestPost'}
 	,{name: 'RPSendQuestion', schema: exports.RPSendQuestion, collection: 'RequestPost'}
+	,{name: 'RPGetTemplateFiles', schema: exports.RPGetTemplateFiles, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
