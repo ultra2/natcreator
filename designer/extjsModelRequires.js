@@ -40,6 +40,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.RGAuthGoogleCallback');
 		Ext.syncRequire('designer.model.RGSetupGithub');
 		Ext.syncRequire('designer.model.RGSetupGithubCallback');
+		Ext.syncRequire('designer.model.RGGetTemplateFiles');
 		Ext.syncRequire('designer.model.RequestPost');
 		Ext.syncRequire('designer.model.RPLogin');
 		Ext.syncRequire('designer.model.RPLogout');
