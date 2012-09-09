@@ -40,6 +40,7 @@ exports.RGAuthGoogle = require('../schemas/RGAuthGoogle').RGAuthGoogle;
 exports.RGAuthGoogleCallback = require('../schemas/RGAuthGoogleCallback').RGAuthGoogleCallback;
 exports.RGSetupGithub = require('../schemas/RGSetupGithub').RGSetupGithub;
 exports.RGSetupGithubCallback = require('../schemas/RGSetupGithubCallback').RGSetupGithubCallback;
+exports.RGGetTemplateFiles = require('../schemas/RGGetTemplateFiles').RGGetTemplateFiles;
 exports.RequestPost = require('../schemas/RequestPost').RequestPost;
 exports.RPLogin = require('../schemas/RPLogin').RPLogin;
 exports.RPLogout = require('../schemas/RPLogout').RPLogout;
@@ -88,6 +89,7 @@ exports.Models = [
 	,{name: 'RGAuthGoogleCallback', schema: exports.RGAuthGoogleCallback, collection: 'RequestGet'}
 	,{name: 'RGSetupGithub', schema: exports.RGSetupGithub, collection: 'RequestGet'}
 	,{name: 'RGSetupGithubCallback', schema: exports.RGSetupGithubCallback, collection: 'RequestGet'}
+	,{name: 'RGGetTemplateFiles', schema: exports.RGGetTemplateFiles, collection: 'RequestGet'}
 	,{name: 'RequestPost', schema: exports.RequestPost, collection: 'RequestPost'}
 	,{name: 'RPLogin', schema: exports.RPLogin, collection: 'RequestPost'}
 	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RequestPost'}
