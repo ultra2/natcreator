@@ -26,10 +26,10 @@ exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
 exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
 exports.ClientDesigner = require('../schemas/ClientDesigner').ClientDesigner;
-exports.CDConnection = require('../schemas/CDConnection').CDConnection;
 exports.CDMetaRow = require('../schemas/CDMetaRow').CDMetaRow;
 exports.CDMetaCategoryRow = require('../schemas/CDMetaCategoryRow').CDMetaCategoryRow;
 exports.CDMetaPropertyRow = require('../schemas/CDMetaPropertyRow').CDMetaPropertyRow;
+exports.CDConnection = require('../schemas/CDConnection').CDConnection;
 exports.CDFrameworkItem = require('../schemas/CDFrameworkItem').CDFrameworkItem;
 exports.CDManagerMenu = require('../schemas/CDManagerMenu').CDManagerMenu;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
@@ -54,17 +54,15 @@ exports.RPIsAuthenticated = require('../schemas/RPIsAuthenticated').RPIsAuthenti
 exports.RPTestConnection = require('../schemas/RPTestConnection').RPTestConnection;
 exports.RPOpenProject = require('../schemas/RPOpenProject').RPOpenProject;
 exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
-exports.RPDeleteProject = require('../schemas/RPDeleteProject').RPDeleteProject;
 exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
+exports.RPDeleteProject = require('../schemas/RPDeleteProject').RPDeleteProject;
 exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.RPResetProjectConfig = require('../schemas/RPResetProjectConfig').RPResetProjectConfig;
 exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallGenerator;
 exports.RPUpdateGenerator = require('../schemas/RPUpdateGenerator').RPUpdateGenerator;
-exports.RPPushGenerator = require('../schemas/RPPushGenerator').RPPushGenerator;
 exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
-exports.RPGetTemplateFiles = require('../schemas/RPGetTemplateFiles').RPGetTemplateFiles;
 exports.RPGetTemplateProjectGithubZipUrl = require('../schemas/RPGetTemplateProjectGithubZipUrl').RPGetTemplateProjectGithubZipUrl;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
@@ -104,17 +102,15 @@ exports.Models = [
 	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RequestPost'}
 	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RequestPost'}
 	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RequestPost'}
-	,{name: 'RPDeleteProject', schema: exports.RPDeleteProject, collection: 'RequestPost'}
 	,{name: 'RequestObject', schema: exports.RequestObject, collection: 'RequestObject'}
 	,{name: 'ROFile', schema: exports.ROFile, collection: 'RequestObject'}
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
+	,{name: 'RPDeleteProject', schema: exports.RPDeleteProject, collection: 'RequestPost'}
 	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RequestPost'}
 	,{name: 'RPResetProjectConfig', schema: exports.RPResetProjectConfig, collection: 'RequestPost'}
 	,{name: 'RPInstallGenerator', schema: exports.RPInstallGenerator, collection: 'RequestPost'}
 	,{name: 'RPUpdateGenerator', schema: exports.RPUpdateGenerator, collection: 'RequestPost'}
-	,{name: 'RPPushGenerator', schema: exports.RPPushGenerator, collection: 'RequestPost'}
 	,{name: 'RPSendQuestion', schema: exports.RPSendQuestion, collection: 'RequestPost'}
-	,{name: 'RPGetTemplateFiles', schema: exports.RPGetTemplateFiles, collection: 'RequestPost'}
 	,{name: 'RPGetTemplateProjectGithubZipUrl', schema: exports.RPGetTemplateProjectGithubZipUrl, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
