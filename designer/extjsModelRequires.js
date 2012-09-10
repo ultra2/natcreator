@@ -4,7 +4,6 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.PersistentMaster');
 		Ext.syncRequire('designer.model.PMAccountProjectRole');
 		Ext.syncRequire('designer.model.PMAccountProject');
-		Ext.syncRequire('designer.model.PMConnection');
 		Ext.syncRequire('designer.model.PMProject');
 		Ext.syncRequire('designer.model.PMAccount');
 		Ext.syncRequire('designer.model.PMRegistration');
@@ -27,6 +26,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.PPProjectData');
 		Ext.syncRequire('designer.model.PPGenerator');
 		Ext.syncRequire('designer.model.ClientDesigner');
+		Ext.syncRequire('designer.model.CDConnection');
 		Ext.syncRequire('designer.model.CDMetaRow');
 		Ext.syncRequire('designer.model.CDMetaCategoryRow');
 		Ext.syncRequire('designer.model.CDMetaPropertyRow');
