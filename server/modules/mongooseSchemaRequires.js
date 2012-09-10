@@ -46,6 +46,7 @@ exports.RPLogin = require('../schemas/RPLogin').RPLogin;
 exports.RPLogout = require('../schemas/RPLogout').RPLogout;
 exports.RPRegistration = require('../schemas/RPRegistration').RPRegistration;
 exports.RPIsAccountAvailable = require('../schemas/RPIsAccountAvailable').RPIsAccountAvailable;
+exports.RPIsProjectNameAvailable = require('../schemas/RPIsProjectNameAvailable').RPIsProjectNameAvailable;
 exports.RPChangePassword = require('../schemas/RPChangePassword').RPChangePassword;
 exports.RPResetPassword = require('../schemas/RPResetPassword').RPResetPassword;
 exports.RPResetPasswordRequest = require('../schemas/RPResetPasswordRequest').RPResetPasswordRequest;
@@ -53,10 +54,10 @@ exports.RPIsAuthenticated = require('../schemas/RPIsAuthenticated').RPIsAuthenti
 exports.RPTestConnection = require('../schemas/RPTestConnection').RPTestConnection;
 exports.RPOpenProject = require('../schemas/RPOpenProject').RPOpenProject;
 exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
-exports.RPDeleteProject = require('../schemas/RPDeleteProject').RPDeleteProject;
 exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
+exports.RPDeleteProject = require('../schemas/RPDeleteProject').RPDeleteProject;
 exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.RPResetProjectConfig = require('../schemas/RPResetProjectConfig').RPResetProjectConfig;
 exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallGenerator;
@@ -95,6 +96,7 @@ exports.Models = [
 	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RequestPost'}
 	,{name: 'RPRegistration', schema: exports.RPRegistration, collection: 'RequestPost'}
 	,{name: 'RPIsAccountAvailable', schema: exports.RPIsAccountAvailable, collection: 'RequestPost'}
+	,{name: 'RPIsProjectNameAvailable', schema: exports.RPIsProjectNameAvailable, collection: 'RequestPost'}
 	,{name: 'RPChangePassword', schema: exports.RPChangePassword, collection: 'RequestPost'}
 	,{name: 'RPResetPassword', schema: exports.RPResetPassword, collection: 'RequestPost'}
 	,{name: 'RPResetPasswordRequest', schema: exports.RPResetPasswordRequest, collection: 'RequestPost'}
@@ -102,10 +104,10 @@ exports.Models = [
 	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RequestPost'}
 	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RequestPost'}
 	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RequestPost'}
-	,{name: 'RPDeleteProject', schema: exports.RPDeleteProject, collection: 'RequestPost'}
 	,{name: 'RequestObject', schema: exports.RequestObject, collection: 'RequestObject'}
 	,{name: 'ROFile', schema: exports.ROFile, collection: 'RequestObject'}
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
+	,{name: 'RPDeleteProject', schema: exports.RPDeleteProject, collection: 'RequestPost'}
 	,{name: 'RPGetGithubInfo', schema: exports.RPGetGithubInfo, collection: 'RequestPost'}
 	,{name: 'RPResetProjectConfig', schema: exports.RPResetProjectConfig, collection: 'RequestPost'}
 	,{name: 'RPInstallGenerator', schema: exports.RPInstallGenerator, collection: 'RequestPost'}
