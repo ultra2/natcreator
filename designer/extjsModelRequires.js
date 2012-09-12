@@ -71,5 +71,6 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.QueryResult');
 		Ext.syncRequire('designer.model.QRLookup');
 		Ext.syncRequire('designer.model.QRProjectList');
+		Ext.syncRequire('designer.model.QRSharedGeneratorList');
 	}
 });
