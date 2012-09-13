@@ -66,6 +66,7 @@ exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
 exports.RPGetTemplateProjectGithubZipUrl = require('../schemas/RPGetTemplateProjectGithubZipUrl').RPGetTemplateProjectGithubZipUrl;
 exports.RPCreateGenerator = require('../schemas/RPCreateGenerator').RPCreateGenerator;
 exports.RPRenameGenerator = require('../schemas/RPRenameGenerator').RPRenameGenerator;
+exports.RPAcquireGenerator = require('../schemas/RPAcquireGenerator').RPAcquireGenerator;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -117,6 +118,7 @@ exports.Models = [
 	,{name: 'RPGetTemplateProjectGithubZipUrl', schema: exports.RPGetTemplateProjectGithubZipUrl, collection: 'RequestPost'}
 	,{name: 'RPCreateGenerator', schema: exports.RPCreateGenerator, collection: 'RequestPost'}
 	,{name: 'RPRenameGenerator', schema: exports.RPRenameGenerator, collection: 'RequestPost'}
+	,{name: 'RPAcquireGenerator', schema: exports.RPAcquireGenerator, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
