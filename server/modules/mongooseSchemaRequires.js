@@ -62,6 +62,7 @@ exports.RPGetGithubInfo = require('../schemas/RPGetGithubInfo').RPGetGithubInfo;
 exports.RPResetProjectConfig = require('../schemas/RPResetProjectConfig').RPResetProjectConfig;
 exports.RPInstallGenerator = require('../schemas/RPInstallGenerator').RPInstallGenerator;
 exports.RPUpdateGenerator = require('../schemas/RPUpdateGenerator').RPUpdateGenerator;
+exports.RPIsGeneratorUpdatable = require('../schemas/RPIsGeneratorUpdatable').RPIsGeneratorUpdatable;
 exports.RPGetTemplateProjectGithubZipUrl = require('../schemas/RPGetTemplateProjectGithubZipUrl').RPGetTemplateProjectGithubZipUrl;
 exports.RPCreateGenerator = require('../schemas/RPCreateGenerator').RPCreateGenerator;
 exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
@@ -115,6 +116,7 @@ exports.Models = [
 	,{name: 'RPResetProjectConfig', schema: exports.RPResetProjectConfig, collection: 'RequestPost'}
 	,{name: 'RPInstallGenerator', schema: exports.RPInstallGenerator, collection: 'RequestPost'}
 	,{name: 'RPUpdateGenerator', schema: exports.RPUpdateGenerator, collection: 'RequestPost'}
+	,{name: 'RPIsGeneratorUpdatable', schema: exports.RPIsGeneratorUpdatable, collection: 'RequestPost'}
 	,{name: 'RPGetTemplateProjectGithubZipUrl', schema: exports.RPGetTemplateProjectGithubZipUrl, collection: 'RequestPost'}
 	,{name: 'RPCreateGenerator', schema: exports.RPCreateGenerator, collection: 'RequestPost'}
 	,{name: 'RPSendQuestion', schema: exports.RPSendQuestion, collection: 'RequestPost'}
