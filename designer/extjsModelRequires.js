@@ -62,6 +62,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.RPResetProjectConfig');
 		Ext.syncRequire('designer.model.RPInstallGenerator');
 		Ext.syncRequire('designer.model.RPUpdateGenerator');
+		Ext.syncRequire('designer.model.RPIsGeneratorUpdatable');
 		Ext.syncRequire('designer.model.RPGetTemplateProjectGithubZipUrl');
 		Ext.syncRequire('designer.model.RPCreateGenerator');
 		Ext.syncRequire('designer.model.RPSendQuestion');
