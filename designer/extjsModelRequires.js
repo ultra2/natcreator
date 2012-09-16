@@ -32,6 +32,7 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.CDConnection');
 		Ext.syncRequire('designer.model.CDFrameworkItem');
 		Ext.syncRequire('designer.model.CDManagerMenu');
+		Ext.syncRequire('designer.model.CDFile');
 		Ext.syncRequire('designer.model.ClientWeb');
 		Ext.syncRequire('designer.model.RequestGet');
 		Ext.syncRequire('designer.model.RGResetPassword');
@@ -46,8 +47,8 @@ Ext.define('designer.extjsModelRequires', {
 		Ext.syncRequire('designer.model.RPLogout');
 		Ext.syncRequire('designer.model.RPRegistration');
 		Ext.syncRequire('designer.model.RPIsAccountAvailable');
-		Ext.syncRequire('designer.model.RPIsProjectNameAvailable');
 		Ext.syncRequire('designer.model.RPChangePassword');
+		Ext.syncRequire('designer.model.RPIsProjectNameAvailable');
 		Ext.syncRequire('designer.model.RPResetPassword');
 		Ext.syncRequire('designer.model.RPResetPasswordRequest');
 		Ext.syncRequire('designer.model.RPIsAuthenticated');
