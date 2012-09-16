@@ -32,6 +32,7 @@ exports.CDMetaPropertyRow = require('../schemas/CDMetaPropertyRow').CDMetaProper
 exports.CDConnection = require('../schemas/CDConnection').CDConnection;
 exports.CDFrameworkItem = require('../schemas/CDFrameworkItem').CDFrameworkItem;
 exports.CDManagerMenu = require('../schemas/CDManagerMenu').CDManagerMenu;
+exports.CDFile = require('../schemas/CDFile').CDFile;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
 exports.RequestGet = require('../schemas/RequestGet').RequestGet;
 exports.RGResetPassword = require('../schemas/RGResetPassword').RGResetPassword;
@@ -46,8 +47,8 @@ exports.RPLogin = require('../schemas/RPLogin').RPLogin;
 exports.RPLogout = require('../schemas/RPLogout').RPLogout;
 exports.RPRegistration = require('../schemas/RPRegistration').RPRegistration;
 exports.RPIsAccountAvailable = require('../schemas/RPIsAccountAvailable').RPIsAccountAvailable;
-exports.RPIsProjectNameAvailable = require('../schemas/RPIsProjectNameAvailable').RPIsProjectNameAvailable;
 exports.RPChangePassword = require('../schemas/RPChangePassword').RPChangePassword;
+exports.RPIsProjectNameAvailable = require('../schemas/RPIsProjectNameAvailable').RPIsProjectNameAvailable;
 exports.RPResetPassword = require('../schemas/RPResetPassword').RPResetPassword;
 exports.RPResetPasswordRequest = require('../schemas/RPResetPasswordRequest').RPResetPasswordRequest;
 exports.RPIsAuthenticated = require('../schemas/RPIsAuthenticated').RPIsAuthenticated;
@@ -100,8 +101,8 @@ exports.Models = [
 	,{name: 'RPLogout', schema: exports.RPLogout, collection: 'RequestPost'}
 	,{name: 'RPRegistration', schema: exports.RPRegistration, collection: 'RequestPost'}
 	,{name: 'RPIsAccountAvailable', schema: exports.RPIsAccountAvailable, collection: 'RequestPost'}
-	,{name: 'RPIsProjectNameAvailable', schema: exports.RPIsProjectNameAvailable, collection: 'RequestPost'}
 	,{name: 'RPChangePassword', schema: exports.RPChangePassword, collection: 'RequestPost'}
+	,{name: 'RPIsProjectNameAvailable', schema: exports.RPIsProjectNameAvailable, collection: 'RequestPost'}
 	,{name: 'RPResetPassword', schema: exports.RPResetPassword, collection: 'RequestPost'}
 	,{name: 'RPResetPasswordRequest', schema: exports.RPResetPasswordRequest, collection: 'RequestPost'}
 	,{name: 'RPIsAuthenticated', schema: exports.RPIsAuthenticated, collection: 'RequestPost'}
