@@ -25,6 +25,7 @@ exports.PPCustomProperty = require('../schemas/PPCustomProperty').PPCustomProper
 exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
 exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
+exports.PPView = require('../schemas/PPView').PPView;
 exports.ClientDesigner = require('../schemas/ClientDesigner').ClientDesigner;
 exports.CDMetaRow = require('../schemas/CDMetaRow').CDMetaRow;
 exports.CDMetaCategoryRow = require('../schemas/CDMetaCategoryRow').CDMetaCategoryRow;
@@ -88,6 +89,7 @@ exports.Models = [
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
+	,{name: 'PPView', schema: exports.PPView, collection: 'PPView'}
 	,{name: 'RequestGet', schema: exports.RequestGet, collection: 'RequestGet'}
 	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RequestGet'}
 	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RequestGet'}
