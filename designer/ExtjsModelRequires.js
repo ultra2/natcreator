@@ -33,6 +33,7 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.CDFile');
 		Ext.syncRequire('designer.model.CDViewNode');
 		Ext.syncRequire('designer.model.CDPropertyNode');
+		Ext.syncRequire('designer.model.CDClass');
 		Ext.syncRequire('designer.model.ClientWeb');
 		Ext.syncRequire('designer.model.RequestGet');
 		Ext.syncRequire('designer.model.RGResetPassword');
