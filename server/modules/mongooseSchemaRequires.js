@@ -9,6 +9,7 @@ exports.PMAccount = require('../schemas/PMAccount').PMAccount;
 exports.PMRegistration = require('../schemas/PMRegistration').PMRegistration;
 exports.PMSharedGenerator = require('../schemas/PMSharedGenerator').PMSharedGenerator;
 exports.PersistentProject = require('../schemas/PersistentProject').PersistentProject;
+exports.PPProjectItem = require('../schemas/PPProjectItem').PPProjectItem;
 exports.PPDataProperty = require('../schemas/PPDataProperty').PPDataProperty;
 exports.PPSchema = require('../schemas/PPSchema').PPSchema;
 exports.PPStringProperty = require('../schemas/PPStringProperty').PPStringProperty;
@@ -19,13 +20,13 @@ exports.PPReferenceProperty = require('../schemas/PPReferenceProperty').PPRefere
 exports.PPObjectProperty = require('../schemas/PPObjectProperty').PPObjectProperty;
 exports.PPAutoProperty = require('../schemas/PPAutoProperty').PPAutoProperty;
 exports.PPObjectIdProperty = require('../schemas/PPObjectIdProperty').PPObjectIdProperty;
+exports.PPView = require('../schemas/PPView').PPView;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
 exports.PPCustomProperty = require('../schemas/PPCustomProperty').PPCustomProperty;
 exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
 exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
-exports.PPView = require('../schemas/PPView').PPView;
 exports.ClientDesigner = require('../schemas/ClientDesigner').ClientDesigner;
 exports.CDConnection = require('../schemas/CDConnection').CDConnection;
 exports.CDFrameworkItem = require('../schemas/CDFrameworkItem').CDFrameworkItem;
@@ -86,11 +87,11 @@ exports.Models = [
 	,{name: 'PMRegistration', schema: exports.PMRegistration, collection: 'PMRegistration'}
 	,{name: 'PMSharedGenerator', schema: exports.PMSharedGenerator, collection: 'PMSharedGenerator'}
 	,{name: 'PPSchema', schema: exports.PPSchema, collection: 'PPSchema'}
+	,{name: 'PPView', schema: exports.PPView, collection: 'PPView'}
 	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
-	,{name: 'PPView', schema: exports.PPView, collection: 'PPView'}
 	,{name: 'RequestGet', schema: exports.RequestGet, collection: 'RequestGet'}
 	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RequestGet'}
 	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RequestGet'}
