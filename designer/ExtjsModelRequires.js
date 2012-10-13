@@ -9,6 +9,7 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.PMRegistration');
 		Ext.syncRequire('designer.model.PMSharedGenerator');
 		Ext.syncRequire('designer.model.PersistentProject');
+		Ext.syncRequire('designer.model.PPProjectItem');
 		Ext.syncRequire('designer.model.PPDataProperty');
 		Ext.syncRequire('designer.model.PPSchema');
 		Ext.syncRequire('designer.model.PPStringProperty');
@@ -19,13 +20,13 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.PPObjectProperty');
 		Ext.syncRequire('designer.model.PPAutoProperty');
 		Ext.syncRequire('designer.model.PPObjectIdProperty');
+		Ext.syncRequire('designer.model.PPView');
 		Ext.syncRequire('designer.model.PPGenerationStep');
 		Ext.syncRequire('designer.model.PPProjectSetting');
 		Ext.syncRequire('designer.model.PPCustomProperty');
 		Ext.syncRequire('designer.model.PPProjectConfig');
 		Ext.syncRequire('designer.model.PPProjectData');
 		Ext.syncRequire('designer.model.PPGenerator');
-		Ext.syncRequire('designer.model.PPView');
 		Ext.syncRequire('designer.model.ClientDesigner');
 		Ext.syncRequire('designer.model.CDConnection');
 		Ext.syncRequire('designer.model.CDFrameworkItem');
