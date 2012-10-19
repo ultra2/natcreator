@@ -29,7 +29,7 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.PPGenerator');
 		Ext.syncRequire('designer.model.ClientDesigner');
 		Ext.syncRequire('designer.model.CDConnection');
-		Ext.syncRequire('designer.model.CDFrameworkItem');
+		Ext.syncRequire('designer.model.CDProjectItem');
 		Ext.syncRequire('designer.model.CDManagerMenu');
 		Ext.syncRequire('designer.model.CDFile');
 		Ext.syncRequire('designer.model.CDViewNode');
