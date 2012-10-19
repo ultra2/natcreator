@@ -73,6 +73,7 @@ exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
 exports.RPRenameGenerator = require('../schemas/RPRenameGenerator').RPRenameGenerator;
 exports.RPAcceptGeneratorSource = require('../schemas/RPAcceptGeneratorSource').RPAcceptGeneratorSource;
 exports.RPAcquireGenerator = require('../schemas/RPAcquireGenerator').RPAcquireGenerator;
+exports.RPCreateCustomProperty = require('../schemas/RPCreateCustomProperty').RPCreateCustomProperty;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -128,6 +129,7 @@ exports.Models = [
 	,{name: 'RPRenameGenerator', schema: exports.RPRenameGenerator, collection: 'RequestPost'}
 	,{name: 'RPAcceptGeneratorSource', schema: exports.RPAcceptGeneratorSource, collection: 'RequestPost'}
 	,{name: 'RPAcquireGenerator', schema: exports.RPAcquireGenerator, collection: 'RequestPost'}
+	,{name: 'RPCreateCustomProperty', schema: exports.RPCreateCustomProperty, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
