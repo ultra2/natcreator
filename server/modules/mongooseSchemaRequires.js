@@ -36,6 +36,7 @@ exports.CDViewNode = require('../schemas/CDViewNode').CDViewNode;
 exports.CDPropertyNode = require('../schemas/CDPropertyNode').CDPropertyNode;
 exports.CDClassConfig = require('../schemas/CDClassConfig').CDClassConfig;
 exports.CDClass = require('../schemas/CDClass').CDClass;
+exports.CDDataType = require('../schemas/CDDataType').CDDataType;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
 exports.RequestGet = require('../schemas/RequestGet').RequestGet;
 exports.RGResetPassword = require('../schemas/RGResetPassword').RGResetPassword;
