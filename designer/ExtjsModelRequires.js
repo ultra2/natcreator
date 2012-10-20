@@ -51,8 +51,8 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.RPLogout');
 		Ext.syncRequire('designer.model.RPRegistration');
 		Ext.syncRequire('designer.model.RPIsAccountAvailable');
-		Ext.syncRequire('designer.model.RPChangePassword');
 		Ext.syncRequire('designer.model.RPIsProjectNameAvailable');
+		Ext.syncRequire('designer.model.RPChangePassword');
 		Ext.syncRequire('designer.model.RPResetPassword');
 		Ext.syncRequire('designer.model.RPResetPasswordRequest');
 		Ext.syncRequire('designer.model.RPIsAuthenticated');
