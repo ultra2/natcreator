@@ -75,6 +75,7 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.RPAcceptGeneratorSource');
 		Ext.syncRequire('designer.model.RPAcquireGenerator');
 		Ext.syncRequire('designer.model.RPCreateCustomProperty');
+		Ext.syncRequire('designer.model.RPDeleteCustomProperty');
 		Ext.syncRequire('designer.model.ROAccountInfo');
 		Ext.syncRequire('designer.model.ROGithubInfo');
 		Ext.syncRequire('designer.model.QueryResult');
