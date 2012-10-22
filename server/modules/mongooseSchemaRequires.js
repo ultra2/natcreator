@@ -76,6 +76,7 @@ exports.RPRenameGenerator = require('../schemas/RPRenameGenerator').RPRenameGene
 exports.RPAcquireGenerator = require('../schemas/RPAcquireGenerator').RPAcquireGenerator;
 exports.RPCreateCustomProperty = require('../schemas/RPCreateCustomProperty').RPCreateCustomProperty;
 exports.RPDeleteCustomProperty = require('../schemas/RPDeleteCustomProperty').RPDeleteCustomProperty;
+exports.RPUpdateCustomProperty = require('../schemas/RPUpdateCustomProperty').RPUpdateCustomProperty;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -133,6 +134,7 @@ exports.Models = [
 	,{name: 'RPAcquireGenerator', schema: exports.RPAcquireGenerator, collection: 'RequestPost'}
 	,{name: 'RPCreateCustomProperty', schema: exports.RPCreateCustomProperty, collection: 'RequestPost'}
 	,{name: 'RPDeleteCustomProperty', schema: exports.RPDeleteCustomProperty, collection: 'RequestPost'}
+	,{name: 'RPUpdateCustomProperty', schema: exports.RPUpdateCustomProperty, collection: 'RPUpdateCustomProperty'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
