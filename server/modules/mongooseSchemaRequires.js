@@ -57,8 +57,8 @@ exports.RPResetPassword = require('../schemas/RPResetPassword').RPResetPassword;
 exports.RPResetPasswordRequest = require('../schemas/RPResetPasswordRequest').RPResetPasswordRequest;
 exports.RPTestConnection = require('../schemas/RPTestConnection').RPTestConnection;
 exports.RPIsAuthenticated = require('../schemas/RPIsAuthenticated').RPIsAuthenticated;
-exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
 exports.RPOpenProject = require('../schemas/RPOpenProject').RPOpenProject;
+exports.RPCloseProject = require('../schemas/RPCloseProject').RPCloseProject;
 exports.RequestObject = require('../schemas/RequestObject').RequestObject;
 exports.ROFile = require('../schemas/ROFile').ROFile;
 exports.RPExportFiles = require('../schemas/RPExportFiles').RPExportFiles;
@@ -70,9 +70,9 @@ exports.RPUpdateGenerator = require('../schemas/RPUpdateGenerator').RPUpdateGene
 exports.RPIsGeneratorUpdatable = require('../schemas/RPIsGeneratorUpdatable').RPIsGeneratorUpdatable;
 exports.RPCreateGenerator = require('../schemas/RPCreateGenerator').RPCreateGenerator;
 exports.RPGetTemplateProjectGithubZipUrl = require('../schemas/RPGetTemplateProjectGithubZipUrl').RPGetTemplateProjectGithubZipUrl;
+exports.RPRenameGenerator = require('../schemas/RPRenameGenerator').RPRenameGenerator;
 exports.RPAcceptGeneratorSource = require('../schemas/RPAcceptGeneratorSource').RPAcceptGeneratorSource;
 exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
-exports.RPRenameGenerator = require('../schemas/RPRenameGenerator').RPRenameGenerator;
 exports.RPAcquireGenerator = require('../schemas/RPAcquireGenerator').RPAcquireGenerator;
 exports.RPCreateCustomProperty = require('../schemas/RPCreateCustomProperty').RPCreateCustomProperty;
 exports.RPDeleteCustomProperty = require('../schemas/RPDeleteCustomProperty').RPDeleteCustomProperty;
@@ -115,8 +115,8 @@ exports.Models = [
 	,{name: 'RPResetPasswordRequest', schema: exports.RPResetPasswordRequest, collection: 'RequestPost'}
 	,{name: 'RPTestConnection', schema: exports.RPTestConnection, collection: 'RequestPost'}
 	,{name: 'RPIsAuthenticated', schema: exports.RPIsAuthenticated, collection: 'RequestPost'}
-	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RequestPost'}
 	,{name: 'RPOpenProject', schema: exports.RPOpenProject, collection: 'RequestPost'}
+	,{name: 'RPCloseProject', schema: exports.RPCloseProject, collection: 'RequestPost'}
 	,{name: 'RequestObject', schema: exports.RequestObject, collection: 'RequestObject'}
 	,{name: 'ROFile', schema: exports.ROFile, collection: 'RequestObject'}
 	,{name: 'RPExportFiles', schema: exports.RPExportFiles, collection: 'RequestPost'}
@@ -128,9 +128,9 @@ exports.Models = [
 	,{name: 'RPIsGeneratorUpdatable', schema: exports.RPIsGeneratorUpdatable, collection: 'RequestPost'}
 	,{name: 'RPCreateGenerator', schema: exports.RPCreateGenerator, collection: 'RequestPost'}
 	,{name: 'RPGetTemplateProjectGithubZipUrl', schema: exports.RPGetTemplateProjectGithubZipUrl, collection: 'RequestPost'}
+	,{name: 'RPRenameGenerator', schema: exports.RPRenameGenerator, collection: 'RequestPost'}
 	,{name: 'RPAcceptGeneratorSource', schema: exports.RPAcceptGeneratorSource, collection: 'RequestPost'}
 	,{name: 'RPSendQuestion', schema: exports.RPSendQuestion, collection: 'RequestPost'}
-	,{name: 'RPRenameGenerator', schema: exports.RPRenameGenerator, collection: 'RequestPost'}
 	,{name: 'RPAcquireGenerator', schema: exports.RPAcquireGenerator, collection: 'RequestPost'}
 	,{name: 'RPCreateCustomProperty', schema: exports.RPCreateCustomProperty, collection: 'RequestPost'}
 	,{name: 'RPDeleteCustomProperty', schema: exports.RPDeleteCustomProperty, collection: 'RequestPost'}
