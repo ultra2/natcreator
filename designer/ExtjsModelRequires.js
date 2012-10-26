@@ -20,6 +20,7 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.PPObjectProperty');
 		Ext.syncRequire('designer.model.PPAutoProperty');
 		Ext.syncRequire('designer.model.PPObjectIdProperty');
+		Ext.syncRequire('designer.model.PPStore');
 		Ext.syncRequire('designer.model.PPView');
 		Ext.syncRequire('designer.model.PPGenerationStep');
 		Ext.syncRequire('designer.model.PPProjectSetting');
