@@ -22,6 +22,7 @@ exports.PPAutoProperty = require('../schemas/PPAutoProperty').PPAutoProperty;
 exports.PPObjectIdProperty = require('../schemas/PPObjectIdProperty').PPObjectIdProperty;
 exports.PPStore = require('../schemas/PPStore').PPStore;
 exports.PPView = require('../schemas/PPView').PPView;
+exports.PPClass = require('../schemas/PPClass').PPClass;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
 exports.PPCustomProperty = require('../schemas/PPCustomProperty').PPCustomProperty;
@@ -33,10 +34,10 @@ exports.CDConnection = require('../schemas/CDConnection').CDConnection;
 exports.CDProjectItem = require('../schemas/CDProjectItem').CDProjectItem;
 exports.CDManagerMenu = require('../schemas/CDManagerMenu').CDManagerMenu;
 exports.CDFile = require('../schemas/CDFile').CDFile;
-exports.CDViewNode = require('../schemas/CDViewNode').CDViewNode;
 exports.CDPropertyNode = require('../schemas/CDPropertyNode').CDPropertyNode;
 exports.CDClassConfig = require('../schemas/CDClassConfig').CDClassConfig;
 exports.CDClass = require('../schemas/CDClass').CDClass;
+exports.CDClassMetaNode = require('../schemas/CDClassMetaNode').CDClassMetaNode;
 exports.CDDataType = require('../schemas/CDDataType').CDDataType;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
 exports.RequestGet = require('../schemas/RequestGet').RequestGet;
@@ -94,6 +95,7 @@ exports.Models = [
 	,{name: 'PPSchema', schema: exports.PPSchema, collection: 'PPSchema'}
 	,{name: 'PPStore', schema: exports.PPStore, collection: 'PPStore'}
 	,{name: 'PPView', schema: exports.PPView, collection: 'PPView'}
+	,{name: 'PPClass', schema: exports.PPClass, collection: 'PPClass'}
 	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
