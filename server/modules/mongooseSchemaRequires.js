@@ -39,6 +39,7 @@ exports.CDClassConfig = require('../schemas/CDClassConfig').CDClassConfig;
 exports.CDClass = require('../schemas/CDClass').CDClass;
 exports.CDViewNode = require('../schemas/CDViewNode').CDViewNode;
 exports.CDDataType = require('../schemas/CDDataType').CDDataType;
+exports.CDInspectorNode = require('../schemas/CDInspectorNode').CDInspectorNode;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
 exports.RequestGet = require('../schemas/RequestGet').RequestGet;
 exports.RGResetPassword = require('../schemas/RGResetPassword').RGResetPassword;
@@ -100,6 +101,7 @@ exports.Models = [
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
+	,{name: 'CDInspectorNode', schema: exports.CDInspectorNode, collection: 'CDInspectorNode'}
 	,{name: 'RequestGet', schema: exports.RequestGet, collection: 'RequestGet'}
 	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RequestGet'}
 	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RequestGet'}
