@@ -37,7 +37,7 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.CDPropertyNode');
 		Ext.syncRequire('designer.model.CDClassConfig');
 		Ext.syncRequire('designer.model.CDClass');
-		Ext.syncRequire('designer.model.CDClassNode');
+		Ext.syncRequire('designer.model.CDClassMetaNode');
 		Ext.syncRequire('designer.model.CDDataType');
 		Ext.syncRequire('designer.model.CDInspectorNode');
 		Ext.syncRequire('designer.model.ClientWeb');
