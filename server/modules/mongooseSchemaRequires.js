@@ -25,9 +25,9 @@ exports.PPView = require('../schemas/PPView').PPView;
 exports.PPClass = require('../schemas/PPClass').PPClass;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
+exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPCustomProperty = require('../schemas/PPCustomProperty').PPCustomProperty;
 exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
-exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
 exports.ClientDesigner = require('../schemas/ClientDesigner').ClientDesigner;
 exports.CDConnection = require('../schemas/CDConnection').CDConnection;
@@ -40,6 +40,7 @@ exports.CDClass = require('../schemas/CDClass').CDClass;
 exports.CDClassMetaNode = require('../schemas/CDClassMetaNode').CDClassMetaNode;
 exports.CDDataType = require('../schemas/CDDataType').CDDataType;
 exports.CDInspectorNode = require('../schemas/CDInspectorNode').CDInspectorNode;
+exports.CDEditToolboxNode = require('../schemas/CDEditToolboxNode').CDEditToolboxNode;
 exports.ClientWeb = require('../schemas/ClientWeb').ClientWeb;
 exports.RequestGet = require('../schemas/RequestGet').RequestGet;
 exports.RGResetPassword = require('../schemas/RGResetPassword').RGResetPassword;
@@ -98,10 +99,11 @@ exports.Models = [
 	,{name: 'PPView', schema: exports.PPView, collection: 'PPView'}
 	,{name: 'PPClass', schema: exports.PPClass, collection: 'PPClass'}
 	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
-	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
+	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
 	,{name: 'CDInspectorNode', schema: exports.CDInspectorNode, collection: 'CDInspectorNode'}
+	,{name: 'CDEditToolboxNode', schema: exports.CDEditToolboxNode, collection: 'CDEditToolboxNode'}
 	,{name: 'RequestGet', schema: exports.RequestGet, collection: 'RequestGet'}
 	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RequestGet'}
 	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RequestGet'}
