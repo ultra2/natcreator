@@ -25,9 +25,9 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.PPClass');
 		Ext.syncRequire('designer.model.PPGenerationStep');
 		Ext.syncRequire('designer.model.PPProjectSetting');
+		Ext.syncRequire('designer.model.PPProjectData');
 		Ext.syncRequire('designer.model.PPCustomProperty');
 		Ext.syncRequire('designer.model.PPProjectConfig');
-		Ext.syncRequire('designer.model.PPProjectData');
 		Ext.syncRequire('designer.model.PPGenerator');
 		Ext.syncRequire('designer.model.ClientDesigner');
 		Ext.syncRequire('designer.model.CDConnection');
@@ -40,6 +40,7 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.CDClassMetaNode');
 		Ext.syncRequire('designer.model.CDDataType');
 		Ext.syncRequire('designer.model.CDInspectorNode');
+		Ext.syncRequire('designer.model.CDEditToolboxNode');
 		Ext.syncRequire('designer.model.ClientWeb');
 		Ext.syncRequire('designer.model.RequestGet');
 		Ext.syncRequire('designer.model.RGResetPassword');
