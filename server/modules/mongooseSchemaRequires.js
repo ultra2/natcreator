@@ -22,9 +22,9 @@ exports.PPAutoProperty = require('../schemas/PPAutoProperty').PPAutoProperty;
 exports.PPObjectIdProperty = require('../schemas/PPObjectIdProperty').PPObjectIdProperty;
 exports.PPStore = require('../schemas/PPStore').PPStore;
 exports.PPView = require('../schemas/PPView').PPView;
-exports.PPClass = require('../schemas/PPClass').PPClass;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
+exports.PPClass = require('../schemas/PPClass').PPClass;
 exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
 exports.PPCustomProperty = require('../schemas/PPCustomProperty').PPCustomProperty;
 exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
@@ -96,8 +96,8 @@ exports.Models = [
 	,{name: 'PPSchema', schema: exports.PPSchema, collection: 'PPSchema'}
 	,{name: 'PPStore', schema: exports.PPStore, collection: 'PPStore'}
 	,{name: 'PPView', schema: exports.PPView, collection: 'PPView'}
-	,{name: 'PPClass', schema: exports.PPClass, collection: 'PPClass'}
 	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
+	,{name: 'PPClass', schema: exports.PPClass, collection: 'PPClass'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
