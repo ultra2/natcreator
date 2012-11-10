@@ -26,7 +26,6 @@ exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationSt
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
 exports.PPClass = require('../schemas/PPClass').PPClass;
 exports.PPProjectData = require('../schemas/PPProjectData').PPProjectData;
-exports.PPCustomProperty = require('../schemas/PPCustomProperty').PPCustomProperty;
 exports.PPProjectConfig = require('../schemas/PPProjectConfig').PPProjectConfig;
 exports.PPGenerator = require('../schemas/PPGenerator').PPGenerator;
 exports.ClientDesigner = require('../schemas/ClientDesigner').ClientDesigner;
