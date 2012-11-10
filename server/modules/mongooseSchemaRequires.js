@@ -76,9 +76,9 @@ exports.RPRenameGenerator = require('../schemas/RPRenameGenerator').RPRenameGene
 exports.RPAcceptGeneratorSource = require('../schemas/RPAcceptGeneratorSource').RPAcceptGeneratorSource;
 exports.RPSendQuestion = require('../schemas/RPSendQuestion').RPSendQuestion;
 exports.RPAcquireGenerator = require('../schemas/RPAcquireGenerator').RPAcquireGenerator;
-exports.RPCreateCustomProperty = require('../schemas/RPCreateCustomProperty').RPCreateCustomProperty;
-exports.RPDeleteCustomProperty = require('../schemas/RPDeleteCustomProperty').RPDeleteCustomProperty;
-exports.RPUpdateCustomProperty = require('../schemas/RPUpdateCustomProperty').RPUpdateCustomProperty;
+exports.RPCreateClassConfig = require('../schemas/RPCreateClassConfig').RPCreateClassConfig;
+exports.RPDeleteClassConfig = require('../schemas/RPDeleteClassConfig').RPDeleteClassConfig;
+exports.RPUpdateClassConfig = require('../schemas/RPUpdateClassConfig').RPUpdateClassConfig;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -138,9 +138,9 @@ exports.Models = [
 	,{name: 'RPAcceptGeneratorSource', schema: exports.RPAcceptGeneratorSource, collection: 'RequestPost'}
 	,{name: 'RPSendQuestion', schema: exports.RPSendQuestion, collection: 'RequestPost'}
 	,{name: 'RPAcquireGenerator', schema: exports.RPAcquireGenerator, collection: 'RequestPost'}
-	,{name: 'RPCreateCustomProperty', schema: exports.RPCreateCustomProperty, collection: 'RequestPost'}
-	,{name: 'RPDeleteCustomProperty', schema: exports.RPDeleteCustomProperty, collection: 'RequestPost'}
-	,{name: 'RPUpdateCustomProperty', schema: exports.RPUpdateCustomProperty, collection: 'RPUpdateCustomProperty'}
+	,{name: 'RPCreateClassConfig', schema: exports.RPCreateClassConfig, collection: 'RequestPost'}
+	,{name: 'RPDeleteClassConfig', schema: exports.RPDeleteClassConfig, collection: 'RequestPost'}
+	,{name: 'RPUpdateClassConfig', schema: exports.RPUpdateClassConfig, collection: 'RPUpdateClassConfig'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
