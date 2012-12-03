@@ -36,8 +36,8 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.CDPropertyNode');
 		Ext.syncRequire('designer.model.CDClassConfig');
 		Ext.syncRequire('designer.model.CDClassMetaNode');
-		Ext.syncRequire('designer.model.CDDataType');
 		Ext.syncRequire('designer.model.CDInspectorNode');
+		Ext.syncRequire('designer.model.CDDataType');
 		Ext.syncRequire('designer.model.CDEditToolboxNode');
 		Ext.syncRequire('designer.model.ClientWeb');
 		Ext.syncRequire('designer.model.RequestGet');
@@ -72,9 +72,9 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.RPIsGeneratorUpdatable');
 		Ext.syncRequire('designer.model.RPGetTemplateProjectGithubZipUrl');
 		Ext.syncRequire('designer.model.RPCreateGenerator');
+		Ext.syncRequire('designer.model.RPSendQuestion');
 		Ext.syncRequire('designer.model.RPAcceptGeneratorSource');
 		Ext.syncRequire('designer.model.RPRenameGenerator');
-		Ext.syncRequire('designer.model.RPSendQuestion');
 		Ext.syncRequire('designer.model.RPAcquireGenerator');
 		Ext.syncRequire('designer.model.RPCreateClassConfig');
 		Ext.syncRequire('designer.model.RPDeleteClassConfig');
