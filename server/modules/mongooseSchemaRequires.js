@@ -9,19 +9,6 @@ exports.PMAccount = require('../schemas/PMAccount').PMAccount;
 exports.PMRegistration = require('../schemas/PMRegistration').PMRegistration;
 exports.PMSharedGenerator = require('../schemas/PMSharedGenerator').PMSharedGenerator;
 exports.PersistentProject = require('../schemas/PersistentProject').PersistentProject;
-exports.PPProjectItem = require('../schemas/PPProjectItem').PPProjectItem;
-exports.PPDataProperty = require('../schemas/PPDataProperty').PPDataProperty;
-exports.PPSchema = require('../schemas/PPSchema').PPSchema;
-exports.PPStringProperty = require('../schemas/PPStringProperty').PPStringProperty;
-exports.PPBooleanProperty = require('../schemas/PPBooleanProperty').PPBooleanProperty;
-exports.PPIntProperty = require('../schemas/PPIntProperty').PPIntProperty;
-exports.PPDateProperty = require('../schemas/PPDateProperty').PPDateProperty;
-exports.PPReferenceProperty = require('../schemas/PPReferenceProperty').PPReferenceProperty;
-exports.PPObjectProperty = require('../schemas/PPObjectProperty').PPObjectProperty;
-exports.PPAutoProperty = require('../schemas/PPAutoProperty').PPAutoProperty;
-exports.PPObjectIdProperty = require('../schemas/PPObjectIdProperty').PPObjectIdProperty;
-exports.PPStore = require('../schemas/PPStore').PPStore;
-exports.PPView = require('../schemas/PPView').PPView;
 exports.PPGenerationStep = require('../schemas/PPGenerationStep').PPGenerationStep;
 exports.PPProjectSetting = require('../schemas/PPProjectSetting').PPProjectSetting;
 exports.PPClass = require('../schemas/PPClass').PPClass;
@@ -92,16 +79,11 @@ exports.Models = [
 	,{name: 'PMAccount', schema: exports.PMAccount, collection: 'PMAccount'}
 	,{name: 'PMRegistration', schema: exports.PMRegistration, collection: 'PMRegistration'}
 	,{name: 'PMSharedGenerator', schema: exports.PMSharedGenerator, collection: 'PMSharedGenerator'}
-	,{name: 'PPSchema', schema: exports.PPSchema, collection: 'PPSchema'}
-	,{name: 'PPStore', schema: exports.PPStore, collection: 'PPStore'}
-	,{name: 'PPView', schema: exports.PPView, collection: 'PPView'}
 	,{name: 'PPProjectSetting', schema: exports.PPProjectSetting, collection: 'PPProjectSetting'}
 	,{name: 'PPClass', schema: exports.PPClass, collection: 'PPClass'}
 	,{name: 'PPProjectData', schema: exports.PPProjectData, collection: 'PPProjectData'}
 	,{name: 'PPProjectConfig', schema: exports.PPProjectConfig, collection: 'PPProjectConfig'}
 	,{name: 'PPGenerator', schema: exports.PPGenerator, collection: 'PPGenerator'}
-	,{name: 'CDInspectorNode', schema: exports.CDInspectorNode, collection: 'CDInspectorNode'}
-	,{name: 'CDEditToolboxNode', schema: exports.CDEditToolboxNode, collection: 'CDEditToolboxNode'}
 	,{name: 'RequestGet', schema: exports.RequestGet, collection: 'RequestGet'}
 	,{name: 'RGResetPassword', schema: exports.RGResetPassword, collection: 'RequestGet'}
 	,{name: 'RGActivate', schema: exports.RGActivate, collection: 'RequestGet'}
@@ -140,7 +122,7 @@ exports.Models = [
 	,{name: 'RPAcquireGenerator', schema: exports.RPAcquireGenerator, collection: 'RequestPost'}
 	,{name: 'RPCreateClassConfig', schema: exports.RPCreateClassConfig, collection: 'RequestPost'}
 	,{name: 'RPDeleteClassConfig', schema: exports.RPDeleteClassConfig, collection: 'RequestPost'}
-	,{name: 'RPUpdateClassConfig', schema: exports.RPUpdateClassConfig, collection: 'RPUpdateClassConfig'}
+	,{name: 'RPUpdateClassConfig', schema: exports.RPUpdateClassConfig, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
