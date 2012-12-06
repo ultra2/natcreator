@@ -12,8 +12,8 @@ Ext.define('designer.ExtjsModelRequires', {
 		Ext.syncRequire('designer.model.PPProjectSetting');
 		Ext.syncRequire('designer.model.PPClass');
 		Ext.syncRequire('designer.model.PPProjectData');
-		Ext.syncRequire('designer.model.PPProjectConfig');
 		Ext.syncRequire('designer.model.PPGenerationStep');
+		Ext.syncRequire('designer.model.PPProjectConfig');
 		Ext.syncRequire('designer.model.PPGenerator');
 		Ext.syncRequire('designer.model.ClientDesigner');
 		Ext.syncRequire('designer.model.CDConnection');
