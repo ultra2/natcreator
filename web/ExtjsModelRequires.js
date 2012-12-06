@@ -9,11 +9,11 @@ Ext.define('web.ExtjsModelRequires', {
 		Ext.syncRequire('web.model.PMRegistration');
 		Ext.syncRequire('web.model.PMSharedGenerator');
 		Ext.syncRequire('web.model.PersistentProject');
-		Ext.syncRequire('web.model.PPGenerationStep');
 		Ext.syncRequire('web.model.PPProjectSetting');
 		Ext.syncRequire('web.model.PPClass');
 		Ext.syncRequire('web.model.PPProjectData');
 		Ext.syncRequire('web.model.PPProjectConfig');
+		Ext.syncRequire('web.model.PPGenerationStep');
 		Ext.syncRequire('web.model.PPGenerator');
 		Ext.syncRequire('web.model.ClientDesigner');
 		Ext.syncRequire('web.model.CDConnection');
