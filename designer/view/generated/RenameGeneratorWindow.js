@@ -24,7 +24,8 @@ Ext.define('designer.view.generated.RenameGeneratorWindow', {
 					items: [
 						{
 							xtype: 'component',
-							margin: '2 0 2 0'
+							margin: '2 0 2 0',
+							html: 'Type a new name for the generator'
 						},
 						{
 							xtype: 'textfield',
