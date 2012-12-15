@@ -1,7 +1,7 @@
 Ext.define('designer.view.generated.LoginWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.LoginWindow',
-	height: 230,
+	height: 220,
 	width: 446,
 	resizable: false,
 	title: 'Log In',
