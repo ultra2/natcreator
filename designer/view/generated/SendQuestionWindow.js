@@ -8,6 +8,7 @@ Ext.define('designer.view.generated.SendQuestionWindow', {
 	},
 	title: 'Request feature / Ask Question',
 	modal: true,
+	resizable: false,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
