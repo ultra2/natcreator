@@ -21,7 +21,11 @@ Ext.define('designer.view.generated.ProjectManager', {
 						{
 							xtype: 'gridcolumn',
 							dataIndex: 'name',
-							text: 'Name'
+							text: 'Name',
+							renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
+								if (record.get('isTemplate')) value += ' (template)';
+								return value;
+							}
 						},
 						{
 							xtype: 'gridcolumn',
