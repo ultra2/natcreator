@@ -17,7 +17,7 @@ Ext.define('designer.view.generated.ProjectManager', {
 					xtype: 'natgrid',
 					itemId: 'gridMain',
 					forceFit: true,
-					items: [
+					columns: [
 						{
 							xtype: 'gridcolumn',
 							dataIndex: 'name',
