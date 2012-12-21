@@ -89,6 +89,7 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 						pack: 'end',
 						padding: '5'
 					},
+					cls: 'commandpanel',
 					items: [
 						{
 							xtype: 'button',
