@@ -1,7 +1,7 @@
 Ext.define('designer.view.generated.ClassConfigWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ClassConfigWindow',
-	height: 430,
+	height: 450,
 	width: 446,
 	resizable: false,
 	layout: {
@@ -99,6 +99,13 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							itemId: 'chAdvanced',
 							propertyPath: 'advanced',
 							fieldLabel: 'Advanced'
+						},
+						{
+							xtype: 'natstringlistfield',
+							itemId: 'memoParams',
+							propertyPath: 'params',
+							height: 50,
+							fieldLabel: 'Params'
 						}
 					],
 					layout: {
