@@ -29,6 +29,9 @@ Ext.define('designer.view.generated.EnvironmentSettingsForm', {
 							editable: false
 						}
 					]
+				},
+				{
+					xtype: 'natwindow'
 				}
 			]
 		});
