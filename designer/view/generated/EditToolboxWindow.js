@@ -2,7 +2,7 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.EditToolboxWindow',
 	height: 500,
-	width: 800,
+	width: 1000,
 	layout: {
 		type: 'hbox',
 		align: 'stretch'
