@@ -49,8 +49,8 @@ Ext.define('designer.view.generated.GenerationWindow', {
 							xtype: 'component',
 							id: 'downloadify',
 							itemId: 'downloadify',
-							minWidth: 24,
-							minHeight: 100
+							minWidth: 100,
+							minHeight: 24
 						},
 						{
 							xtype: 'button',
