@@ -71,17 +71,7 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 							xtype: 'gridcolumn',
 							dataIndex: 'name'
 						}
-					],
-					viewConfig: {
-						xtype: 'gridview',
-						plugins: [
-							{
-								xtype: 'gridviewdragdrop',
-								dragGroup: 'EditToolboxDD',
-								dropGroup: 'EditToolboxDD'
-							}
-						]
-					}
+					]
 				}
 			],
 			dockedItems: [
