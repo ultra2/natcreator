@@ -50,7 +50,7 @@ Ext.define('designer.view.generated.ChangeTypeWindow', {
 							text: 'Change'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnCancel',
 							text: 'Cancel'
 						}
