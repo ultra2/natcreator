@@ -1,88 +1,88 @@
 Ext.define('designer.view.generated.ProjectWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ProjectWindow',
-	activeItem: '1',
+	height: 560,
+	width: 600,
+	resizable: false,
+	title: 'New Project',
+	modal: true,
 	layout: {
 		type: 'card'
 	},
-	modal: true,
-	title: 'New Project',
-	resizable: false,
-	width: 600,
-	height: 560,
+	activeItem: '1',
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					bodyPadding: 10,
+					itemId: 'edProject0',
 					layout: {
 						type: 'vbox',
 						align: 'stretch'
 					},
-					itemId: 'edProject0',
+					bodyPadding: 10,
 					items: [
 						{
 							xtype: 'natgrid',
-							forceFit: true,
-							flex: 1,
-							title: 'Project Templates',
 							itemId: 'gridProjectTemplates',
+							title: 'Project Templates',
+							flex: 1,
+							forceFit: true,
 							columns: [
 								{
 									xtype: 'gridcolumn',
-									text: 'Name',
+									width: 50,
 									dataIndex: 'name',
-									width: 50
+									text: 'Name'
 								},
 								{
 									xtype: 'gridcolumn',
-									text: 'Description',
-									dataIndex: 'description'
+									dataIndex: 'description',
+									text: 'Description'
 								}
 							]
 						},
 						{
 							xtype: 'textfield',
-							labelWidth: 80,
-							fieldLabel: 'Name',
+							itemId: 'txtName',
 							propertyPath: 'name',
-							itemId: 'txtName'
+							fieldLabel: 'Name',
+							labelWidth: 80
 						},
 						{
-							xtype: 'textarea',
-							labelWidth: 80,
-							fieldLabel: 'Description',
+							xtype: 'nattextarea',
+							itemId: 'txtDescription',
 							propertyPath: 'description',
-							itemId: 'txtDescription'
+							fieldLabel: 'Description',
+							labelWidth: 80
 						}
 					]
 				},
 				{
 					xtype: 'natform',
-					title: 'MongoDB connection to project\'s metadata database',
-					bodyPadding: 10,
+					itemId: 'edProject1',
 					layout: {
 						type: 'vbox',
 						align: 'stretch'
 					},
-					itemId: 'edProject1',
+					bodyPadding: 10,
+					title: 'MongoDB connection to project\'s metadata database',
 					items: [
 						{
 							xtype: 'component',
-							margins: '5 0 5 0',
-							html: 'You need to provide a MongoDB database connection where your project\'s metadata  will be stored. Your generated web application\'s data can be elsewhere.'
+							html: 'You need to provide a MongoDB database connection where your project\'s metadata  will be stored. Your generated web application\'s data can be elsewhere.',
+							margins: '5 0 5 0'
 						},
 						{
 							xtype: 'natform',
+							itemId: 'edConnection',
+							margins: '5 0 5 0',
+							height: 250,
 							layout: {
 								type: 'vbox',
 								align: 'stretch'
 							},
-							height: 250,
-							margins: '5 0 5 0',
-							itemId: 'edConnection',
 							items: [
 								{
 									xtype: 'natfieldset',
@@ -92,18 +92,18 @@ Ext.define('designer.view.generated.ProjectWindow', {
 									items: [
 										{
 											xtype: 'textfield',
-											labelWidth: 40,
-											labelPad: 0,
-											fieldLabel: 'Url',
-											margin: '0',
+											itemId: 'txtUrl',
 											propertyPath: 'url',
-											itemId: 'txtUrl'
+											margin: '0',
+											fieldLabel: 'Url',
+											labelPad: 0,
+											labelWidth: 40
 										},
 										{
 											xtype: 'component',
-											margin: '0 0 0 40',
+											cls: 'small-label',
 											html: 'mongodb://user:password@ds012345.mongolab.com:12345/databasename',
-											cls: 'small-label'
+											margin: '0 0 0 40'
 										}
 									]
 								},
@@ -115,33 +115,33 @@ Ext.define('designer.view.generated.ProjectWindow', {
 									items: [
 										{
 											xtype: 'textfield',
-											fieldLabel: 'Server',
+											itemId: 'txtServer',
 											propertyPath: 'server',
-											itemId: 'txtServer'
+											fieldLabel: 'Server'
 										},
 										{
 											xtype: 'textfield',
-											fieldLabel: 'Port',
+											itemId: 'intPort',
 											propertyPath: 'port',
-											itemId: 'intPort'
+											fieldLabel: 'Port'
 										},
 										{
 											xtype: 'textfield',
-											fieldLabel: 'Username',
+											itemId: 'txtUsername',
 											propertyPath: 'username',
-											itemId: 'txtUsername'
+											fieldLabel: 'Username'
 										},
 										{
 											xtype: 'textfield',
-											fieldLabel: 'Password',
+											itemId: 'txtPassword',
 											propertyPath: 'password',
-											itemId: 'txtPassword'
+											fieldLabel: 'Password'
 										},
 										{
 											xtype: 'textfield',
-											fieldLabel: 'Database',
+											itemId: 'txtDatabase',
 											propertyPath: 'database',
-											itemId: 'txtDatabase'
+											fieldLabel: 'Database'
 										}
 									]
 								}
@@ -149,13 +149,13 @@ Ext.define('designer.view.generated.ProjectWindow', {
 						},
 						{
 							xtype: 'component',
-							margins: '5 0 5 0',
-							html: 'You can register one for free at any of the next hosting providers:'
+							html: 'You can register one for free at any of the next hosting providers:',
+							margins: '5 0 5 0'
 						},
 						{
 							xtype: 'component',
-							margins: '5 0 5 0',
-							html: '<a href="http://mongolab.com" target="_blank"><img src="https://extsolutions.herokuapp.com/graphics/logo/logo_mongolab.png"></a> <a href="http://mongohq.com" target="_blank"><img src="https://extsolutions.herokuapp.com/graphics/logo/logo_mongohq.png"></a>'
+							html: '<a href="http://mongolab.com" target="_blank"><img src="https://extsolutions.herokuapp.com/graphics/logo/logo_mongolab.png"></a> <a href="http://mongohq.com" target="_blank"><img src="https://extsolutions.herokuapp.com/graphics/logo/logo_mongohq.png"></a>',
+							margins: '5 0 5 0'
 						}
 					]
 				}
@@ -163,46 +163,46 @@ Ext.define('designer.view.generated.ProjectWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					layout: {
-						type: 'hbox',
-						padding: '5',
-						pack: 'end',
-						align: 'middle'
-					},
+					dock: 'bottom',
+					cls: 'commandpanel',
+					height: 30,
 					defaults: {
 						margins: '0 0 0 5',
 						autoWidth: true
 					},
-					height: 30,
-					cls: 'commandpanel',
-					dock: 'bottom',
+					layout: {
+						type: 'hbox',
+						align: 'middle',
+						pack: 'end',
+						padding: '5'
+					},
 					items: [
 						{
 							xtype: 'natbutton',
-							text: 'Test',
-							itemId: 'btnTest'
+							itemId: 'btnTest',
+							text: 'Test'
 						},
 						{
 							xtype: 'natbutton',
-							text: 'Previous',
-							itemId: 'btnPrevious'
+							itemId: 'btnPrevious',
+							text: 'Previous'
 						},
 						{
 							xtype: 'natbutton',
-							ui: 'green',
+							itemId: 'btnNext',
 							text: 'Next',
-							itemId: 'btnNext'
+							ui: 'green'
 						},
 						{
 							xtype: 'natbutton',
-							ui: 'green',
+							itemId: 'btnSave',
 							text: 'Save',
-							itemId: 'btnSave'
+							ui: 'green'
 						},
 						{
 							xtype: 'natbutton',
-							text: 'Cancel',
-							itemId: 'btnCancel'
+							itemId: 'btnCancel',
+							text: 'Cancel'
 						}
 					]
 				}

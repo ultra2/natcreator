@@ -1,44 +1,44 @@
 Ext.define('designer.view.generated.SendQuestionWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.SendQuestionWindow',
-	resizable: false,
-	modal: true,
-	title: 'Request feature / Ask Question',
+	height: 500,
+	width: 600,
 	layout: {
 		type: 'fit'
 	},
-	width: 600,
-	height: 500,
+	title: 'Request feature / Ask Question',
+	modal: true,
+	resizable: false,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					bodyPadding: 10,
-					layout: {
-						type: 'vbox',
-						align: 'stretch'
-					},
+					itemId: 'edSendQuestion',
 					defaults: {
 						anchor: '100%',
 						labelWidth: 120,
 						labelAlign: 'top'
 					},
-					itemId: 'edSendQuestion',
+					layout: {
+						type: 'vbox',
+						align: 'stretch'
+					},
+					bodyPadding: 10,
 					items: [
 						{
 							xtype: 'textfield',
-							fieldLabel: 'Subject',
+							itemId: 'txtSubject',
 							propertyPath: 'subject',
-							itemId: 'txtSubject'
+							fieldLabel: 'Subject'
 						},
 						{
-							xtype: 'textarea',
-							flex: 1,
-							fieldLabel: 'Question',
+							xtype: 'nattextarea',
+							itemId: 'txtQuestion',
 							propertyPath: 'question',
-							itemId: 'txtQuestion'
+							fieldLabel: 'Question',
+							flex: 1
 						}
 					]
 				}
@@ -46,25 +46,25 @@ Ext.define('designer.view.generated.SendQuestionWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					layout: {
-						type: 'hbox',
-						padding: '5',
-						pack: 'end',
-						align: 'middle'
-					},
+					dock: 'bottom',
+					cls: 'commandpanel',
+					height: 30,
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					height: 30,
-					cls: 'commandpanel',
-					dock: 'bottom',
+					layout: {
+						type: 'hbox',
+						align: 'middle',
+						pack: 'end',
+						padding: '5'
+					},
 					items: [
 						{
 							xtype: 'natbutton',
-							text: 'Send Request',
-							ui: 'green',
+							itemId: 'btnSendQuestion',
 							minWidth: 100,
-							itemId: 'btnSendQuestion'
+							ui: 'green',
+							text: 'Send Request'
 						}
 					]
 				}
