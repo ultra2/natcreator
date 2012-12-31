@@ -1,69 +1,69 @@
 Ext.define('designer.view.generated.GenerationWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.GenerationWindow',
-	modal: true,
-	title: 'Code Generation',
-	bodyPadding: 20,
+	height: 400,
+	width: 800,
 	layout: {
 		type: 'vbox',
 		align: 'stretch'
 	},
-	width: 800,
-	height: 400,
+	bodyPadding: 20,
+	title: 'Code Generation',
+	modal: true,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'nattextarea',
-					labelAlign: 'top',
-					fieldLabel: 'Generation log',
-					readOnly: true,
+					itemId: 'txtGenerationLog',
 					flex: 1,
-					itemId: 'txtGenerationLog'
+					readOnly: true,
+					fieldLabel: 'Generation log',
+					labelAlign: 'top'
 				},
 				{
-					xtype: 'checkboxfield',
-					margin: '5 0 0 0',
+					xtype: 'natcheckboxfield',
+					itemId: 'chCloseOnSuccessful',
 					boxLabel: 'Close this window if code generation was successful',
-					itemId: 'chCloseOnSuccessful'
+					margin: '5 0 0 0'
 				}
 			],
 			dockedItems: [
 				{
 					xtype: 'container',
-					layout: {
-						type: 'hbox',
-						padding: '5',
-						pack: 'end',
-						align: 'middle'
-					},
+					dock: 'bottom',
+					cls: 'commandpanel',
+					height: 30,
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					height: 30,
-					cls: 'commandpanel',
-					dock: 'bottom',
+					layout: {
+						type: 'hbox',
+						align: 'middle',
+						pack: 'end',
+						padding: '5'
+					},
 					items: [
 						{
 							xtype: 'component',
-							minHeight: 24,
-							minWidth: 100,
+							id: 'downloadify',
 							itemId: 'downloadify',
-							id: 'downloadify'
+							minWidth: 100,
+							minHeight: 24
 						},
 						{
 							xtype: 'natbutton',
-							text: 'Open Repository',
+							itemId: 'btnOpenRepository',
+							minWidth: 100,
 							ui: 'green',
-							minWidth: 100,
-							itemId: 'btnOpenRepository'
+							text: 'Open Repository'
 						},
 						{
 							xtype: 'natbutton',
-							text: 'Close',
+							itemId: 'btnClose',
 							minWidth: 100,
-							itemId: 'btnClose'
+							text: 'Close'
 						}
 					]
 				}

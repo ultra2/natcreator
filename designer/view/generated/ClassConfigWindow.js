@@ -1,115 +1,115 @@
 Ext.define('designer.view.generated.ClassConfigWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ClassConfigWindow',
-	modal: true,
-	title: 'Edit Config',
+	height: 450,
+	width: 446,
+	resizable: false,
 	layout: {
 		type: 'fit'
 	},
-	resizable: false,
-	width: 446,
-	height: 450,
+	title: 'Edit Config',
+	modal: true,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					bodyPadding: 10,
+					itemId: 'ed',
 					defaults: {
 						anchor: '100%',
 						labelWidth: 120
 					},
-					itemId: 'ed',
+					bodyPadding: 10,
 					items: [
 						{
 							xtype: 'natlookupfield',
-							fieldLabel: 'Type',
+							itemId: 'luType',
 							propertyPath: 'type',
-							itemId: 'luType'
+							fieldLabel: 'Type'
 						},
 						{
 							xtype: 'nattextfield',
-							fieldLabel: 'Name',
+							itemId: 'txtName',
 							propertyPath: 'name',
-							itemId: 'txtName'
+							fieldLabel: 'Name'
 						},
 						{
 							xtype: 'nattextfield',
-							fieldLabel: 'Default Value',
+							itemId: 'txtDefaultValue',
 							propertyPath: 'defaultValue',
-							itemId: 'txtDefaultValue'
+							fieldLabel: 'Default Value'
 						},
 						{
 							xtype: 'natcombobox',
-							editable: false,
-							fieldLabel: 'Default Value',
-							propertyPath: 'defaultValue',
-							itemId: 'boolDefaultValue',
 							comboData: [
 								'true',
 								'false'
-							]
+							],
+							itemId: 'boolDefaultValue',
+							propertyPath: 'defaultValue',
+							fieldLabel: 'Default Value',
+							editable: false
 						},
 						{
 							xtype: 'datefield',
-							fieldLabel: 'Default Value',
+							itemId: 'dateDefaultValue',
 							propertyPath: 'defaultValue',
-							itemId: 'dateDefaultValue'
+							fieldLabel: 'Default Value'
 						},
 						{
 							xtype: 'numberfield',
-							anchor: '70%',
-							hideTrigger: true,
-							fieldLabel: 'Default Value',
+							itemId: 'intDefaultValue',
 							propertyPath: 'defaultValue',
-							itemId: 'intDefaultValue'
+							fieldLabel: 'Default Value',
+							hideTrigger: true,
+							anchor: '70%'
 						},
 						{
 							xtype: 'natstringlistfield',
-							fieldLabel: 'Values',
-							height: 50,
+							itemId: 'memoValues',
 							propertyPath: 'values',
-							itemId: 'memoValues'
+							height: 50,
+							fieldLabel: 'Values'
 						},
 						{
 							xtype: 'natstringlistfield',
-							fieldLabel: 'Accepted',
-							height: 50,
+							itemId: 'memoAccepted',
 							propertyPath: 'accepted',
-							itemId: 'memoAccepted'
+							height: 50,
+							fieldLabel: 'Accepted'
 						},
 						{
 							xtype: 'natstringlistfield',
-							fieldLabel: 'Not Accepted',
-							height: 50,
+							itemId: 'memoNotAccepted',
 							propertyPath: 'notAccepted',
-							itemId: 'memoNotAccepted'
+							height: 50,
+							fieldLabel: 'Not Accepted'
 						},
 						{
-							xtype: 'checkboxfield',
-							fieldLabel: 'Dependency',
+							xtype: 'natcheckboxfield',
+							itemId: 'chDependency',
 							propertyPath: 'dependency',
-							itemId: 'chDependency'
+							fieldLabel: 'Dependency'
 						},
 						{
-							xtype: 'checkboxfield',
-							fieldLabel: 'Hidden',
+							xtype: 'natcheckboxfield',
+							itemId: 'chHidden',
 							propertyPath: 'hidden',
-							itemId: 'chHidden'
+							fieldLabel: 'Hidden'
 						},
 						{
-							xtype: 'checkboxfield',
-							fieldLabel: 'Advanced',
+							xtype: 'natcheckboxfield',
+							itemId: 'chAdvanced',
 							propertyPath: 'advanced',
-							itemId: 'chAdvanced'
+							fieldLabel: 'Advanced'
 						},
 						{
 							xtype: 'natstringlistfield',
-							fieldLabel: 'Params',
-							height: 50,
+							itemId: 'memoParams',
 							propertyPath: 'params',
-							itemId: 'memoParams'
+							height: 50,
+							fieldLabel: 'Params'
 						}
 					],
 					layout: {
@@ -120,33 +120,33 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					layout: {
-						type: 'hbox',
-						padding: '5',
-						pack: 'end',
-						align: 'middle'
-					},
+					dock: 'bottom',
+					cls: 'commandpanel',
+					height: 30,
 					defaults: {
 						margins: '0 0 0 5',
 						autoWidth: true
 					},
-					height: 30,
-					cls: 'commandpanel',
-					dock: 'bottom',
+					layout: {
+						type: 'hbox',
+						align: 'middle',
+						pack: 'end',
+						padding: '5'
+					},
 					items: [
 						{
 							xtype: 'natbutton',
-							text: 'Ok',
-							ui: 'green',
+							itemId: 'btnOk',
 							minWidth: 100,
-							itemId: 'btnOk'
+							ui: 'green',
+							text: 'Ok'
 						},
 						{
 							xtype: 'natbutton',
-							text: 'Cancel',
-							ui: 'gray',
+							itemId: 'btnCancel',
 							minWidth: 100,
-							itemId: 'btnCancel'
+							ui: 'gray',
+							text: 'Cancel'
 						}
 					]
 				}

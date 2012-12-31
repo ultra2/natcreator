@@ -1,72 +1,72 @@
 Ext.define('designer.view.generated.CodeGenerationStepsForm', {
 	extend: 'Ext.panel.Panel',
 	alias: 'widget.CodeGenerationStepsForm',
-	title: 'Code Generation Steps',
-	preventHeader: true,
-	closable: true,
 	layout: {
 		type: 'vbox',
 		align: 'stretch'
 	},
+	closable: true,
+	preventHeader: true,
+	title: 'Code Generation Steps',
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					bodyPadding: 10,
 					itemId: 'edSettings',
+					bodyPadding: 10,
 					items: [
 						{
-							xtype: 'checkboxfield',
-							boxLabel: 'Include Template Files Into Generation',
+							xtype: 'natcheckboxfield',
+							itemId: 'chIncludeTemplateFilesIntoGeneration',
 							propertyPath: 'includeTemplateFilesIntoGeneration',
-							itemId: 'chIncludeTemplateFilesIntoGeneration'
+							boxLabel: 'Include Template Files Into Generation'
 						}
 					]
 				},
 				{
 					xtype: 'natform',
-					flex: 1,
+					itemId: 'edConfigs',
 					layout: {
 						type: 'border'
 					},
-					itemId: 'edConfigs',
+					flex: 1,
 					items: [
 						{
 							xtype: 'natgrid',
-							region: 'center',
-							propertyPath: 'hasMany_generationSteps',
 							itemId: 'gridGenerationSteps',
+							propertyPath: 'hasMany_generationSteps',
+							region: 'center',
 							dockedItems: [
 								{
 									xtype: 'toolbar',
-									dock: 'top',
 									itemId: 'tbMain',
+									dock: 'top',
 									items: [
 										{
 											xtype: 'natbutton',
-											tooltip: 'New',
+											itemId: 'btnNew',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
-											itemId: 'btnNew'
+											tooltip: 'New'
 										},
 										{
 											xtype: 'natbutton',
-											tooltip: 'Delete',
+											itemId: 'btnDelete',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
-											itemId: 'btnDelete'
+											tooltip: 'Delete'
 										},
 										{
 											xtype: 'natbutton',
-											tooltip: 'Move Up',
+											itemId: 'btnMoveUp',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/up.png',
-											itemId: 'btnMoveUp'
+											tooltip: 'Move Up'
 										},
 										{
 											xtype: 'natbutton',
-											tooltip: 'Move Down',
+											itemId: 'btnMoveDown',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/down.png',
-											itemId: 'btnMoveDown'
+											tooltip: 'Move Down'
 										}
 									]
 								}
@@ -77,6 +77,10 @@ Ext.define('designer.view.generated.CodeGenerationStepsForm', {
 								},
 								{
 									xtype: 'natlookupcolumn',
+									itemId: 'luGenerator',
+									dataIndex: 'generator_id',
+									width: 300,
+									text: 'Generator',
 									renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
 								var col = this.columns[colIndex];
 								var result = col.field.renderer(value, record);
@@ -85,39 +89,35 @@ Ext.define('designer.view.generated.CodeGenerationStepsForm', {
 								var generator = value.substr(project.length + 1);
 								return "<b><big>" + generator + "</big></b></br>" + project;
 							},
-									text: 'Generator',
-									width: 300,
-									dataIndex: 'generator_id',
-									itemId: 'luGenerator',
 									editor: {
 										xtype: 'natlookupfield'
 									}
 								},
 								{
 									xtype: 'gridcolumn',
-									text: 'Path',
-									width: 300,
 									dataIndex: 'path',
+									width: 300,
+									text: 'Path',
 									editor: {
 										xtype: 'nattextfield'
 									}
 								},
 								{
 									xtype: 'booleancolumn',
-									text: 'Delete Directory',
-									width: 150,
 									dataIndex: 'deleteDirectory',
+									width: 150,
+									text: 'Delete Directory',
 									editor: {
-										xtype: 'checkboxfield'
+										xtype: 'natcheckboxfield'
 									}
 								},
 								{
 									xtype: 'booleancolumn',
-									text: 'Active',
-									width: 100,
 									dataIndex: 'active',
+									width: 100,
+									text: 'Active',
 									editor: {
-										xtype: 'checkboxfield'
+										xtype: 'natcheckboxfield'
 									}
 								}
 							],
@@ -129,22 +129,22 @@ Ext.define('designer.view.generated.CodeGenerationStepsForm', {
 						},
 						{
 							xtype: 'natform',
-							title: 'Step Parameters:',
+							propertyPath: 'hasMany_generationSteps',
+							region: 'south',
+							split: true,
+							height: 150,
+							itemId: 'formGenerationSteps',
 							layout: {
 								type: 'vbox',
 								align: 'stretch'
 							},
-							itemId: 'formGenerationSteps',
-							height: 150,
-							split: true,
-							region: 'south',
-							propertyPath: 'hasMany_generationSteps',
+							title: 'Step Parameters:',
 							items: [
 								{
 									xtype: 'natsourceedit',
-									flex: 1,
+									propertyPath: 'params',
 									parser: 'json',
-									propertyPath: 'params'
+									flex: 1
 								}
 							]
 						}
