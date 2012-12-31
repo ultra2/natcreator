@@ -1,24 +1,24 @@
 Ext.define('designer.view.generated.ChangeTypeWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ChangeTypeWindow',
-	height: 500,
-	width: 800,
+	modal: true,
+	title: 'Change Type',
 	layout: {
 		type: 'fit'
 	},
-	title: 'Change Type',
-	modal: true,
+	width: 800,
+	height: 500,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'nattree',
-					itemId: 'treeAvailableClasses',
-					padding: '2',
-					title: 'Available Classes',
-					forceFit: true,
 					hideHeaders: true,
+					forceFit: true,
+					title: 'Available Classes',
+					padding: '2',
+					itemId: 'treeAvailableClasses',
 					columns: [
 						{
 							xtype: 'treecolumn',
@@ -30,29 +30,29 @@ Ext.define('designer.view.generated.ChangeTypeWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5',
 						minWidth: 80
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnChange',
+							xtype: 'natbutton',
+							text: 'Change',
 							ui: 'green',
-							text: 'Change'
+							itemId: 'btnChange'
 						},
 						{
 							xtype: 'natbutton',
-							itemId: 'btnCancel',
-							text: 'Cancel'
+							text: 'Cancel',
+							itemId: 'btnCancel'
 						}
 					]
 				}

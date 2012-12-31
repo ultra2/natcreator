@@ -1,58 +1,58 @@
 Ext.define('designer.view.generated.GeneratorsForm', {
 	extend: 'NAT.grid.Panel',
 	alias: 'widget.GeneratorsForm',
-	forceFit: true,
-	sortableColumns: false,
 	columnLines: false,
+	sortableColumns: false,
+	forceFit: true,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'top',
-					height: 22,
-					html: '<b>Generators</b>',
-					itemId: 'title',
+					style: 'background: white',
 					padding: '6',
-					style: 'background: white'
+					itemId: 'title',
+					html: '<b>Generators</b>',
+					height: 22,
+					dock: 'top'
 				},
 				{
 					xtype: 'toolbar',
 					dock: 'top',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnNew',
+							xtype: 'natbutton',
+							tooltip: 'New',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
-							tooltip: 'New'
+							itemId: 'btnNew'
 						},
 						{
 							xtype: 'button',
-							itemId: 'btnDelete',
+							tooltip: 'Delete',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
-							tooltip: 'Delete'
+							itemId: 'btnDelete'
 						},
 						{
 							xtype: 'button',
-							itemId: 'btnRename',
+							tooltip: 'Rename',
 							icon: 'https://extsolutions.herokuapp.com/graphics/icon/16/rename.png',
-							tooltip: 'Rename'
+							itemId: 'btnRename'
 						},
 						{
 							xtype: 'button',
-							itemId: 'btnUpdate',
+							tooltip: 'Update',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/clockwise-arrow.png',
-							tooltip: 'Update'
+							itemId: 'btnUpdate'
 						},
 						{
 							xtype: 'tbfill'
 						},
 						{
 							xtype: 'button',
-							itemId: 'btnInstall',
+							tooltip: 'Install',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/download.png',
-							tooltip: 'Install'
+							itemId: 'btnInstall'
 						}
 					]
 				}
@@ -60,9 +60,6 @@ Ext.define('designer.view.generated.GeneratorsForm', {
 			columns: [
 				{
 					xtype: 'gridcolumn',
-					itemId: 'txtName',
-					dataIndex: 'name',
-					text: 'Name',
 					renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
 								var project = value.substr(0, value.indexOf('/'));
 								var generator = value.substr(project.length + 1);
@@ -72,14 +69,17 @@ Ext.define('designer.view.generated.GeneratorsForm', {
 								} else {
 								    return '<span style="color:black"><b><big>' + generator + '</big></b></br></span>';
 								}
-							}
+							},
+					text: 'Name',
+					dataIndex: 'name',
+					itemId: 'txtName'
 				},
 				{
 					xtype: 'gridcolumn',
-					itemId: 'txtGeneratorVersion',
-					width: 30,
+					text: 'Version',
 					dataIndex: 'generatorVersion',
-					text: 'Version'
+					width: 30,
+					itemId: 'txtGeneratorVersion'
 				}
 			]
 		});
