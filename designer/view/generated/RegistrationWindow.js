@@ -23,26 +23,26 @@ Ext.define('designer.view.generated.RegistrationWindow', {
 					itemId: 'edRegistration',
 					items: [
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Username',
 							propertyPath: 'username',
 							itemId: 'txtUsername'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Email',
 							propertyPath: 'email',
 							itemId: 'txtEmail'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Password',
 							inputType: 'password',
 							propertyPath: 'password',
 							itemId: 'txtPassword'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Password again',
 							inputType: 'password',
 							propertyPath: 'confirmPassword',

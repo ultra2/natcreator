@@ -1,52 +1,52 @@
 Ext.define('designer.view.generated.ChangePasswordWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ChangePasswordWindow',
-	modal: true,
-	title: 'Change Password',
+	height: 240,
+	width: 446,
+	resizable: false,
 	layout: {
 		type: 'fit'
 	},
-	resizable: false,
-	width: 446,
-	height: 240,
+	title: 'Change Password',
+	modal: true,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					bodyPadding: 10,
+					itemId: 'edChangePassword',
 					defaults: {
 						anchor: '100%',
 						labelWidth: 140
 					},
-					itemId: 'edChangePassword',
+					bodyPadding: 10,
 					items: [
 						{
 							xtype: 'component',
-							margin: '10 0 10 0',
-							html: 'To reset your password, provide your current password and your new password below.'
+							html: 'To reset your password, provide your current password and your new password below.',
+							margin: '10 0 10 0'
 						},
 						{
-							xtype: 'textfield',
-							fieldLabel: 'Current password',
-							inputType: 'password',
+							xtype: 'nattextfield',
+							itemId: 'txtCurrentPassword',
 							propertyPath: 'currentPassword',
-							itemId: 'txtCurrentPassword'
+							inputType: 'password',
+							fieldLabel: 'Current password'
 						},
 						{
-							xtype: 'textfield',
-							fieldLabel: 'New password',
-							inputType: 'password',
+							xtype: 'nattextfield',
+							itemId: 'txtNewPassword',
 							propertyPath: 'newPassword',
-							itemId: 'txtNewPassword'
+							inputType: 'password',
+							fieldLabel: 'New password'
 						},
 						{
-							xtype: 'textfield',
-							fieldLabel: 'New password again',
-							inputType: 'password',
+							xtype: 'nattextfield',
+							itemId: 'txtConfirmNewPassword',
 							propertyPath: 'confirmNewPassword',
-							itemId: 'txtConfirmNewPassword'
+							inputType: 'password',
+							fieldLabel: 'New password again'
 						}
 					]
 				}
@@ -54,25 +54,25 @@ Ext.define('designer.view.generated.ChangePasswordWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					layout: {
-						type: 'hbox',
-						padding: '5',
-						pack: 'end',
-						align: 'middle'
-					},
+					dock: 'bottom',
+					cls: 'commandpanel',
+					height: 30,
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					height: 30,
-					cls: 'commandpanel',
-					dock: 'bottom',
+					layout: {
+						type: 'hbox',
+						align: 'middle',
+						pack: 'end',
+						padding: '5'
+					},
 					items: [
 						{
 							xtype: 'natbutton',
-							text: 'Change Password',
-							ui: 'green',
+							itemId: 'btnChangePassword',
 							minWidth: 100,
-							itemId: 'btnChangePassword'
+							ui: 'green',
+							text: 'Change Password'
 						}
 					]
 				}

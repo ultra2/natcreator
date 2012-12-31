@@ -23,14 +23,14 @@ Ext.define('designer.view.generated.LoginWindow', {
 					itemId: 'edLogin',
 					items: [
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							labelAlign: 'top',
 							fieldLabel: 'Username',
 							itemId: 'txtUsername',
 							propertyPath: 'username'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							labelAlign: 'top',
 							fieldLabel: 'Password',
 							inputType: 'password',

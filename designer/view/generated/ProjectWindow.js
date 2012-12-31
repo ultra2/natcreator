@@ -91,7 +91,7 @@ Ext.define('designer.view.generated.ProjectWindow', {
 									},
 									items: [
 										{
-											xtype: 'textfield',
+											xtype: 'nattextfield',
 											labelWidth: 40,
 											labelPad: 0,
 											fieldLabel: 'Url',
@@ -114,31 +114,31 @@ Ext.define('designer.view.generated.ProjectWindow', {
 									},
 									items: [
 										{
-											xtype: 'textfield',
+											xtype: 'nattextfield',
 											fieldLabel: 'Server',
 											propertyPath: 'server',
 											itemId: 'txtServer'
 										},
 										{
-											xtype: 'textfield',
+											xtype: 'nattextfield',
 											fieldLabel: 'Port',
 											propertyPath: 'port',
 											itemId: 'intPort'
 										},
 										{
-											xtype: 'textfield',
+											xtype: 'nattextfield',
 											fieldLabel: 'Username',
 											propertyPath: 'username',
 											itemId: 'txtUsername'
 										},
 										{
-											xtype: 'textfield',
+											xtype: 'nattextfield',
 											fieldLabel: 'Password',
 											propertyPath: 'password',
 											itemId: 'txtPassword'
 										},
 										{
-											xtype: 'textfield',
+											xtype: 'nattextfield',
 											fieldLabel: 'Database',
 											propertyPath: 'database',
 											itemId: 'txtDatabase'

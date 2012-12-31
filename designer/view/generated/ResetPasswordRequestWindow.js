@@ -1,37 +1,37 @@
 Ext.define('designer.view.generated.ResetPasswordRequestWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ResetPasswordRequestWindow',
-	modal: true,
-	title: 'Reset Password (Step 2/1)',
+	height: 200,
+	width: 446,
+	resizable: false,
 	layout: {
 		type: 'fit'
 	},
-	resizable: false,
-	width: 446,
-	height: 200,
+	title: 'Reset Password (Step 2/1)',
+	modal: true,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					bodyPadding: 10,
+					itemId: 'edResetPasswordRequest',
 					defaults: {
 						anchor: '100%',
 						labelWidth: 120
 					},
-					itemId: 'edResetPasswordRequest',
+					bodyPadding: 10,
 					items: [
 						{
 							xtype: 'component',
-							margin: '20 0 20 0',
-							html: 'Please enter your email address below and we\'ll send you informations to reset your password.'
+							html: 'Please enter your email address below and we\'ll send you informations to reset your password.',
+							margin: '20 0 20 0'
 						},
 						{
-							xtype: 'textfield',
-							fieldLabel: 'Email',
+							xtype: 'nattextfield',
+							itemId: 'txtEmail',
 							propertyPath: 'email',
-							itemId: 'txtEmail'
+							fieldLabel: 'Email'
 						}
 					]
 				}
@@ -39,25 +39,25 @@ Ext.define('designer.view.generated.ResetPasswordRequestWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					layout: {
-						type: 'hbox',
-						padding: '5',
-						pack: 'end',
-						align: 'middle'
-					},
+					dock: 'bottom',
+					cls: 'commandpanel',
+					height: 30,
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					height: 30,
-					cls: 'commandpanel',
-					dock: 'bottom',
+					layout: {
+						type: 'hbox',
+						align: 'middle',
+						pack: 'end',
+						padding: '5'
+					},
 					items: [
 						{
 							xtype: 'natbutton',
-							text: 'Next',
-							ui: 'green',
+							itemId: 'btnResetPasswordRequest',
 							minWidth: 100,
-							itemId: 'btnResetPasswordRequest'
+							ui: 'green',
+							text: 'Next'
 						}
 					]
 				}

@@ -1,38 +1,38 @@
 Ext.define('designer.view.generated.CreateToolboxGroupWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.CreateToolboxGroupWindow',
-	height: 166,
-	width: 400,
-	resizable: false,
-	title: 'New Toolbox Group',
+	modal: true,
 	layout: {
 		type: 'fit'
 	},
-	modal: true,
+	title: 'New Toolbox Group',
+	resizable: false,
+	width: 400,
+	height: 166,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'ed',
+					bodyPadding: 10,
 					layout: {
 						type: 'vbox',
 						align: 'stretch'
 					},
-					bodyPadding: 10,
+					itemId: 'ed',
 					items: [
 						{
 							xtype: 'component',
-							margin: '5 0 5 0',
-							html: 'Type a name for the new toolbox group'
+							html: 'Type a name for the new toolbox group',
+							margin: '5 0 5 0'
 						},
 						{
-							xtype: 'textfield',
-							itemId: 'txtName',
-							propertyPath: 'name',
+							xtype: 'nattextfield',
+							labelWidth: 60,
 							fieldLabel: 'Name',
-							labelWidth: 60
+							propertyPath: 'name',
+							itemId: 'txtName'
 						}
 					]
 				}
@@ -40,29 +40,29 @@ Ext.define('designer.view.generated.CreateToolboxGroupWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5',
 						minWidth: 80
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
 							xtype: 'natbutton',
-							itemId: 'btnOk',
+							text: 'Ok',
 							ui: 'green',
-							text: 'Ok'
+							itemId: 'btnOk'
 						},
 						{
 							xtype: 'natbutton',
-							itemId: 'btnCancel',
-							text: 'Cancel'
+							text: 'Cancel',
+							itemId: 'btnCancel'
 						}
 					]
 				}

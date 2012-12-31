@@ -1,80 +1,80 @@
 Ext.define('designer.view.generated.CodeGenerationTargetForm', {
 	extend: 'Ext.panel.Panel',
 	alias: 'widget.CodeGenerationTargetForm',
-	title: 'Code Generation Target',
-	closable: true,
-	preventHeader: true,
-	bodyPadding: 10,
 	layout: {
 		type: 'fit'
 	},
+	bodyPadding: 10,
+	preventHeader: true,
+	closable: true,
+	title: 'Code Generation Target',
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edSettings',
 					layout: {
 						type: 'vbox',
 						align: 'stretch'
 					},
+					itemId: 'edSettings',
 					items: [
 						{
 							xtype: 'natfieldset',
-							itemId: 'fsZip',
-							height: 100,
 							title: 'Zip',
+							height: 100,
+							itemId: 'fsZip',
 							items: [
 								{
 									xtype: 'natradiofield',
-									itemId: 'rdZip',
-									propertyPath: 'generationTarget',
+									boxLabel: 'Download the generated source code as zip file',
 									propertyValue: 'zip',
-									boxLabel: 'Download the generated source code as zip file'
+									propertyPath: 'generationTarget',
+									itemId: 'rdZip'
 								}
 							]
 						},
 						{
 							xtype: 'natfieldset',
-							itemId: 'fsGithub',
-							height: 200,
 							title: 'Github',
+							height: 200,
+							itemId: 'fsGithub',
 							items: [
 								{
 									xtype: 'natradiofield',
-									itemId: 'rdGithub',
-									propertyPath: 'generationTarget',
+									boxLabel: 'Export the generated source code to Github repository',
 									propertyValue: 'github',
-									boxLabel: 'Export the generated source code to Github repository'
+									propertyPath: 'generationTarget',
+									itemId: 'rdGithub'
 								},
 								{
 									xtype: 'label',
-									itemId: 'lGihubInfo',
+									maxWidth: 450,
 									margin: '10 0 0 0',
-									maxWidth: 450
+									itemId: 'lGihubInfo'
 								},
 								{
 									xtype: 'natbutton',
-									itemId: 'btnSetupRepository',
-									maxWidth: 300,
+									text: 'Allow access',
 									ui: 'green',
-									text: 'Allow access'
+									maxWidth: 300,
+									itemId: 'btnSetupRepository'
 								},
 								{
-									xtype: 'textfield',
-									itemId: 'txtGithubRepository',
-									propertyPath: 'githubRepository',
-									margin: '10 0 0 0',
+									xtype: 'nattextfield',
+									fieldLabel: 'Repository',
 									width: 400,
-									fieldLabel: 'Repository'
+									margin: '10 0 0 0',
+									propertyPath: 'githubRepository',
+									itemId: 'txtGithubRepository'
 								},
 								{
 									xtype: 'natbutton',
-									itemId: 'btnOpenRepository',
-									maxWidth: 300,
+									text: 'Open Repository',
 									ui: 'green',
-									text: 'Open Repository'
+									maxWidth: 300,
+									itemId: 'btnOpenRepository'
 								}
 							]
 						}

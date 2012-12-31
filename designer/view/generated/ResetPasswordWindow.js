@@ -28,27 +28,27 @@ Ext.define('designer.view.generated.ResetPasswordWindow', {
 							html: 'We sent you an email containing your username and a pin code. Please type them here.'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Pin code',
 							inputType: 'password',
 							propertyPath: 'pinCode',
 							itemId: 'txtPinCode'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Username',
 							propertyPath: 'username',
 							itemId: 'txtUsername'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'New password',
 							inputType: 'password',
 							propertyPath: 'newPassword',
 							itemId: 'txtNewPassword'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'New password again',
 							inputType: 'password',
 							propertyPath: 'confirmNewPassword',

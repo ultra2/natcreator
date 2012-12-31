@@ -29,13 +29,13 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							itemId: 'luType'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Name',
 							propertyPath: 'name',
 							itemId: 'txtName'
 						},
 						{
-							xtype: 'textfield',
+							xtype: 'nattextfield',
 							fieldLabel: 'Default Value',
 							propertyPath: 'defaultValue',
 							itemId: 'txtDefaultValue'

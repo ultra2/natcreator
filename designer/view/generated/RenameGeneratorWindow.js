@@ -1,38 +1,38 @@
 Ext.define('designer.view.generated.RenameGeneratorWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.RenameGeneratorWindow',
-	height: 150,
-	width: 400,
-	resizable: false,
+	modal: true,
+	title: 'Rename Generator',
 	layout: {
 		type: 'fit'
 	},
-	title: 'Rename Generator',
-	modal: true,
+	resizable: false,
+	width: 400,
+	height: 150,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'ed',
+					bodyPadding: 10,
 					layout: {
 						type: 'vbox',
 						align: 'stretch'
 					},
-					bodyPadding: 10,
+					itemId: 'ed',
 					items: [
 						{
 							xtype: 'component',
-							margin: '2 0 2 0',
-							html: 'Type a new name for the generator'
+							html: 'Type a new name for the generator',
+							margin: '2 0 2 0'
 						},
 						{
-							xtype: 'textfield',
-							itemId: 'txtName',
-							propertyPath: 'name',
+							xtype: 'nattextfield',
+							labelWidth: 60,
 							fieldLabel: 'Name',
-							labelWidth: 60
+							propertyPath: 'name',
+							itemId: 'txtName'
 						}
 					]
 				}
@@ -40,30 +40,30 @@ Ext.define('designer.view.generated.RenameGeneratorWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5',
 						autoWidth: true
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					height: 30,
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
 							xtype: 'natbutton',
-							itemId: 'btnSave',
+							text: 'Save',
 							ui: 'green',
-							text: 'Save'
+							itemId: 'btnSave'
 						},
 						{
 							xtype: 'natbutton',
-							itemId: 'btnCancel',
-							text: 'Cancel'
+							text: 'Cancel',
+							itemId: 'btnCancel'
 						}
 					]
 				}
