@@ -1,32 +1,32 @@
 Ext.define('designer.view.generated.EnvironmentSettingsForm', {
 	extend: 'Ext.panel.Panel',
 	alias: 'widget.EnvironmentSettingsForm',
-	title: 'Environment Settings',
-	preventHeader: true,
-	closable: true,
 	layout: {
 		type: 'fit'
 	},
+	closable: true,
+	preventHeader: true,
+	title: 'Environment Settings',
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edSettings',
+					bodyPadding: 10,
 					defaults: {
 						labelPad: 0
 					},
-					bodyPadding: 10,
+					itemId: 'edSettings',
 					items: [
 						{
-							xtype: 'combobox',
-							itemId: 'cbFontSize',
-							propertyPath: 'fontSize',
-							width: 160,
-							labelWidth: 80,
+							xtype: 'natcombobox',
+							editable: false,
 							fieldLabel: 'Font Size',
-							editable: false
+							labelWidth: 80,
+							width: 160,
+							propertyPath: 'fontSize',
+							itemId: 'cbFontSize'
 						}
 					]
 				},
