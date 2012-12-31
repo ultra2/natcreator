@@ -76,7 +76,7 @@ Ext.define('designer.view.generated.CodeGenerationStepsForm', {
 									xtype: 'rownumberer'
 								},
 								{
-									xtype: 'lookupcolumn',
+									xtype: 'natlookupcolumn',
 									renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
 								var col = this.columns[colIndex];
 								var result = col.field.renderer(value, record);
