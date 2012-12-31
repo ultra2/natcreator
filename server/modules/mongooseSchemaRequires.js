@@ -66,6 +66,7 @@ exports.RPAcquireGenerator = require('../schemas/RPAcquireGenerator').RPAcquireG
 exports.RPCreateClassConfig = require('../schemas/RPCreateClassConfig').RPCreateClassConfig;
 exports.RPDeleteClassConfig = require('../schemas/RPDeleteClassConfig').RPDeleteClassConfig;
 exports.RPUpdateClassConfig = require('../schemas/RPUpdateClassConfig').RPUpdateClassConfig;
+exports.RPChangeType = require('../schemas/RPChangeType').RPChangeType;
 exports.ROAccountInfo = require('../schemas/ROAccountInfo').ROAccountInfo;
 exports.ROGithubInfo = require('../schemas/ROGithubInfo').ROGithubInfo;
 exports.QueryResult = require('../schemas/QueryResult').QueryResult;
@@ -123,6 +124,7 @@ exports.Models = [
 	,{name: 'RPCreateClassConfig', schema: exports.RPCreateClassConfig, collection: 'RequestPost'}
 	,{name: 'RPDeleteClassConfig', schema: exports.RPDeleteClassConfig, collection: 'RequestPost'}
 	,{name: 'RPUpdateClassConfig', schema: exports.RPUpdateClassConfig, collection: 'RequestPost'}
+	,{name: 'RPChangeType', schema: exports.RPChangeType, collection: 'RequestPost'}
 	,{name: 'ROAccountInfo', schema: exports.ROAccountInfo, collection: 'RequestObject'}
 	,{name: 'ROGithubInfo', schema: exports.ROGithubInfo, collection: 'RequestObject'}
 ];
