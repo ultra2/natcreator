@@ -28,19 +28,19 @@ Ext.define('designer.view.generated.GeneratorsForm', {
 							itemId: 'btnNew'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							tooltip: 'Delete',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
 							itemId: 'btnDelete'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							tooltip: 'Rename',
 							icon: 'https://extsolutions.herokuapp.com/graphics/icon/16/rename.png',
 							itemId: 'btnRename'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							tooltip: 'Update',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/clockwise-arrow.png',
 							itemId: 'btnUpdate'
@@ -49,7 +49,7 @@ Ext.define('designer.view.generated.GeneratorsForm', {
 							xtype: 'tbfill'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							tooltip: 'Install',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/download.png',
 							itemId: 'btnInstall'
