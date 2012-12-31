@@ -55,14 +55,14 @@ Ext.define('designer.view.generated.InstallGeneratorWindow', {
 					},
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnInstall',
 							minWidth: 100,
 							ui: 'green',
 							text: 'Install'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnCancel',
 							minWidth: 100,
 							text: 'Cancel'

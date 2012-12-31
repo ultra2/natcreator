@@ -22,13 +22,13 @@ Ext.define('designer.view.generated.FilesForm', {
 					dock: 'top',
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnExpandAll',
 							icon: 'https://extsolutions.herokuapp.com/graphics/IconExperience/16/text_tree.png',
 							tooltip: 'Expand All'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnGenerate',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/lightning.png',
 							tooltip: 'Generate files by running generation steps'

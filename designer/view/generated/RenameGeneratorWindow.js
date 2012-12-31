@@ -55,13 +55,13 @@ Ext.define('designer.view.generated.RenameGeneratorWindow', {
 					},
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnSave',
 							ui: 'green',
 							text: 'Save'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnCancel',
 							text: 'Cancel'
 						}

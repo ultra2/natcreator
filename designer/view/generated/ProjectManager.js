@@ -1,36 +1,36 @@
 Ext.define('designer.view.generated.ProjectManager', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ProjectManager',
-	height: 500,
-	width: 1000,
+	modal: true,
+	title: 'Project Manager',
+	closable: false,
 	layout: {
 		type: 'fit'
 	},
-	closable: false,
-	title: 'Project Manager',
-	modal: true,
+	width: 1000,
+	height: 500,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natgrid',
-					itemId: 'gridMain',
 					forceFit: true,
+					itemId: 'gridMain',
 					columns: [
 						{
 							xtype: 'gridcolumn',
-							dataIndex: 'name',
-							text: 'Name',
 							renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
 								if (record.get('isTemplate')) value += ' (template)';
 								return value;
-							}
+							},
+							text: 'Name',
+							dataIndex: 'name'
 						},
 						{
 							xtype: 'gridcolumn',
-							dataIndex: 'roleName',
-							text: 'Role'
+							text: 'Role',
+							dataIndex: 'roleName'
 						}
 					]
 				}
@@ -38,66 +38,66 @@ Ext.define('designer.view.generated.ProjectManager', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'top',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '2',
+						align: 'stretch'
+					},
 					defaults: {
 						width: 100,
 						margin: '0 5 0 0'
 					},
-					layout: {
-						type: 'hbox',
-						align: 'stretch',
-						padding: '2'
-					},
+					height: 30,
+					dock: 'top',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnNew',
+							xtype: 'natbutton',
+							text: 'New',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
-							text: 'New'
+							itemId: 'btnNew'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnDelete',
+							xtype: 'natbutton',
+							text: 'Delete',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
-							text: 'Delete'
+							itemId: 'btnDelete'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnRename',
-							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/edit.png',
+							xtype: 'natbutton',
+							hidden: true,
 							text: 'Rename',
-							hidden: true
+							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/edit.png',
+							itemId: 'btnRename'
 						}
 					]
 				},
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					height: 30,
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnOpen',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'Open',
 							ui: 'green',
-							text: 'Open'
+							minWidth: 100,
+							itemId: 'btnOpen'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnCancel',
+							xtype: 'natbutton',
+							text: 'Cancel',
 							minWidth: 100,
-							text: 'Cancel'
+							itemId: 'btnCancel'
 						}
 					]
 				}

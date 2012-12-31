@@ -45,13 +45,13 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 					},
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnAddClass',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/right1.png',
 							tooltip: 'Add class to toolbox group'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnRemoveClass',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/left.png',
 							tooltip: 'Remove class from toolbox group'
@@ -95,13 +95,13 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 							labelWidth: 40
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnNewGroup',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
 							tooltip: 'Create new toolbox group'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnDeleteGroup',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
 							tooltip: 'Delete a toolbox group'
@@ -123,14 +123,14 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 					},
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnSave',
 							minWidth: 100,
 							ui: 'green',
 							text: 'Save'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnCancel',
 							minWidth: 100,
 							text: 'Cancel'

@@ -34,13 +34,13 @@ Ext.define('designer.view.generated.InspectorForm', {
 							tooltip: 'Delete'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnEditConfigs',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/edit.png',
 							tooltip: 'Edit Configs'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnExpandAll',
 							icon: 'https://extsolutions.herokuapp.com/graphics/IconExperience/16/text_tree.png',
 							tooltip: 'Expand All'

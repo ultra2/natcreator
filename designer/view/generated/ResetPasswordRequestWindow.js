@@ -1,37 +1,37 @@
 Ext.define('designer.view.generated.ResetPasswordRequestWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ResetPasswordRequestWindow',
-	height: 200,
-	width: 446,
-	resizable: false,
+	modal: true,
+	title: 'Reset Password (Step 2/1)',
 	layout: {
 		type: 'fit'
 	},
-	title: 'Reset Password (Step 2/1)',
-	modal: true,
+	resizable: false,
+	width: 446,
+	height: 200,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edResetPasswordRequest',
+					bodyPadding: 10,
 					defaults: {
 						anchor: '100%',
 						labelWidth: 120
 					},
-					bodyPadding: 10,
+					itemId: 'edResetPasswordRequest',
 					items: [
 						{
 							xtype: 'component',
-							html: 'Please enter your email address below and we\'ll send you informations to reset your password.',
-							margin: '20 0 20 0'
+							margin: '20 0 20 0',
+							html: 'Please enter your email address below and we\'ll send you informations to reset your password.'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtEmail',
+							fieldLabel: 'Email',
 							propertyPath: 'email',
-							fieldLabel: 'Email'
+							itemId: 'txtEmail'
 						}
 					]
 				}
@@ -39,25 +39,25 @@ Ext.define('designer.view.generated.ResetPasswordRequestWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					height: 30,
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnResetPasswordRequest',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'Next',
 							ui: 'green',
-							text: 'Next'
+							minWidth: 100,
+							itemId: 'btnResetPasswordRequest'
 						}
 					]
 				}

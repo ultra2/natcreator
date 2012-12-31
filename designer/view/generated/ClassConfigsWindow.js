@@ -23,19 +23,19 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 							dock: 'top',
 							items: [
 								{
-									xtype: 'button',
+									xtype: 'natbutton',
 									itemId: 'btnNew',
 									icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
 									tooltip: 'New'
 								},
 								{
-									xtype: 'button',
+									xtype: 'natbutton',
 									itemId: 'btnDelete',
 									icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
 									tooltip: 'Delete'
 								},
 								{
-									xtype: 'button',
+									xtype: 'natbutton',
 									itemId: 'btnEdit',
 									icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/edit.png',
 									tooltip: 'Edit'
@@ -92,7 +92,7 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 					cls: 'commandpanel',
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnClose',
 							minWidth: 100,
 							ui: 'gray',

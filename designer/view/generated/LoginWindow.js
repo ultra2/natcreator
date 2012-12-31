@@ -1,46 +1,46 @@
 Ext.define('designer.view.generated.LoginWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.LoginWindow',
-	height: 220,
-	width: 446,
-	resizable: false,
-	title: 'Log In',
-	modal: true,
 	layout: {
 		type: 'fit'
 	},
+	modal: true,
+	title: 'Log In',
+	resizable: false,
+	width: 446,
+	height: 220,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edLogin',
+					bodyPadding: 10,
 					defaults: {
 						anchor: '100%',
 						labelWidth: 120
 					},
-					bodyPadding: 10,
+					itemId: 'edLogin',
 					items: [
 						{
 							xtype: 'textfield',
-							propertyPath: 'username',
-							itemId: 'txtUsername',
+							labelAlign: 'top',
 							fieldLabel: 'Username',
-							labelAlign: 'top'
+							itemId: 'txtUsername',
+							propertyPath: 'username'
 						},
 						{
 							xtype: 'textfield',
-							propertyPath: 'password',
-							itemId: 'txtPassword',
-							inputType: 'password',
+							labelAlign: 'top',
 							fieldLabel: 'Password',
-							labelAlign: 'top'
+							inputType: 'password',
+							itemId: 'txtPassword',
+							propertyPath: 'password'
 						},
 						{
 							xtype: 'checkboxfield',
-							propertyPath: 'rememberMe',
-							fieldLabel: 'Remember me'
+							fieldLabel: 'Remember me',
+							propertyPath: 'rememberMe'
 						}
 					]
 				}
@@ -48,39 +48,39 @@ Ext.define('designer.view.generated.LoginWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					height: 30,
-					dock: 'bottom',
-					cls: 'commandpanel',
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5',
 						autoWidth: true
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					cls: 'commandpanel',
+					dock: 'bottom',
+					height: 30,
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnResetPasswordRequest',
+							xtype: 'natbutton',
+							text: 'Can\'t access your account?',
 							ui: 'blue',
-							text: 'Can\'t access your account?'
+							itemId: 'btnResetPasswordRequest'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnRegister',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'Register',
 							ui: 'green',
-							text: 'Register'
+							minWidth: 100,
+							itemId: 'btnRegister'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnLogin',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'Log In',
 							ui: 'green',
-							text: 'Log In'
+							minWidth: 100,
+							itemId: 'btnLogin'
 						}
 					]
 				}

@@ -1,58 +1,58 @@
 Ext.define('designer.view.generated.RegistrationWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.RegistrationWindow',
-	height: 300,
-	width: 446,
-	resizable: false,
+	modal: true,
+	title: 'Create a New Account',
 	layout: {
 		type: 'fit'
 	},
-	title: 'Create a New Account',
-	modal: true,
+	resizable: false,
+	width: 446,
+	height: 300,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edRegistration',
+					bodyPadding: 10,
 					defaults: {
 						anchor: '100%',
 						labelWidth: 120
 					},
-					bodyPadding: 10,
+					itemId: 'edRegistration',
 					items: [
 						{
 							xtype: 'textfield',
-							itemId: 'txtUsername',
+							fieldLabel: 'Username',
 							propertyPath: 'username',
-							fieldLabel: 'Username'
+							itemId: 'txtUsername'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtEmail',
+							fieldLabel: 'Email',
 							propertyPath: 'email',
-							fieldLabel: 'Email'
+							itemId: 'txtEmail'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtPassword',
+							fieldLabel: 'Password',
+							inputType: 'password',
 							propertyPath: 'password',
-							inputType: 'password',
-							fieldLabel: 'Password'
+							itemId: 'txtPassword'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtConfirmPassword',
-							propertyPath: 'confirmPassword',
+							fieldLabel: 'Password again',
 							inputType: 'password',
-							fieldLabel: 'Password again'
+							propertyPath: 'confirmPassword',
+							itemId: 'txtConfirmPassword'
 						},
 						{
 							xtype: 'component',
-							cls: 'small-label',
+							margin: '20 0 20 0',
 							html: 'By clicking on \'I accept\' below you are agreeing to the <a href="http://www.extsolutions.net/#web.Terms" target="_blank">Terms of Service</a> and the <a href="http://www.extsolutions.net/#web.Privacy" target="_blank">Privacy Policy</a>.',
-							margin: '20 0 20 0'
+							cls: 'small-label'
 						}
 					]
 				}
@@ -60,25 +60,25 @@ Ext.define('designer.view.generated.RegistrationWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					height: 30,
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnRegister',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'I accept. Create my account.',
 							ui: 'green',
-							text: 'I accept. Create my account.'
+							minWidth: 100,
+							itemId: 'btnRegister'
 						}
 					]
 				}

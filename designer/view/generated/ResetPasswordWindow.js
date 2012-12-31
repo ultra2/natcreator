@@ -1,58 +1,58 @@
 Ext.define('designer.view.generated.ResetPasswordWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ResetPasswordWindow',
-	height: 280,
-	width: 446,
-	resizable: false,
+	modal: true,
+	title: 'Reset Password (Step 2/2)',
 	layout: {
 		type: 'fit'
 	},
-	title: 'Reset Password (Step 2/2)',
-	modal: true,
+	resizable: false,
+	width: 446,
+	height: 280,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edResetPassword',
+					bodyPadding: 10,
 					defaults: {
 						anchor: '100%',
 						labelWidth: 140
 					},
-					bodyPadding: 10,
+					itemId: 'edResetPassword',
 					items: [
 						{
 							xtype: 'component',
-							html: 'We sent you an email containing your username and a pin code. Please type them here.',
-							margin: '10 0 10 0'
+							margin: '10 0 10 0',
+							html: 'We sent you an email containing your username and a pin code. Please type them here.'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtPinCode',
+							fieldLabel: 'Pin code',
+							inputType: 'password',
 							propertyPath: 'pinCode',
-							inputType: 'password',
-							fieldLabel: 'Pin code'
+							itemId: 'txtPinCode'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtUsername',
+							fieldLabel: 'Username',
 							propertyPath: 'username',
-							fieldLabel: 'Username'
+							itemId: 'txtUsername'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtNewPassword',
+							fieldLabel: 'New password',
+							inputType: 'password',
 							propertyPath: 'newPassword',
-							inputType: 'password',
-							fieldLabel: 'New password'
+							itemId: 'txtNewPassword'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtConfirmNewPassword',
-							propertyPath: 'confirmNewPassword',
+							fieldLabel: 'New password again',
 							inputType: 'password',
-							fieldLabel: 'New password again'
+							propertyPath: 'confirmNewPassword',
+							itemId: 'txtConfirmNewPassword'
 						}
 					]
 				}
@@ -60,25 +60,25 @@ Ext.define('designer.view.generated.ResetPasswordWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					height: 30,
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnResetPassword',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'Save Password',
 							ui: 'green',
-							text: 'Save Password'
+							minWidth: 100,
+							itemId: 'btnResetPassword'
 						}
 					]
 				}

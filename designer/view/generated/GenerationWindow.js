@@ -53,14 +53,14 @@ Ext.define('designer.view.generated.GenerationWindow', {
 							minHeight: 24
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnOpenRepository',
 							minWidth: 100,
 							ui: 'green',
 							text: 'Open Repository'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnClose',
 							minWidth: 100,
 							text: 'Close'

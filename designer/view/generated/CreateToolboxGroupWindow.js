@@ -54,13 +54,13 @@ Ext.define('designer.view.generated.CreateToolboxGroupWindow', {
 					},
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnOk',
 							ui: 'green',
 							text: 'Ok'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnCancel',
 							text: 'Cancel'
 						}

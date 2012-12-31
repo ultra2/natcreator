@@ -45,25 +45,25 @@ Ext.define('designer.view.generated.CodeGenerationStepsForm', {
 									dock: 'top',
 									items: [
 										{
-											xtype: 'button',
+											xtype: 'natbutton',
 											itemId: 'btnNew',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
 											tooltip: 'New'
 										},
 										{
-											xtype: 'button',
+											xtype: 'natbutton',
 											itemId: 'btnDelete',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
 											tooltip: 'Delete'
 										},
 										{
-											xtype: 'button',
+											xtype: 'natbutton',
 											itemId: 'btnMoveUp',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/up.png',
 											tooltip: 'Move Up'
 										},
 										{
-											xtype: 'button',
+											xtype: 'natbutton',
 											itemId: 'btnMoveDown',
 											icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/down.png',
 											tooltip: 'Move Down'

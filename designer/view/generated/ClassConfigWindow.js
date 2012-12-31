@@ -131,14 +131,14 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 					},
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnOk',
 							minWidth: 100,
 							ui: 'green',
 							text: 'Ok'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnCancel',
 							minWidth: 100,
 							ui: 'gray',

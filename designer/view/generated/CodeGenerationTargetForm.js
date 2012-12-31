@@ -55,7 +55,7 @@ Ext.define('designer.view.generated.CodeGenerationTargetForm', {
 									maxWidth: 450
 								},
 								{
-									xtype: 'button',
+									xtype: 'natbutton',
 									itemId: 'btnSetupRepository',
 									maxWidth: 300,
 									ui: 'green',
@@ -70,7 +70,7 @@ Ext.define('designer.view.generated.CodeGenerationTargetForm', {
 									fieldLabel: 'Repository'
 								},
 								{
-									xtype: 'button',
+									xtype: 'natbutton',
 									itemId: 'btnOpenRepository',
 									maxWidth: 300,
 									ui: 'green',

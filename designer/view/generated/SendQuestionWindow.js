@@ -1,44 +1,44 @@
 Ext.define('designer.view.generated.SendQuestionWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.SendQuestionWindow',
-	height: 500,
-	width: 600,
+	resizable: false,
+	modal: true,
+	title: 'Request feature / Ask Question',
 	layout: {
 		type: 'fit'
 	},
-	title: 'Request feature / Ask Question',
-	modal: true,
-	resizable: false,
+	width: 600,
+	height: 500,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edSendQuestion',
+					bodyPadding: 10,
+					layout: {
+						type: 'vbox',
+						align: 'stretch'
+					},
 					defaults: {
 						anchor: '100%',
 						labelWidth: 120,
 						labelAlign: 'top'
 					},
-					layout: {
-						type: 'vbox',
-						align: 'stretch'
-					},
-					bodyPadding: 10,
+					itemId: 'edSendQuestion',
 					items: [
 						{
 							xtype: 'textfield',
-							itemId: 'txtSubject',
+							fieldLabel: 'Subject',
 							propertyPath: 'subject',
-							fieldLabel: 'Subject'
+							itemId: 'txtSubject'
 						},
 						{
 							xtype: 'textarea',
-							itemId: 'txtQuestion',
-							propertyPath: 'question',
+							flex: 1,
 							fieldLabel: 'Question',
-							flex: 1
+							propertyPath: 'question',
+							itemId: 'txtQuestion'
 						}
 					]
 				}
@@ -46,25 +46,25 @@ Ext.define('designer.view.generated.SendQuestionWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					height: 30,
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnSendQuestion',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'Send Request',
 							ui: 'green',
-							text: 'Send Request'
+							minWidth: 100,
+							itemId: 'btnSendQuestion'
 						}
 					]
 				}

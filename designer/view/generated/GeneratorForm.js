@@ -1,33 +1,33 @@
 Ext.define('designer.view.generated.GeneratorForm', {
 	extend: 'NAT.form.Panel',
 	alias: 'widget.GeneratorForm',
-	closable: true,
-	preventHeader: true,
 	layout: {
 		type: 'vbox',
 		align: 'stretch'
 	},
+	preventHeader: true,
+	closable: true,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'nattabpanel',
-					itemId: 'tabGenerator',
-					flex: 1,
 					tabPosition: 'bottom',
+					flex: 1,
+					itemId: 'tabGenerator',
 					items: [
 						{
 							xtype: 'natsourceedit',
-							itemId: 'srcSource',
+							title: 'Source',
 							propertyPath: 'source',
-							title: 'Source'
+							itemId: 'srcSource'
 						},
 						{
 							xtype: 'natsourceedit',
-							itemId: 'srcSharedSource',
+							title: 'Shared Source',
 							propertyPath: 'sharedSource',
-							title: 'Shared Source'
+							itemId: 'srcSharedSource'
 						}
 					]
 				}
@@ -35,46 +35,46 @@ Ext.define('designer.view.generated.GeneratorForm', {
 			dockedItems: [
 				{
 					xtype: 'toolbar',
-					dock: 'top',
 					itemId: 'tbMain',
+					dock: 'top',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnUndo',
+							xtype: 'natbutton',
+							tooltip: 'Undo',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/undo.png',
-							tooltip: 'Undo'
+							itemId: 'btnUndo'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnRedo',
+							xtype: 'natbutton',
+							tooltip: 'Redo',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/redo.png',
-							tooltip: 'Redo'
+							itemId: 'btnRedo'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnHelp',
+							xtype: 'natbutton',
+							tooltip: 'Help',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/help.png',
-							tooltip: 'Help'
+							itemId: 'btnHelp'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnEdit',
+							xtype: 'natbutton',
+							tooltip: 'Edit',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/edit.png',
-							tooltip: 'Edit'
+							itemId: 'btnEdit'
 						},
 						{
 							xtype: 'tbfill'
 						},
 						{
-							xtype: 'button',
-							itemId: 'btnAcceptSource',
+							xtype: 'natbutton',
+							tooltip: 'Overrides the shared source of this generator and increases the version number.',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/code-accept.png',
-							tooltip: 'Overrides the shared source of this generator and increases the version number.'
+							itemId: 'btnAcceptSource'
 						},
 						{
 							xtype: 'tbtext',
-							itemId: 'txtGeneratorVersion',
-							text: 'Version: 1.0'
+							text: 'Version: 1.0',
+							itemId: 'txtGeneratorVersion'
 						}
 					]
 				}

@@ -1,52 +1,52 @@
 Ext.define('designer.view.generated.ChangePasswordWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ChangePasswordWindow',
-	height: 240,
-	width: 446,
-	resizable: false,
+	modal: true,
+	title: 'Change Password',
 	layout: {
 		type: 'fit'
 	},
-	title: 'Change Password',
-	modal: true,
+	resizable: false,
+	width: 446,
+	height: 240,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'natform',
-					itemId: 'edChangePassword',
+					bodyPadding: 10,
 					defaults: {
 						anchor: '100%',
 						labelWidth: 140
 					},
-					bodyPadding: 10,
+					itemId: 'edChangePassword',
 					items: [
 						{
 							xtype: 'component',
-							html: 'To reset your password, provide your current password and your new password below.',
-							margin: '10 0 10 0'
+							margin: '10 0 10 0',
+							html: 'To reset your password, provide your current password and your new password below.'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtCurrentPassword',
+							fieldLabel: 'Current password',
+							inputType: 'password',
 							propertyPath: 'currentPassword',
-							inputType: 'password',
-							fieldLabel: 'Current password'
+							itemId: 'txtCurrentPassword'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtNewPassword',
+							fieldLabel: 'New password',
+							inputType: 'password',
 							propertyPath: 'newPassword',
-							inputType: 'password',
-							fieldLabel: 'New password'
+							itemId: 'txtNewPassword'
 						},
 						{
 							xtype: 'textfield',
-							itemId: 'txtConfirmNewPassword',
-							propertyPath: 'confirmNewPassword',
+							fieldLabel: 'New password again',
 							inputType: 'password',
-							fieldLabel: 'New password again'
+							propertyPath: 'confirmNewPassword',
+							itemId: 'txtConfirmNewPassword'
 						}
 					]
 				}
@@ -54,25 +54,25 @@ Ext.define('designer.view.generated.ChangePasswordWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
-					dock: 'bottom',
-					cls: 'commandpanel',
-					height: 30,
+					layout: {
+						type: 'hbox',
+						padding: '5',
+						pack: 'end',
+						align: 'middle'
+					},
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					layout: {
-						type: 'hbox',
-						align: 'middle',
-						pack: 'end',
-						padding: '5'
-					},
+					height: 30,
+					cls: 'commandpanel',
+					dock: 'bottom',
 					items: [
 						{
-							xtype: 'button',
-							itemId: 'btnChangePassword',
-							minWidth: 100,
+							xtype: 'natbutton',
+							text: 'Change Password',
 							ui: 'green',
-							text: 'Change Password'
+							minWidth: 100,
+							itemId: 'btnChangePassword'
 						}
 					]
 				}
