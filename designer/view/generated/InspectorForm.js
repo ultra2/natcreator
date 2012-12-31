@@ -22,13 +22,13 @@ Ext.define('designer.view.generated.InspectorForm', {
 					dock: 'top',
 					items: [
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnInherit',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
 							tooltip: 'Inherit'
 						},
 						{
-							xtype: 'button',
+							xtype: 'natbutton',
 							itemId: 'btnDelete',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
 							tooltip: 'Delete'

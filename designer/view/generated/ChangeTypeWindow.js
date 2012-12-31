@@ -8,7 +8,6 @@ Ext.define('designer.view.generated.ChangeTypeWindow', {
 	},
 	width: 800,
 	height: 500,
-	closeAction: 'hide',
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
