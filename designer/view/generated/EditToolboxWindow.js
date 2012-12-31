@@ -1,30 +1,30 @@
 Ext.define('designer.view.generated.EditToolboxWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.EditToolboxWindow',
-	modal: true,
-	title: 'Edit Toolbox',
-	closable: false,
+	height: 500,
+	width: 1000,
 	layout: {
 		type: 'hbox',
 		align: 'stretch'
 	},
-	width: 1000,
-	height: 500,
+	closable: false,
+	title: 'Edit Toolbox',
+	modal: true,
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
 			items: [
 				{
 					xtype: 'nattree',
+					itemId: 'treeAvailableClasses',
+					flex: 1,
+					padding: '2',
+					title: 'Available Classes',
+					hideHeaders: true,
+					forceFit: true,
 					viewConfig: {
 						getRowClass: function(record) {        if (!record) return '';        return record.get('cls');    }
 					},
-					forceFit: true,
-					hideHeaders: true,
-					title: 'Available Classes',
-					padding: '2',
-					flex: 1,
-					itemId: 'treeAvailableClasses',
 					columns: [
 						{
 							xtype: 'treecolumn',
@@ -34,38 +34,38 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 				},
 				{
 					xtype: 'container',
-					layout: {
-						type: 'vbox',
-						pack: 'center',
-						align: 'center'
-					},
+					cls: 'commandbar',
 					defaults: {
 						margins: '2.5f 5 2.5f 5'
 					},
-					cls: 'commandbar',
+					layout: {
+						type: 'vbox',
+						align: 'center',
+						pack: 'center'
+					},
 					items: [
 						{
 							xtype: 'natbutton',
-							tooltip: 'Add class to toolbox group',
+							itemId: 'btnAddClass',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/right1.png',
-							itemId: 'btnAddClass'
+							tooltip: 'Add class to toolbox group'
 						},
 						{
 							xtype: 'natbutton',
-							tooltip: 'Remove class from toolbox group',
+							itemId: 'btnRemoveClass',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/left.png',
-							itemId: 'btnRemoveClass'
+							tooltip: 'Remove class from toolbox group'
 						}
 					]
 				},
 				{
 					xtype: 'natgrid',
-					flex: 1,
-					forceFit: true,
-					hideHeaders: true,
-					itemId: 'gridSelectedClasses',
-					padding: '2',
 					title: 'Selected Classes',
+					padding: '2',
+					itemId: 'gridSelectedClasses',
+					hideHeaders: true,
+					forceFit: true,
+					flex: 1,
 					columns: [
 						{
 							xtype: 'gridcolumn',
@@ -77,63 +77,63 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 			dockedItems: [
 				{
 					xtype: 'container',
+					dock: 'top',
+					cls: 'commandbar',
+					defaults: {
+						margins: 5
+					},
 					layout: {
 						type: 'hbox',
 						align: 'middle'
 					},
-					defaults: {
-						margins: 5
-					},
-					cls: 'commandbar',
-					dock: 'top',
 					items: [
 						{
-							xtype: 'natcombobox',
-							labelWidth: 40,
-							fieldLabel: 'Group',
+							xtype: 'natlookupfield',
+							itemId: 'luGroup',
 							width: 254,
-							itemId: 'cbGroup'
+							fieldLabel: 'Group',
+							labelWidth: 40
 						},
 						{
 							xtype: 'natbutton',
-							tooltip: 'Create new toolbox group',
+							itemId: 'btnNewGroup',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/add.png',
-							itemId: 'btnNewGroup'
+							tooltip: 'Create new toolbox group'
 						},
 						{
 							xtype: 'natbutton',
-							tooltip: 'Delete a toolbox group',
+							itemId: 'btnDeleteGroup',
 							icon: 'https://extsolutions.herokuapp.com/graphics/Momentum_MatteEntireSet1/16/delete.png',
-							itemId: 'btnDeleteGroup'
+							tooltip: 'Delete a toolbox group'
 						}
 					]
 				},
 				{
 					xtype: 'container',
-					layout: {
-						type: 'hbox',
-						padding: '5',
-						pack: 'end',
-						align: 'middle'
-					},
+					dock: 'bottom',
+					flex: 1,
 					defaults: {
 						margins: '0 0 0 5'
 					},
-					flex: 1,
-					dock: 'bottom',
+					layout: {
+						type: 'hbox',
+						align: 'middle',
+						pack: 'end',
+						padding: '5'
+					},
 					items: [
 						{
 							xtype: 'natbutton',
-							text: 'Save',
-							ui: 'green',
+							itemId: 'btnSave',
 							minWidth: 100,
-							itemId: 'btnSave'
+							ui: 'green',
+							text: 'Save'
 						},
 						{
 							xtype: 'natbutton',
-							text: 'Cancel',
+							itemId: 'btnCancel',
 							minWidth: 100,
-							itemId: 'btnCancel'
+							text: 'Cancel'
 						}
 					]
 				}
