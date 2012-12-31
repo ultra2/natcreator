@@ -66,6 +66,7 @@ Ext.define('web.ExtjsModelRequires', {
 		Ext.syncRequire('web.model.RPCreateClassConfig');
 		Ext.syncRequire('web.model.RPDeleteClassConfig');
 		Ext.syncRequire('web.model.RPUpdateClassConfig');
+		Ext.syncRequire('web.model.RPChangeType');
 		Ext.syncRequire('web.model.ROAccountInfo');
 		Ext.syncRequire('web.model.ROGithubInfo');
 		Ext.syncRequire('web.model.QueryResult');
