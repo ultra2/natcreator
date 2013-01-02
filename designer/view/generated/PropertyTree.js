@@ -11,6 +11,24 @@ Ext.define('designer.view.generated.PropertyTree', {
 	initComponent: function(){
 		var me = this;
 		Ext.applyIf(me, {
+			columns: [
+				{
+					xtype: 'treecolumn',
+					header: 'Name',
+					sortable: false,
+					dataIndex: 'value',
+					itemId: 'name',
+					menuDisabled: true
+				},
+				{
+					xtype: 'gridcolumn',
+					header: 'Value',
+					sortable: false,
+					dataIndex: 'name',
+					itemId: 'value',
+					menuDisabled: true
+				}
+			]
 		});
 		me.callParent(arguments);
 	}
