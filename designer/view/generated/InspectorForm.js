@@ -52,7 +52,13 @@ Ext.define('designer.view.generated.InspectorForm', {
 				{
 					xtype: 'treecolumn',
 					itemId: 'txtName',
-					dataIndex: 'name'
+					dataIndex: 'name',
+					renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
+								var iconUrl = 'resources/images/extjs_components.png';
+								var iconIndex = record.reference.getIconIndex();
+								var iconPosX = iconIndex * -16;
+								return '<div style="background-image: url(' + iconUrl + '); background-position: ' + iconPosX + 'px 0px; width: 16px; height: 16px; margin-right: 4px; position:relative; top: 4px; display: inline-block;"></div>' + value;
+							}
 				}
 			]
 		});
