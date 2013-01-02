@@ -16,7 +16,7 @@ Ext.define('designer.view.generated.PropertyTree', {
 					xtype: 'treecolumn',
 					header: 'Name',
 					sortable: false,
-					dataIndex: 'value',
+					dataIndex: 'name',
 					itemId: 'name',
 					menuDisabled: true
 				},
@@ -24,7 +24,7 @@ Ext.define('designer.view.generated.PropertyTree', {
 					xtype: 'gridcolumn',
 					header: 'Value',
 					sortable: false,
-					dataIndex: 'name',
+					dataIndex: 'value',
 					itemId: 'value',
 					menuDisabled: true
 				}
