@@ -23,16 +23,17 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 					itemId: 'ed',
 					items: [
 						{
-							xtype: 'natlookupfield',
-							fieldLabel: 'Type',
-							propertyPath: 'type',
-							itemId: 'luType'
-						},
-						{
 							xtype: 'nattextfield',
 							fieldLabel: 'Name',
 							propertyPath: 'name',
 							itemId: 'txtName'
+						},
+						{
+							xtype: 'natstringarrayedit',
+							fieldLabel: 'Types',
+							height: 50,
+							propertyPath: 'types',
+							itemId: 'saeTypes'
 						},
 						{
 							xtype: 'nattextfield',
@@ -110,13 +111,6 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							height: 50,
 							propertyPath: 'params',
 							itemId: 'memoParams'
-						},
-						{
-							xtype: 'natstringarrayedit',
-							fieldLabel: 'Types',
-							height: 50,
-							propertyPath: 'types',
-							itemId: 'saeTypes'
 						}
 					],
 					layout: {
