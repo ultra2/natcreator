@@ -75,13 +75,6 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 						},
 						{
 							xtype: 'natstringlistfield',
-							fieldLabel: 'Accepted',
-							height: 50,
-							propertyPath: 'accepted',
-							itemId: 'memoAccepted'
-						},
-						{
-							xtype: 'natstringlistfield',
 							fieldLabel: 'Not Accepted',
 							height: 50,
 							propertyPath: 'notAccepted',
