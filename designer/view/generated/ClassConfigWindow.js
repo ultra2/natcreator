@@ -115,7 +115,8 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							xtype: 'natstringarrayedit',
 							itemId: 'saeTypes',
 							propertyPath: 'types',
-							height: 50
+							height: 50,
+							fieldLabel: 'Types'
 						}
 					],
 					layout: {
