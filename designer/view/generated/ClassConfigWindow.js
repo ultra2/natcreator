@@ -1,7 +1,7 @@
 Ext.define('designer.view.generated.ClassConfigWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ClassConfigWindow',
-	height: 450,
+	height: 500,
 	width: 446,
 	resizable: false,
 	layout: {
@@ -110,6 +110,12 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							propertyPath: 'params',
 							height: 50,
 							fieldLabel: 'Params'
+						},
+						{
+							xtype: 'natstringarrayedit',
+							itemId: 'saeTypes',
+							propertyPath: 'types',
+							height: 50
 						}
 					],
 					layout: {
