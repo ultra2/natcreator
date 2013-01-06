@@ -31,9 +31,23 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 						{
 							xtype: 'natstringarrayedit',
 							fieldLabel: 'Types',
-							height: 50,
+							height: 150,
 							propertyPath: 'types',
-							itemId: 'saeTypes'
+							itemId: 'saeTypes',
+							itemRenderer: function(value){
+								var temp,id;
+								if (Ext.String.endsWith(value, '[][]')){
+								    id = Ext.String.removeFromEnd(value, '[][]');
+								    temp = '[][]';
+								}
+								if (Ext.String.endsWith(value, '[]')){
+								    id = Ext.String.removeFromEnd(value, '[]');
+								    temp = '[]';
+								}
+								var cls = viewport.projectEditor.stClasses.getById(id);
+								if (!cls) return value;
+								return cls.get('name') + temp;
+							}
 						},
 						{
 							xtype: 'nattextfield',
