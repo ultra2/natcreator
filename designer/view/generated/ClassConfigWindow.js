@@ -35,8 +35,8 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							propertyPath: 'types',
 							itemId: 'saeTypes',
 							itemRenderer: function(value){
-								var temp,id;
-								id = value;
+								var temp = '';
+								var id = value;
 								if (Ext.String.endsWith(value, '[][]')){
 								    id = Ext.String.removeFromEnd(value, '[][]');
 								    temp = '[][]';
