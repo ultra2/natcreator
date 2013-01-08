@@ -90,6 +90,13 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 						},
 						{
 							xtype: 'natstringlistfield',
+							fieldLabel: 'Params',
+							height: 50,
+							propertyPath: 'params',
+							itemId: 'memoParams'
+						},
+						{
+							xtype: 'natstringlistfield',
 							fieldLabel: 'Not Accepted',
 							height: 50,
 							propertyPath: 'notAccepted',
@@ -112,13 +119,6 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							fieldLabel: 'Advanced',
 							propertyPath: 'advanced',
 							itemId: 'chAdvanced'
-						},
-						{
-							xtype: 'natstringlistfield',
-							fieldLabel: 'Params',
-							height: 50,
-							propertyPath: 'params',
-							itemId: 'memoParams'
 						}
 					],
 					layout: {
