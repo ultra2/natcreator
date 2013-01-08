@@ -1,7 +1,7 @@
 Ext.define('designer.view.generated.ClassConfigsWindow', {
 	extend: 'NAT.window.Window',
 	alias: 'widget.ClassConfigsWindow',
-	height: 400,
+	height: 500,
 	width: 600,
 	layout: {
 		type: 'fit'

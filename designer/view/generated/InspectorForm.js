@@ -46,6 +46,11 @@ Ext.define('designer.view.generated.InspectorForm', {
 							tooltip: 'Expand All'
 						}
 					]
+				},
+				{
+					xtype: 'nattextfield',
+					itemId: 'txtSearch',
+					dock: 'top'
 				}
 			],
 			columns: [
