@@ -35,19 +35,7 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							propertyPath: 'types',
 							itemId: 'saeTypes',
 							itemRenderer: function(value){
-								var temp = '';
-								var id = value;
-								if (Ext.String.endsWith(value, '[][]')){
-								    id = Ext.String.removeFromEnd(value, '[][]');
-								    temp = '[][]';
-								}
-								if (Ext.String.endsWith(value, '[]')){
-								    id = Ext.String.removeFromEnd(value, '[]');
-								    temp = '[]';
-								}
-								var cls = viewport.projectEditor.stClasses.getById(id);
-								if (!cls) return value;
-								return cls.get('name') + temp;
+								return viewport.projectEditor.getClassConfigTypeName(value);
 							}
 						},
 						{

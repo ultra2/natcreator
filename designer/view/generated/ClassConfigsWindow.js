@@ -58,10 +58,7 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 							dataIndex: 'types',
 							text: 'Type',
 							renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
-								var st = viewport.projectEditor.SM.getByKey('stClassConfigDataTypes');
-								var dataType = st.getById(value[0]);
-								if (!dataType) dataType = st.getById('Object');
-								return dataType.get('name');
+								return viewport.projectEditor.getClassConfigTypeName(value[0]);
 							}
 						},
 						{
