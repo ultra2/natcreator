@@ -54,7 +54,7 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 						{
 							xtype: 'gridcolumn',
 							itemId: 'luType',
-							width: 113,
+							width: 200,
 							dataIndex: 'types',
 							text: 'Type',
 							renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
