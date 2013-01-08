@@ -39,6 +39,27 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							}
 						},
 						{
+							xtype: 'natstringarrayfield',
+							fieldLabel: 'Values',
+							height: 50,
+							propertyPath: 'values',
+							itemId: 'memoValues'
+						},
+						{
+							xtype: 'natstringarrayfield',
+							fieldLabel: 'Params',
+							height: 50,
+							propertyPath: 'params',
+							itemId: 'memoParams'
+						},
+						{
+							xtype: 'natstringarrayfield',
+							fieldLabel: 'Not Accepted',
+							height: 50,
+							propertyPath: 'notAccepted',
+							itemId: 'memoNotAccepted'
+						},
+						{
 							xtype: 'nattextfield',
 							fieldLabel: 'Default Value',
 							propertyPath: 'defaultValue',
@@ -70,25 +91,10 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							itemId: 'intDefaultValue'
 						},
 						{
-							xtype: 'natstringlistfield',
-							fieldLabel: 'Values',
-							height: 50,
-							propertyPath: 'values',
-							itemId: 'memoValues'
-						},
-						{
-							xtype: 'natstringlistfield',
-							fieldLabel: 'Params',
-							height: 50,
-							propertyPath: 'params',
-							itemId: 'memoParams'
-						},
-						{
-							xtype: 'natstringlistfield',
-							fieldLabel: 'Not Accepted',
-							height: 50,
-							propertyPath: 'notAccepted',
-							itemId: 'memoNotAccepted'
+							xtype: 'natstringarrayfield',
+							itemId: 'saDefaultValue',
+							fieldLabel: 'Default Value',
+							propertyPath: 'defaultValue'
 						},
 						{
 							xtype: 'natcheckboxfield',
