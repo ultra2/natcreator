@@ -100,7 +100,9 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 							xtype: 'natcheckboxfield',
 							fieldLabel: 'Dependency',
 							propertyPath: 'dependency',
-							itemId: 'chDependency'
+							itemId: 'chDependency',
+							handler: function(checkbox,checked){
+							}
 						},
 						{
 							xtype: 'natcheckboxfield',
