@@ -52,7 +52,7 @@ Ext.define('designer.view.generated.LoginWindow', {
 					dock: 'bottom',
 					cls: 'commandpanel',
 					defaults: {
-						margins: '0 0 0 5',
+						margins: '0005',
 						autoWidth: true
 					},
 					layout: {

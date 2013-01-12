@@ -30,13 +30,14 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 						},
 						{
 							xtype: 'natstringarrayedit',
-							fieldLabel: 'Types',
-							height: 150,
 							propertyPath: 'types',
 							itemId: 'saeTypes',
-							itemRenderer: function(value){
-								return viewport.projectEditor.getClassConfigTypeName(value);
-							}
+							height: 150,
+							fieldLabel: 'Types',
+							itemRenderer: function(value)
+								{
+									return viewport.projectEditor.getClassConfigTypeName(value);
+								}
 						},
 						{
 							xtype: 'natstringarrayfield',
@@ -98,11 +99,9 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 						},
 						{
 							xtype: 'natcheckboxfield',
-							fieldLabel: 'Dependency',
 							propertyPath: 'dependency',
 							itemId: 'chDependency',
-							handler: function(checkbox,checked){
-							}
+							fieldLabel: 'Dependency'
 						},
 						{
 							xtype: 'natcheckboxfield',
@@ -132,7 +131,7 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0 0 0 5',
+						margins: '0005',
 						autoWidth: true
 					},
 					height: 30,

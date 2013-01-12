@@ -60,19 +60,21 @@ Ext.define('designer.view.generated.GeneratorsForm', {
 			columns: [
 				{
 					xtype: 'gridcolumn',
-					renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
-								var project = value.substr(0, value.indexOf('/'));
-								var generator = value.substr(project.length + 1);
-								var ownedGenerator = viewport.projectEditor.IsOwnedGenerator(record);
-								if (!ownedGenerator) {
-								    return '<span style="color:blue"><b><big>' + generator + '</big></b></br>' + project + '</span>';
-								} else {
-								    return '<span style="color:black"><b><big>' + generator + '</big></b></br></span>';
-								}
-							},
 					text: 'Name',
+					itemId: 'txtName',
 					dataIndex: 'name',
-					itemId: 'txtName'
+					renderer: function(value, metaData, record, rowIndex, colIndex, store, view)
+								{
+									var project = value.substr(0, value.indexOf('/'));
+									var generator = value.substr(project.length + 1);
+									var ownedGenerator = viewport.projectEditor.IsOwnedGenerator(record);
+									if (!ownedGenerator) {
+										return '<span style="color:blue"><b><big>' + generator + '</big></b></br>' + project + '</span>';
+									} else {
+										return '<span style="color:black"><b><big>' + generator + '</big></b></br></span>';
+									}
+								},
+					menuText: ''
 				},
 				{
 					xtype: 'gridcolumn',

@@ -37,7 +37,7 @@ Ext.define('designer.view.generated.ChangeTypeWindow', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0 0 0 5',
+						margins: '0005',
 						minWidth: 80
 					},
 					cls: 'commandpanel',

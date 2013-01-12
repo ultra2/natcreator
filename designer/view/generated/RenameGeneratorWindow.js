@@ -47,7 +47,7 @@ Ext.define('designer.view.generated.RenameGeneratorWindow', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0 0 0 5',
+						margins: '0005',
 						autoWidth: true
 					},
 					height: 30,

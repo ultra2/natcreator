@@ -20,14 +20,16 @@ Ext.define('designer.view.generated.InstallGeneratorWindow', {
 					columns: [
 						{
 							xtype: 'gridcolumn',
-							dataIndex: 'name',
 							width: 400,
 							text: 'Name',
-							renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
-								var project = value.substr(0, value.indexOf('/'));
-								var generator = value.substr(project.length + 1);
-								return "<b><big>" + generator + "</big></b></br>" + project;
-							}
+							dataIndex: 'name',
+							renderer: function(value, metaData, record, rowIndex, colIndex, store, view)
+								{
+									var project = value.substr(0, value.indexOf('/'));
+									var generator = value.substr(project.length + 1);
+									return "<b><big>" + generator + "</big></b></br>" + project;
+								},
+							menuText: ''
 						},
 						{
 							xtype: 'gridcolumn',
@@ -45,7 +47,7 @@ Ext.define('designer.view.generated.InstallGeneratorWindow', {
 					cls: 'commandpanel',
 					height: 30,
 					defaults: {
-						margins: '0 0 0 5'
+						margins: '0005'
 					},
 					layout: {
 						type: 'hbox',

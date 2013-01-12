@@ -17,7 +17,7 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 				{
 					xtype: 'nattree',
 					viewConfig: {
-						getRowClass: function(record) {        if (!record) return '';        return record.get('cls');    }
+						getRowClass: function(record){if(!record)return'';returnrecord.get('cls');}
 					},
 					forceFit: true,
 					hideHeaders: true,
@@ -40,7 +40,7 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 						align: 'center'
 					},
 					defaults: {
-						margins: '2.5f 5 2.5f 5'
+						margins: '2.5f52.5f5'
 					},
 					cls: 'commandbar',
 					items: [
@@ -117,7 +117,7 @@ Ext.define('designer.view.generated.EditToolboxWindow', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0 0 0 5'
+						margins: '0005'
 					},
 					flex: 1,
 					dock: 'bottom',

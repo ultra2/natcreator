@@ -57,9 +57,11 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 							width: 200,
 							dataIndex: 'types',
 							text: 'Type',
-							renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
-								return viewport.projectEditor.getClassConfigTypeName(value[0]);
-							}
+							menuText: '',
+							renderer: function(value, metaData, record, rowIndex, colIndex, store, view)
+								{
+									return viewport.projectEditor.getClassConfigTypeName(value[0]);
+								}
 						},
 						{
 							xtype: 'gridcolumn',
@@ -77,7 +79,7 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 					dock: 'bottom',
 					height: 30,
 					defaults: {
-						margins: '0 0 0 5',
+						margins: '0005',
 						autoWidth: true
 					},
 					layout: {

@@ -77,18 +77,20 @@ Ext.define('designer.view.generated.CodeGenerationStepsForm', {
 								},
 								{
 									xtype: 'natlookupcolumn',
-									itemId: 'luGenerator',
-									dataIndex: 'generator_id',
 									width: 300,
 									text: 'Generator',
-									renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
-								var col = this.columns[colIndex];
-								var result = col.field.renderer(value, record);
-								value = Ext.util.Format.htmlEncode(result);
-								var project = value.substr(0, value.indexOf('/'));
-								var generator = value.substr(project.length + 1);
-								return "<b><big>" + generator + "</big></b></br>" + project;
-							},
+									itemId: 'luGenerator',
+									dataIndex: 'generator_id',
+									renderer: function(value, metaData, record, rowIndex, colIndex, store, view)
+								{
+									var col = this.columns[colIndex];
+									var result = col.field.renderer(value, record);
+									value = Ext.util.Format.htmlEncode(result);
+									var project = value.substr(0, value.indexOf('/'));
+									var generator = value.substr(project.length + 1);
+									return "<b><big>" + generator + "</big></b></br>" + project;
+								},
+									menuText: '',
 									editor: {
 										xtype: 'natlookupfield'
 									}

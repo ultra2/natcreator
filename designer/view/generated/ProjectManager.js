@@ -20,12 +20,14 @@ Ext.define('designer.view.generated.ProjectManager', {
 					columns: [
 						{
 							xtype: 'gridcolumn',
-							renderer: function(value,metaData,record,rowIndex,colIndex,store,view){
-								if (record.get('isTemplate')) value += ' (template)';
-								return value;
-							},
 							text: 'Name',
-							dataIndex: 'name'
+							dataIndex: 'name',
+							menuText: '',
+							renderer: function(value, metaData, record, rowIndex, colIndex, store, view)
+								{
+									if (record.get('isTemplate')) value += ' (template)';
+									return value;
+								}
 						},
 						{
 							xtype: 'gridcolumn',
@@ -45,7 +47,7 @@ Ext.define('designer.view.generated.ProjectManager', {
 					},
 					defaults: {
 						width: 100,
-						margin: '0 5 0 0'
+						margin: '0500'
 					},
 					height: 30,
 					dock: 'top',
@@ -80,7 +82,7 @@ Ext.define('designer.view.generated.ProjectManager', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0 0 0 5'
+						margins: '0005'
 					},
 					height: 30,
 					cls: 'commandpanel',

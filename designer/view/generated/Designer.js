@@ -25,7 +25,7 @@ Ext.define('designer.view.generated.Designer', {
 							width: 320,
 							defaults: {
 								scale: 'medium',
-								margin: '0 5 0 0'
+								margin: '0500'
 							},
 							layout: {
 								type: 'hbox',

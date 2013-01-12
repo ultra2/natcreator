@@ -25,7 +25,7 @@ Ext.define('designer.view.generated.Viewport', {
 							width: 400,
 							defaults: {
 								ui: 'gray',
-								margin: '2 0 2 5',
+								margin: '2025',
 								autoWidth: true
 							},
 							layout: {
@@ -84,7 +84,7 @@ Ext.define('designer.view.generated.Viewport', {
 							width: 400,
 							defaults: {
 								ui: 'gray',
-								margin: '2 5 2 0',
+								margin: '2520',
 								autoWidth: true
 							},
 							layout: {

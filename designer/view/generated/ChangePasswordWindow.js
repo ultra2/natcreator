@@ -58,7 +58,7 @@ Ext.define('designer.view.generated.ChangePasswordWindow', {
 					cls: 'commandpanel',
 					height: 30,
 					defaults: {
-						margins: '0 0 0 5'
+						margins: '0005'
 					},
 					layout: {
 						type: 'hbox',

@@ -47,7 +47,7 @@ Ext.define('designer.view.generated.CreateToolboxGroupWindow', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0 0 0 5',
+						margins: '0005',
 						minWidth: 80
 					},
 					cls: 'commandpanel',
