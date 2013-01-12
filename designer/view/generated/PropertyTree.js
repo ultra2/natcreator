@@ -6,7 +6,7 @@ Ext.define('designer.view.generated.PropertyTree', {
 	columnLines: true,
 	rootVisible: false,
 	viewConfig: {
-		getRowClass: function(record){if(!record)return'';returnrecord.get('cls');}
+		getRowClass: function(record) {        if (!record) return '';        return record.get('cls');    }
 	},
 	initComponent: function(){
 		var me = this;

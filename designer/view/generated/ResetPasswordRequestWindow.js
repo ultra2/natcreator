@@ -43,7 +43,7 @@ Ext.define('designer.view.generated.ResetPasswordRequestWindow', {
 					cls: 'commandpanel',
 					height: 30,
 					defaults: {
-						margins: '0005'
+						margins: '0 0 0 5'
 					},
 					layout: {
 						type: 'hbox',

@@ -53,7 +53,7 @@ Ext.define('designer.view.generated.SendQuestionWindow', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0005'
+						margins: '0 0 0 5'
 					},
 					height: 30,
 					cls: 'commandpanel',

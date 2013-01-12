@@ -131,7 +131,7 @@ Ext.define('designer.view.generated.ClassConfigWindow', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0005',
+						margins: '0 0 0 5',
 						autoWidth: true
 					},
 					height: 30,

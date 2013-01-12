@@ -47,7 +47,7 @@ Ext.define('designer.view.generated.ProjectManager', {
 					},
 					defaults: {
 						width: 100,
-						margin: '0500'
+						margin: '0 5 0 0'
 					},
 					height: 30,
 					dock: 'top',
@@ -82,7 +82,7 @@ Ext.define('designer.view.generated.ProjectManager', {
 						align: 'middle'
 					},
 					defaults: {
-						margins: '0005'
+						margins: '0 0 0 5'
 					},
 					height: 30,
 					cls: 'commandpanel',

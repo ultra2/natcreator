@@ -79,7 +79,7 @@ Ext.define('designer.view.generated.ClassConfigsWindow', {
 					dock: 'bottom',
 					height: 30,
 					defaults: {
-						margins: '0005',
+						margins: '0 0 0 5',
 						autoWidth: true
 					},
 					layout: {
