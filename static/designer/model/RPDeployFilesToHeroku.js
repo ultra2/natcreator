@@ -1,0 +1,12 @@
+Ext.define('designer.model.RPDeployFilesToHeroku', { 
+	extend: 'designer.model.RequestPost'
+	
+	,fields: [
+	]
+	,associations: [
+		{ type: 'hasMany', name: 'files', associationKey: 'files', model: 'designer.model.ROFile', primaryKey: '_id' }
+	]
+	,validations: [
+		{ field: 'files', type: 'presence' }
+	]
+});
