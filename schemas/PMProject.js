@@ -13,7 +13,7 @@ var PMProject = new Schema({
 		,name: { type: String }
 		,description: { type: String }
 		,isTemplate: { type: Boolean }
-		,template_id: { type: String, ref: 'PMProject' }
+		,template_id_id: { type: String, ref: 'PMProject' }
 		,guide: { type: String }
 		,connectionUrl: { type: String }
 });

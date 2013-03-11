@@ -10,9 +10,9 @@ var PMAccountProject = new Schema({
 		,_modified: { type: Date }
 		,_version: { type: Number }
 		,_deleted: { type: Boolean }
-		,account_id: { type: String, ref: 'PMAccount' }
-		,project_id: { type: String, ref: 'PMProject' }
-		,role_id: { type: String, ref: 'PMAccountProjectRole' }
+		,account_id_id: { type: String, ref: 'PMAccount' }
+		,project_id_id: { type: String, ref: 'PMProject' }
+		,role_id_id: { type: String, ref: 'PMAccountProjectRole' }
 		,name: { type: String }
 });
 

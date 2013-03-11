@@ -15,14 +15,7 @@ var QRLookup = new Schema({
 
 QRLookup.statics.read = function(req, res, callback)
 {
-/*
-	var lastModified = new Date(req.query.lastModified);
-	var me = this;
-	<model>.find()
-		.$gt('_modified', lastModified)
-		.exec(null, callback);
-*/
-callback(null,null);
+	callback(null, null);
 };
 
 exports.QRLookup = QRLookup;

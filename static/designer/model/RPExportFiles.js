@@ -10,6 +10,6 @@ Ext.define('designer.model.RPExportFiles', {
 	]
 	,validations: [
 		{ field: 'path', type: 'presence' }
-		,{ field: 'files_id', type: 'presence' }
+		,{ field: 'files', type: 'presence' }
 	]
 });

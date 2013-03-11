@@ -7,6 +7,6 @@ Ext.define('designer.model.RPDeployFilesToHeroku', {
 		{ type: 'hasMany', name: 'files', associationKey: 'files', model: 'designer.model.ROFile', primaryKey: '_id' }
 	]
 	,validations: [
-		{ field: 'files_id', type: 'presence' }
+		{ field: 'files', type: 'presence' }
 	]
 });
